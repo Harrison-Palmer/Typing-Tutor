@@ -3,4 +3,9 @@ using namespace std;
 
 public ref class typer{
 
+private:
+
+public:
+
+
 };
