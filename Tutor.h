@@ -7,6 +7,7 @@ private:
 
 public:
 	int getLength();
+	int setLength();
 
 
 };
