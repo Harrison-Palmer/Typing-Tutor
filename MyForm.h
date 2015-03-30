@@ -235,7 +235,7 @@ private: System::Void MyForm_Load(System::Object^  sender, System::EventArgs^  e
 
 }
 private: System::Void panel1_Paint(System::Object^  sender, System::Windows::Forms::PaintEventArgs^  e) {
-
+			      
 }
 
 //start screen
