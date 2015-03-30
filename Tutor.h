@@ -6,7 +6,9 @@ public ref class typer{
 private:
 
 public:
-	int getLength();
-
+	int getInput();
+	bool correctLetter(char a, char b);
+	double accuracy();
+	int getScore();
 
 };
