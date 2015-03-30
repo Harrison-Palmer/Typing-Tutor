@@ -6,6 +6,8 @@ public ref class typer{
 private:
 
 public:
+	int getLength();
+	int setLength();
 
 
 };
