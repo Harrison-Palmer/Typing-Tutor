@@ -35,23 +35,24 @@ namespace Project1 {
 				delete components;
 			}
 		}
-	private: System::Windows::Forms::MenuStrip^  menuStrip1;
+
 	protected:
-	private: System::Windows::Forms::ToolStripMenuItem^  fileToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  editToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  helpToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  aboutToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  aboutToolStripMenuItem1;
+
+
+
+
+
 	private: System::Windows::Forms::Panel^  panel1;
-	private: System::Windows::Forms::ToolStripMenuItem^  restartToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  exitToolStripMenuItem;
-	private: System::Windows::Forms::PictureBox^  Exit_Button;
+
+
+
 
 	private: System::Windows::Forms::PictureBox^  Second_Button;
 
 	private: System::Windows::Forms::PictureBox^  Start_Pictutre;
 
 	private: System::Windows::Forms::PictureBox^  MenuPicture;
+	private: System::Windows::Forms::PictureBox^  Exit_Button;
 
 
 	private:
@@ -67,88 +68,17 @@ namespace Project1 {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
-			this->fileToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->restartToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->exitToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->editToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->helpToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->aboutToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->aboutToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
 			this->Exit_Button = (gcnew System::Windows::Forms::PictureBox());
 			this->Second_Button = (gcnew System::Windows::Forms::PictureBox());
 			this->Start_Pictutre = (gcnew System::Windows::Forms::PictureBox());
 			this->MenuPicture = (gcnew System::Windows::Forms::PictureBox());
-			this->menuStrip1->SuspendLayout();
 			this->panel1->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Exit_Button))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Second_Button))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Start_Pictutre))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->MenuPicture))->BeginInit();
 			this->SuspendLayout();
-			// 
-			// menuStrip1
-			// 
-			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(3) {
-				this->fileToolStripMenuItem,
-					this->editToolStripMenuItem, this->helpToolStripMenuItem
-			});
-			this->menuStrip1->Location = System::Drawing::Point(0, 0);
-			this->menuStrip1->Name = L"menuStrip1";
-			this->menuStrip1->Size = System::Drawing::Size(954, 24);
-			this->menuStrip1->TabIndex = 0;
-			this->menuStrip1->Text = L"menuStrip1";
-			// 
-			// fileToolStripMenuItem
-			// 
-			this->fileToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
-				this->restartToolStripMenuItem,
-					this->exitToolStripMenuItem
-			});
-			this->fileToolStripMenuItem->Name = L"fileToolStripMenuItem";
-			this->fileToolStripMenuItem->Size = System::Drawing::Size(37, 20);
-			this->fileToolStripMenuItem->Text = L"File";
-			// 
-			// restartToolStripMenuItem
-			// 
-			this->restartToolStripMenuItem->Name = L"restartToolStripMenuItem";
-			this->restartToolStripMenuItem->Size = System::Drawing::Size(110, 22);
-			this->restartToolStripMenuItem->Text = L"Restart";
-			// 
-			// exitToolStripMenuItem
-			// 
-			this->exitToolStripMenuItem->Name = L"exitToolStripMenuItem";
-			this->exitToolStripMenuItem->Size = System::Drawing::Size(110, 22);
-			this->exitToolStripMenuItem->Text = L"Exit";
-			// 
-			// editToolStripMenuItem
-			// 
-			this->editToolStripMenuItem->Name = L"editToolStripMenuItem";
-			this->editToolStripMenuItem->Size = System::Drawing::Size(39, 20);
-			this->editToolStripMenuItem->Text = L"Edit";
-			// 
-			// helpToolStripMenuItem
-			// 
-			this->helpToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
-				this->aboutToolStripMenuItem,
-					this->aboutToolStripMenuItem1
-			});
-			this->helpToolStripMenuItem->Name = L"helpToolStripMenuItem";
-			this->helpToolStripMenuItem->Size = System::Drawing::Size(44, 20);
-			this->helpToolStripMenuItem->Text = L"Help";
-			// 
-			// aboutToolStripMenuItem
-			// 
-			this->aboutToolStripMenuItem->Name = L"aboutToolStripMenuItem";
-			this->aboutToolStripMenuItem->Size = System::Drawing::Size(115, 22);
-			this->aboutToolStripMenuItem->Text = L"Tutorial";
-			// 
-			// aboutToolStripMenuItem1
-			// 
-			this->aboutToolStripMenuItem1->Name = L"aboutToolStripMenuItem1";
-			this->aboutToolStripMenuItem1->Size = System::Drawing::Size(115, 22);
-			this->aboutToolStripMenuItem1->Text = L"About";
 			// 
 			// panel1
 			// 
@@ -193,7 +123,7 @@ namespace Project1 {
 			// 
 			this->MenuPicture->Location = System::Drawing::Point(26, 20);
 			this->MenuPicture->Name = L"MenuPicture";
-			this->MenuPicture->Size = System::Drawing::Size(855, 149);
+			this->MenuPicture->Size = System::Drawing::Size(850, 150);
 			this->MenuPicture->TabIndex = 0;
 			this->MenuPicture->TabStop = false;
 			// 
@@ -203,28 +133,26 @@ namespace Project1 {
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(954, 546);
 			this->Controls->Add(this->panel1);
-			this->Controls->Add(this->menuStrip1);
-			this->MainMenuStrip = this->menuStrip1;
 			this->Name = L"MyForm";
 			this->Text = L"MyForm";
 			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
-			this->menuStrip1->ResumeLayout(false);
-			this->menuStrip1->PerformLayout();
 			this->panel1->ResumeLayout(false);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Exit_Button))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Second_Button))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Start_Pictutre))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->MenuPicture))->EndInit();
 			this->ResumeLayout(false);
-			this->PerformLayout();
 
 		}
 #pragma endregion
-		Graphics g;
+		Graphics^  g;
 
 		typer tutor;
 
 		int Length = 0;
+
+		Bitmap^ ExitGame = gcnew Bitmap("Images\\exit.bmp");
+		Bitmap^ NewGame = gcnew Bitmap("Images\\exit.bmp");
 
 		/* potential way of level design
 		char Level1[7];
@@ -232,19 +160,44 @@ namespace Project1 {
 		*/
 
 private: System::Void MyForm_Load(System::Object^  sender, System::EventArgs^  e) {
-
+			 g = panel1->CreateGraphics();
+			 Exit_Button->Image = ExitGame;
+			 Start_Pictutre->Image = NewGame;
 }
 private: System::Void panel1_Paint(System::Object^  sender, System::Windows::Forms::PaintEventArgs^  e) {
 
 }
 
-//start screen
+//start game button
 private: System::Void Start_Pictutre_Click(System::Object^  sender, System::EventArgs^  e) {
+			 panel1->Controls->Clear();
+
+			 //makes new picturebox
+			 /*
+			 PictureBox^ Keyboard;
+			 Keyboard = gcnew PictureBox;
+			 Keyboard->Location = Point(240, 210);
+			 Keyboard->Size.Height = 30;
+			 Keyboard->Size.Width = 30;
+			 Keyboard->BackColor.Aquamarine;
+			 Keyboard->BackgroundImage = NewGame;
+			 Controls->Add(Keyboard);
+			 Keyboard->Visible = true;
+			*/
 			 panel1->Refresh();
+			 PictureBox ^Keyboard = gcnew PictureBox();
+
+			 Keyboard->Parent = this;
+			 Keyboard->Location = Point(240, 120);
+			 Keyboard->Size.Height = 30;
+			 Keyboard->Size.Width = 30;
+			 Keyboard->BackColor.Aquamarine;
 }
+//dont know yet
 private: System::Void Second_Button_Click(System::Object^  sender, System::EventArgs^  e) {
 }
 private: System::Void Exit_Button_Click(System::Object^  sender, System::EventArgs^  e) {
 }
+
 }; //end of myform class
 }
