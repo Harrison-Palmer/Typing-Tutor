@@ -17,7 +17,10 @@ Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c5619
 Class typer: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Methods:
-    getLength(): PrivateScope, Public, HideBySig
+    getInput(): PrivateScope, Public, HideBySig
+    correctLetter(SByte IsSignUnspecifiedByte, SByte IsSignUnspecifiedByte): PrivateScope, Public, HideBySig
+    accuracy(): PrivateScope, Public, HideBySig
+    getScore(): PrivateScope, Public, HideBySig
 Class Project1.MyForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName

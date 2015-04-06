@@ -1,13 +1,7 @@
 #include "tutor.h"
 
-
-<<<<<<< HEAD
-int typer::getLength(){
-	int input = 0;
-=======
 int typer::getInput(){
 	int input;
->>>>>>> origin/master
 
 	//input = System::int(textBox1.Text);
 
