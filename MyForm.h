@@ -992,14 +992,7 @@ private: System::Windows::Forms::PictureBox^  PictureBoxDash;
 		Bitmap^ ExitGame = gcnew Bitmap("Images\\exit.bmp");
 		Image^ Start = Image::FromFile("Images\\startButton.jpg");
 
-		//char Keys[61];
-		array<char, 2>^ Keys;
-		Keys = gcnew array<char>(61);
-		char Keys[] = {'Tild', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', 'Dash', 'Plus',
-					   'BS', 'TAB', 'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', 'LBra', 'RBra', 
-					   'FSla', 'Cap', 'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'Semi', 'Quot', 
-					   'Ent', 'LShi', 'z', 'x', 'c', 'v', 'b', 'n', 'm', 'Comm', 'Dot', 'BSla',
-					   'RShi', 'LCtr', 'LWin', 'LAlt', 'Spac', 'RAlt', 'RWin', 'File', 'RCtr'};
+		array<char>^ Keys = gcnew array<char>(61);
 
 		/* potential way of level design
 		char Level1[7];
@@ -1053,6 +1046,18 @@ private: System::Void Start_Pictutre_Click(System::Object^  sender, System::Even
 			 */
 	 
 			 //pictureBox1->Image = Start;
+
+			char Keys[] = { 'Tild', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', 'Dash', 'Plus',
+				 'BS', 'TAB', 'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', 'LBra', 'RBra',
+				 'FSla', 'Cap', 'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'Semi', 'Quot',
+				 'Ent', 'LShi', 'z', 'x', 'c', 'v', 'b', 'n', 'm', 'Comm', 'Dot', 'BSla',
+				 'RShi', 'LCtr', 'LWin', 'LAlt', 'Spac', 'RAlt', 'RWin', 'File', 'RCtr' };
+
+			for (int i = 0; i < 61; i++)
+			{
+				PictureBox + Keys[i] = false;
+			}
+
 }
 //dont know yet
 private: System::Void Second_Button_Click(System::Object^  sender, System::EventArgs^  e) {
