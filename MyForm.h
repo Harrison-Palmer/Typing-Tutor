@@ -3,6 +3,8 @@
 #include <windows.h>
 #include <Winuser.h>
 #include <stdio.h>
+#include <ctime>
+#include <cstdlib>
 
 namespace Project1 {
 
@@ -157,6 +159,7 @@ private: System::Windows::Forms::PictureBox^  PictureBoxDash;
 	private: System::Windows::Forms::PictureBox^  pictureBox3;
 	private: System::Windows::Forms::PictureBox^  pictureBox2;
 	private: System::Windows::Forms::PictureBox^  pictureBox1;
+private: System::Windows::Forms::TextBox^  textBox1;
 
 	private:
 		/// <summary>
@@ -238,6 +241,7 @@ private: System::Windows::Forms::PictureBox^  PictureBoxDash;
 			this->Second_Button = (gcnew System::Windows::Forms::PictureBox());
 			this->Start_Pictutre = (gcnew System::Windows::Forms::PictureBox());
 			this->MenuPicture = (gcnew System::Windows::Forms::PictureBox());
+			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->panel1->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxSpac))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxRAlt))->BeginInit();
@@ -308,6 +312,7 @@ private: System::Windows::Forms::PictureBox^  PictureBoxDash;
 			// 
 			// panel1
 			// 
+			this->panel1->Controls->Add(this->textBox1);
 			this->panel1->Controls->Add(this->pictureBoxSpac);
 			this->panel1->Controls->Add(this->pictureBoxRAlt);
 			this->panel1->Controls->Add(this->pictureBoxRWin);
@@ -956,6 +961,15 @@ private: System::Windows::Forms::PictureBox^  PictureBoxDash;
 			this->MenuPicture->TabIndex = 0;
 			this->MenuPicture->TabStop = false;
 			// 
+			// textBox1
+			// 
+			this->textBox1->Location = System::Drawing::Point(37, 34);
+			this->textBox1->Multiline = true;
+			this->textBox1->Name = L"textBox1";
+			this->textBox1->Size = System::Drawing::Size(827, 128);
+			this->textBox1->TabIndex = 65;
+			this->textBox1->Click += gcnew System::EventHandler(this, &MyForm::textBox1_Click);
+			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -967,6 +981,7 @@ private: System::Windows::Forms::PictureBox^  PictureBoxDash;
 			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
 			this->KeyPress += gcnew System::Windows::Forms::KeyPressEventHandler(this, &MyForm::MyForm_KeyPress);
 			this->panel1->ResumeLayout(false);
+			this->panel1->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxSpac))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxRAlt))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxRWin))->EndInit();
@@ -1137,5 +1152,20 @@ private: System::Void PictureBoxTild_Click(System::Object^  sender, System::Even
 private: System::Void pictureBox56_Click(System::Object^  sender, System::EventArgs^  e) {
 }
 
+private: System::Void textBox1_Click(System::Object^  sender, System::EventArgs^  e) {
+			 char ones[] = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
+				 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r',
+				 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' };
+
+			 srand(time(0));
+			 for (int i = 1; i <= 5; i++)
+			 {
+
+				 int c = (rand() % 26);
+				 char one = ones[c];
+
+				 textBox1->Text = textBox1->Text + one + "\r\n";
+			 }
+}
 }; //end of myform class
 }
