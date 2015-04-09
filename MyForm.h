@@ -171,6 +171,7 @@ private: System::Windows::Forms::PictureBox^  PictureBoxDash;
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(MyForm::typeid));
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
 			this->pictureBoxSpac = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBoxRAlt = (gcnew System::Windows::Forms::PictureBox());
@@ -388,17 +389,21 @@ private: System::Windows::Forms::PictureBox^  PictureBoxDash;
 			// 
 			// pictureBoxRAlt
 			// 
+			this->pictureBoxRAlt->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBoxRAlt.Image")));
 			this->pictureBoxRAlt->Location = System::Drawing::Point(589, 400);
 			this->pictureBoxRAlt->Name = L"pictureBoxRAlt";
 			this->pictureBoxRAlt->Size = System::Drawing::Size(59, 50);
+			this->pictureBoxRAlt->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->pictureBoxRAlt->TabIndex = 63;
 			this->pictureBoxRAlt->TabStop = false;
 			// 
 			// pictureBoxRWin
 			// 
+			this->pictureBoxRWin->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBoxRWin.Image")));
 			this->pictureBoxRWin->Location = System::Drawing::Point(654, 400);
 			this->pictureBoxRWin->Name = L"pictureBoxRWin";
 			this->pictureBoxRWin->Size = System::Drawing::Size(59, 50);
+			this->pictureBoxRWin->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->pictureBoxRWin->TabIndex = 62;
 			this->pictureBoxRWin->TabStop = false;
 			// 
@@ -407,47 +412,58 @@ private: System::Windows::Forms::PictureBox^  PictureBoxDash;
 			this->pictureBoxFile->Location = System::Drawing::Point(719, 400);
 			this->pictureBoxFile->Name = L"pictureBoxFile";
 			this->pictureBoxFile->Size = System::Drawing::Size(59, 50);
+			this->pictureBoxFile->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->pictureBoxFile->TabIndex = 61;
 			this->pictureBoxFile->TabStop = false;
 			// 
 			// pictureBoxRCtr
 			// 
+			this->pictureBoxRCtr->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBoxRCtr.Image")));
 			this->pictureBoxRCtr->Location = System::Drawing::Point(784, 400);
 			this->pictureBoxRCtr->Name = L"pictureBoxRCtr";
 			this->pictureBoxRCtr->Size = System::Drawing::Size(92, 50);
+			this->pictureBoxRCtr->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->pictureBoxRCtr->TabIndex = 60;
 			this->pictureBoxRCtr->TabStop = false;
 			this->pictureBoxRCtr->Click += gcnew System::EventHandler(this, &MyForm::pictureBox56_Click);
 			// 
 			// pictureBoxLAlt
 			// 
+			this->pictureBoxLAlt->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBoxLAlt.Image")));
 			this->pictureBoxLAlt->Location = System::Drawing::Point(189, 400);
 			this->pictureBoxLAlt->Name = L"pictureBoxLAlt";
 			this->pictureBoxLAlt->Size = System::Drawing::Size(59, 50);
+			this->pictureBoxLAlt->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->pictureBoxLAlt->TabIndex = 59;
 			this->pictureBoxLAlt->TabStop = false;
 			// 
 			// pictureBoxLWin
 			// 
+			this->pictureBoxLWin->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBoxLWin.Image")));
 			this->pictureBoxLWin->Location = System::Drawing::Point(124, 400);
 			this->pictureBoxLWin->Name = L"pictureBoxLWin";
 			this->pictureBoxLWin->Size = System::Drawing::Size(59, 50);
+			this->pictureBoxLWin->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->pictureBoxLWin->TabIndex = 58;
 			this->pictureBoxLWin->TabStop = false;
 			// 
 			// pictureBoxLCtr
 			// 
+			this->pictureBoxLCtr->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBoxLCtr.Image")));
 			this->pictureBoxLCtr->Location = System::Drawing::Point(26, 400);
 			this->pictureBoxLCtr->Name = L"pictureBoxLCtr";
 			this->pictureBoxLCtr->Size = System::Drawing::Size(92, 50);
+			this->pictureBoxLCtr->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->pictureBoxLCtr->TabIndex = 57;
 			this->pictureBoxLCtr->TabStop = false;
 			// 
 			// pictureBoxRShi
 			// 
+			this->pictureBoxRShi->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBoxRShi.Image")));
 			this->pictureBoxRShi->Location = System::Drawing::Point(710, 344);
 			this->pictureBoxRShi->Name = L"pictureBoxRShi";
 			this->pictureBoxRShi->Size = System::Drawing::Size(166, 50);
+			this->pictureBoxRShi->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->pictureBoxRShi->TabIndex = 56;
 			this->pictureBoxRShi->TabStop = false;
 			// 
@@ -533,17 +549,21 @@ private: System::Windows::Forms::PictureBox^  PictureBoxDash;
 			// 
 			// pictureBoxLshi
 			// 
+			this->pictureBoxLshi->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBoxLshi.Image")));
 			this->pictureBoxLshi->Location = System::Drawing::Point(26, 344);
 			this->pictureBoxLshi->Name = L"pictureBoxLshi";
 			this->pictureBoxLshi->Size = System::Drawing::Size(118, 50);
+			this->pictureBoxLshi->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->pictureBoxLshi->TabIndex = 45;
 			this->pictureBoxLshi->TabStop = false;
 			// 
 			// pictureBoxEnt
 			// 
+			this->pictureBoxEnt->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBoxEnt.Image")));
 			this->pictureBoxEnt->Location = System::Drawing::Point(740, 288);
 			this->pictureBoxEnt->Name = L"pictureBoxEnt";
 			this->pictureBoxEnt->Size = System::Drawing::Size(136, 50);
+			this->pictureBoxEnt->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->pictureBoxEnt->TabIndex = 44;
 			this->pictureBoxEnt->TabStop = false;
 			// 
@@ -637,22 +657,27 @@ private: System::Windows::Forms::PictureBox^  PictureBoxDash;
 			// 
 			// pictureBoxCap
 			// 
+			this->pictureBoxCap->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBoxCap.Image")));
 			this->pictureBoxCap->Location = System::Drawing::Point(26, 288);
 			this->pictureBoxCap->Name = L"pictureBoxCap";
 			this->pictureBoxCap->Size = System::Drawing::Size(92, 50);
+			this->pictureBoxCap->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->pictureBoxCap->TabIndex = 32;
 			this->pictureBoxCap->TabStop = false;
 			// 
 			// pictureBoxFSla
 			// 
+			this->pictureBoxFSla->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBoxFSla.Image")));
 			this->pictureBoxFSla->Location = System::Drawing::Point(784, 232);
 			this->pictureBoxFSla->Name = L"pictureBoxFSla";
 			this->pictureBoxFSla->Size = System::Drawing::Size(92, 50);
+			this->pictureBoxFSla->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->pictureBoxFSla->TabIndex = 31;
 			this->pictureBoxFSla->TabStop = false;
 			// 
 			// pictureBoxRBra
 			// 
+			this->pictureBoxRBra->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBoxRBra.Image")));
 			this->pictureBoxRBra->Location = System::Drawing::Point(728, 232);
 			this->pictureBoxRBra->Name = L"pictureBoxRBra";
 			this->pictureBoxRBra->Size = System::Drawing::Size(50, 50);
@@ -661,6 +686,7 @@ private: System::Windows::Forms::PictureBox^  PictureBoxDash;
 			// 
 			// pictureBoxLBra
 			// 
+			this->pictureBoxLBra->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBoxLBra.Image")));
 			this->pictureBoxLBra->Location = System::Drawing::Point(672, 232);
 			this->pictureBoxLBra->Name = L"pictureBoxLBra";
 			this->pictureBoxLBra->Size = System::Drawing::Size(50, 50);
@@ -669,6 +695,7 @@ private: System::Windows::Forms::PictureBox^  PictureBoxDash;
 			// 
 			// pictureBoxp
 			// 
+			this->pictureBoxp->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBoxp.Image")));
 			this->pictureBoxp->Location = System::Drawing::Point(616, 232);
 			this->pictureBoxp->Name = L"pictureBoxp";
 			this->pictureBoxp->Size = System::Drawing::Size(50, 50);
@@ -677,6 +704,7 @@ private: System::Windows::Forms::PictureBox^  PictureBoxDash;
 			// 
 			// pictureBoxo
 			// 
+			this->pictureBoxo->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBoxo.Image")));
 			this->pictureBoxo->Location = System::Drawing::Point(560, 232);
 			this->pictureBoxo->Name = L"pictureBoxo";
 			this->pictureBoxo->Size = System::Drawing::Size(50, 50);
@@ -685,6 +713,7 @@ private: System::Windows::Forms::PictureBox^  PictureBoxDash;
 			// 
 			// pictureBoxi
 			// 
+			this->pictureBoxi->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBoxi.Image")));
 			this->pictureBoxi->Location = System::Drawing::Point(504, 232);
 			this->pictureBoxi->Name = L"pictureBoxi";
 			this->pictureBoxi->Size = System::Drawing::Size(50, 50);
@@ -693,6 +722,7 @@ private: System::Windows::Forms::PictureBox^  PictureBoxDash;
 			// 
 			// pictureBoxu
 			// 
+			this->pictureBoxu->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBoxu.Image")));
 			this->pictureBoxu->Location = System::Drawing::Point(448, 232);
 			this->pictureBoxu->Name = L"pictureBoxu";
 			this->pictureBoxu->Size = System::Drawing::Size(50, 50);
@@ -701,6 +731,7 @@ private: System::Windows::Forms::PictureBox^  PictureBoxDash;
 			// 
 			// pictureBoxy
 			// 
+			this->pictureBoxy->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBoxy.Image")));
 			this->pictureBoxy->Location = System::Drawing::Point(392, 232);
 			this->pictureBoxy->Name = L"pictureBoxy";
 			this->pictureBoxy->Size = System::Drawing::Size(50, 50);
@@ -709,6 +740,7 @@ private: System::Windows::Forms::PictureBox^  PictureBoxDash;
 			// 
 			// pictureBoxt
 			// 
+			this->pictureBoxt->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBoxt.Image")));
 			this->pictureBoxt->Location = System::Drawing::Point(336, 232);
 			this->pictureBoxt->Name = L"pictureBoxt";
 			this->pictureBoxt->Size = System::Drawing::Size(50, 50);
@@ -717,6 +749,7 @@ private: System::Windows::Forms::PictureBox^  PictureBoxDash;
 			// 
 			// pictureBoxr
 			// 
+			this->pictureBoxr->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBoxr.Image")));
 			this->pictureBoxr->Location = System::Drawing::Point(280, 232);
 			this->pictureBoxr->Name = L"pictureBoxr";
 			this->pictureBoxr->Size = System::Drawing::Size(50, 50);
@@ -725,6 +758,7 @@ private: System::Windows::Forms::PictureBox^  PictureBoxDash;
 			// 
 			// pictureBoxe
 			// 
+			this->pictureBoxe->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBoxe.Image")));
 			this->pictureBoxe->Location = System::Drawing::Point(224, 232);
 			this->pictureBoxe->Name = L"pictureBoxe";
 			this->pictureBoxe->Size = System::Drawing::Size(50, 50);
@@ -733,6 +767,7 @@ private: System::Windows::Forms::PictureBox^  PictureBoxDash;
 			// 
 			// pictureBoxw
 			// 
+			this->pictureBoxw->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBoxw.Image")));
 			this->pictureBoxw->Location = System::Drawing::Point(168, 232);
 			this->pictureBoxw->Name = L"pictureBoxw";
 			this->pictureBoxw->Size = System::Drawing::Size(50, 50);
@@ -741,6 +776,7 @@ private: System::Windows::Forms::PictureBox^  PictureBoxDash;
 			// 
 			// pictureBoxq
 			// 
+			this->pictureBoxq->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBoxq.Image")));
 			this->pictureBoxq->Location = System::Drawing::Point(112, 232);
 			this->pictureBoxq->Name = L"pictureBoxq";
 			this->pictureBoxq->Size = System::Drawing::Size(50, 50);
@@ -749,9 +785,11 @@ private: System::Windows::Forms::PictureBox^  PictureBoxDash;
 			// 
 			// pictureBoxTAB
 			// 
+			this->pictureBoxTAB->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBoxTAB.Image")));
 			this->pictureBoxTAB->Location = System::Drawing::Point(26, 232);
 			this->pictureBoxTAB->Name = L"pictureBoxTAB";
 			this->pictureBoxTAB->Size = System::Drawing::Size(80, 50);
+			this->pictureBoxTAB->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->pictureBoxTAB->TabIndex = 18;
 			this->pictureBoxTAB->TabStop = false;
 			// 
@@ -765,6 +803,7 @@ private: System::Windows::Forms::PictureBox^  PictureBoxDash;
 			// 
 			// pictureBoxPlus
 			// 
+			this->pictureBoxPlus->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBoxPlus.Image")));
 			this->pictureBoxPlus->Location = System::Drawing::Point(698, 176);
 			this->pictureBoxPlus->Name = L"pictureBoxPlus";
 			this->pictureBoxPlus->Size = System::Drawing::Size(50, 50);
@@ -773,6 +812,7 @@ private: System::Windows::Forms::PictureBox^  PictureBoxDash;
 			// 
 			// PictureBoxDash
 			// 
+			this->PictureBoxDash->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"PictureBoxDash.Image")));
 			this->PictureBoxDash->Location = System::Drawing::Point(642, 176);
 			this->PictureBoxDash->Name = L"PictureBoxDash";
 			this->PictureBoxDash->Size = System::Drawing::Size(50, 50);
@@ -781,6 +821,7 @@ private: System::Windows::Forms::PictureBox^  PictureBoxDash;
 			// 
 			// pictureBox0
 			// 
+			this->pictureBox0->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox0.Image")));
 			this->pictureBox0->Location = System::Drawing::Point(586, 176);
 			this->pictureBox0->Name = L"pictureBox0";
 			this->pictureBox0->Size = System::Drawing::Size(50, 50);
@@ -789,6 +830,7 @@ private: System::Windows::Forms::PictureBox^  PictureBoxDash;
 			// 
 			// pictureBox9
 			// 
+			this->pictureBox9->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox9.Image")));
 			this->pictureBox9->Location = System::Drawing::Point(530, 176);
 			this->pictureBox9->Name = L"pictureBox9";
 			this->pictureBox9->Size = System::Drawing::Size(50, 50);
@@ -797,6 +839,7 @@ private: System::Windows::Forms::PictureBox^  PictureBoxDash;
 			// 
 			// pictureBox8
 			// 
+			this->pictureBox8->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox8.Image")));
 			this->pictureBox8->Location = System::Drawing::Point(474, 176);
 			this->pictureBox8->Name = L"pictureBox8";
 			this->pictureBox8->Size = System::Drawing::Size(50, 50);
@@ -805,6 +848,7 @@ private: System::Windows::Forms::PictureBox^  PictureBoxDash;
 			// 
 			// pictureBox7
 			// 
+			this->pictureBox7->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox7.Image")));
 			this->pictureBox7->Location = System::Drawing::Point(418, 176);
 			this->pictureBox7->Name = L"pictureBox7";
 			this->pictureBox7->Size = System::Drawing::Size(50, 50);
@@ -813,6 +857,7 @@ private: System::Windows::Forms::PictureBox^  PictureBoxDash;
 			// 
 			// pictureBox6
 			// 
+			this->pictureBox6->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox6.Image")));
 			this->pictureBox6->Location = System::Drawing::Point(362, 176);
 			this->pictureBox6->Name = L"pictureBox6";
 			this->pictureBox6->Size = System::Drawing::Size(50, 50);
@@ -821,6 +866,7 @@ private: System::Windows::Forms::PictureBox^  PictureBoxDash;
 			// 
 			// pictureBox5
 			// 
+			this->pictureBox5->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox5.Image")));
 			this->pictureBox5->Location = System::Drawing::Point(306, 176);
 			this->pictureBox5->Name = L"pictureBox5";
 			this->pictureBox5->Size = System::Drawing::Size(50, 50);
@@ -829,6 +875,7 @@ private: System::Windows::Forms::PictureBox^  PictureBoxDash;
 			// 
 			// pictureBox4
 			// 
+			this->pictureBox4->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox4.Image")));
 			this->pictureBox4->Location = System::Drawing::Point(250, 176);
 			this->pictureBox4->Name = L"pictureBox4";
 			this->pictureBox4->Size = System::Drawing::Size(50, 50);
@@ -837,6 +884,7 @@ private: System::Windows::Forms::PictureBox^  PictureBoxDash;
 			// 
 			// pictureBox3
 			// 
+			this->pictureBox3->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox3.Image")));
 			this->pictureBox3->Location = System::Drawing::Point(194, 176);
 			this->pictureBox3->Name = L"pictureBox3";
 			this->pictureBox3->Size = System::Drawing::Size(50, 50);
@@ -845,6 +893,7 @@ private: System::Windows::Forms::PictureBox^  PictureBoxDash;
 			// 
 			// pictureBox2
 			// 
+			this->pictureBox2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.Image")));
 			this->pictureBox2->Location = System::Drawing::Point(138, 176);
 			this->pictureBox2->Name = L"pictureBox2";
 			this->pictureBox2->Size = System::Drawing::Size(50, 50);
@@ -853,6 +902,7 @@ private: System::Windows::Forms::PictureBox^  PictureBoxDash;
 			// 
 			// pictureBox1
 			// 
+			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
 			this->pictureBox1->Location = System::Drawing::Point(82, 176);
 			this->pictureBox1->Name = L"pictureBox1";
 			this->pictureBox1->Size = System::Drawing::Size(50, 50);
@@ -861,9 +911,12 @@ private: System::Windows::Forms::PictureBox^  PictureBoxDash;
 			// 
 			// PictureBoxTild
 			// 
+			this->PictureBoxTild->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			this->PictureBoxTild->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"PictureBoxTild.Image")));
 			this->PictureBoxTild->Location = System::Drawing::Point(26, 176);
 			this->PictureBoxTild->Name = L"PictureBoxTild";
 			this->PictureBoxTild->Size = System::Drawing::Size(50, 50);
+			this->PictureBoxTild->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->PictureBoxTild->TabIndex = 4;
 			this->PictureBoxTild->TabStop = false;
 			this->PictureBoxTild->Click += gcnew System::EventHandler(this, &MyForm::PictureBoxTild_Click);
@@ -993,6 +1046,7 @@ private: System::Windows::Forms::PictureBox^  PictureBoxDash;
 		Image^ Start = Image::FromFile("Images\\startButton.jpg");
 
 		array<char>^ Keys = gcnew array<char>(61);
+		array<System::Windows::Forms::PictureBox ^>^ kKeys = gcnew array<System::Windows::Forms::PictureBox ^>(63);
 
 		/* potential way of level design
 		char Level1[7];
@@ -1008,7 +1062,7 @@ private: System::Void panel1_Paint(System::Object^  sender, System::Windows::For
 }
 
 private: System::Void MyForm_KeyPress(System::Object^  sender, System::Windows::Forms::KeyPressEventArgs^  e) {
-			 int op = 0;
+			 int op = 65;
 			 if (e->KeyChar.CompareTo(op))
 			 {
 				 MessageBox::Show("yes");
@@ -1052,10 +1106,21 @@ private: System::Void Start_Pictutre_Click(System::Object^  sender, System::Even
 				 'FSla', 'Cap', 'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'Semi', 'Quot',
 				 'Ent', 'LShi', 'z', 'x', 'c', 'v', 'b', 'n', 'm', 'Comm', 'Dot', 'BSla',
 				 'RShi', 'LCtr', 'LWin', 'LAlt', 'Spac', 'RAlt', 'RWin', 'File', 'RCtr' };
+			/*
+			PictureBox^ kKeys[] = { PictureBoxTild, pictureBox0, pictureBox1, pictureBox2, pictureBox3, pictureBox4, pictureBox5, pictureBox6,
+				pictureBox7, pictureBox8, pictureBox9, pictureBox0, PictureBoxDash, pictureBoxPlus, pictureBoxBS, pictureBoxTAB,
+				pictureBoxq, pictureBoxw, pictureBoxe, pictureBoxr, pictureBoxt, pictureBoxy, pictureBoxu, pictureBoxi, pictureBoxo,
+				pictureBoxp, pictureBoxLBra, pictureBoxRBra, pictureBoxFSla, pictureBoxCap, pictureBoxa, pictureBoxs, pictureBoxd,
+				pictureBoxd, pictureBoxf, pictureBoxg, pictureBoxh, pictureBoxj, pictureBoxk, pictureBoxl, pictureBoxSemi,
+				pictureBoxQuot, pictureBoxEnt, pictureBoxLshi, pictureBoxz, pictureBoxx, pictureBoxc, pictureBoxv, pictureBoxb,
+				pictureBoxn, pictureBoxm, pictureBoxComm, pictureBoxDot, pictureBoxBSla, pictureBoxRShi, pictureBoxLCtr,
+				pictureBoxLWin, pictureBoxLAlt, pictureBoxSpac, pictureBoxRAlt, pictureBoxRWin, pictureBoxFile, pictureBoxRCtr
+			};
+			*/
 
 			for (int i = 0; i < 61; i++)
 			{
-				PictureBox + Keys[i] = false;
+				Controls->Find("pictureBox" + Keys[i], true)[0]->Visible = false;
 			}
 
 }
@@ -1071,5 +1136,6 @@ private: System::Void PictureBoxTild_Click(System::Object^  sender, System::Even
 }
 private: System::Void pictureBox56_Click(System::Object^  sender, System::EventArgs^  e) {
 }
+
 }; //end of myform class
 }
