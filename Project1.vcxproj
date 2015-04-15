@@ -85,15 +85,17 @@
     <ClInclude Include="MyForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="resource.h" />
     <ClInclude Include="Tutor.h" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MyForm.resx">
       <DependentUpon>MyForm.h</DependentUpon>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)/CS113FormsProject.MyForm.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)/ MyForm  . MyForm .resources</LogicalName>
+      <SubType>Designer</SubType>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</DeploymentContent>
     </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="..\..\..\Downloads\exit_running_man_right-100x50.jpg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
