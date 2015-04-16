@@ -1171,18 +1171,134 @@ private: System::Void pictureBox56_Click(System::Object^  sender, System::EventA
 }
 
 private: System::Void textBox1_Click(System::Object^  sender, System::EventArgs^  e) {
-			 char ones[] = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
+			 char randMax = 25;
+			 char ones[27] = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
 				 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r',
 				 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' };
 
-			 srand(time(0));
-			 for (int i = 1; i <= 5; i++)
-			 {
-				 int c = (rand() % 26);
-				 char one = ones[c];
 
-				 textBox1->Text = textBox1->Text + one + "\r\n";
+
+			 srand(time(0));
+			 for (int j = 1; j <= 27; j++)
+			 {
+
+				 for (int i = 1; i <= 5; i++)
+				 {
+					 char c = (rand() % randMax);
+					 char one = ones[c];
+
+					 if (one == 97)
+					 {
+						 textBox1->Text = textBox1->Text + "a";
+					 }
+					 if (one == 98)
+					 {
+						 textBox1->Text = textBox1->Text + "b";
+					 }
+					 if (one == 99)
+					 {
+						 textBox1->Text = textBox1->Text + "c";
+					 }
+					 if (one == 100)
+					 {
+						 textBox1->Text = textBox1->Text + "d";
+					 }
+					 if (one == 101)
+					 {
+						 textBox1->Text = textBox1->Text + "e";
+					 }
+					 if (one == 102)
+					 {
+						 textBox1->Text = textBox1->Text + "f";
+					 }
+					 if (one == 103)
+					 {
+						 textBox1->Text = textBox1->Text + "g";
+					 }
+					 if (one == 104)
+					 {
+						 textBox1->Text = textBox1->Text + "h";
+					 }
+					 if (one == 105)
+					 {
+						 textBox1->Text = textBox1->Text + "i";
+					 }
+					 if (one == 106)
+					 {
+						 textBox1->Text = textBox1->Text + "j";
+					 }
+					 if (one == 107)
+					 {
+						 textBox1->Text = textBox1->Text + "k";
+					 }
+					 if (one == 108)
+					 {
+						 textBox1->Text = textBox1->Text + "l";
+					 }
+					 if (one == 109)
+					 {
+						 textBox1->Text = textBox1->Text + "m";
+					 }
+					 if (one == 110)
+					 {
+						 textBox1->Text = textBox1->Text + "n";
+					 }
+					 if (one == 111)
+					 {
+						 textBox1->Text = textBox1->Text + "o";
+					 }
+					 if (one == 112)
+					 {
+						 textBox1->Text = textBox1->Text + "p";
+					 }
+					 if (one == 113)
+					 {
+						 textBox1->Text = textBox1->Text + "q";
+					 }
+					 if (one == 114)
+					 {
+						 textBox1->Text = textBox1->Text + "r";
+					 }
+					 if (one == 115)
+					 {
+						 textBox1->Text = textBox1->Text + "s";
+					 }
+					 if (one == 116)
+					 {
+						 textBox1->Text = textBox1->Text + "t";
+					 }
+					 if (one == 117)
+					 {
+						 textBox1->Text = textBox1->Text + "u";
+					 }
+					 if (one == 118)
+					 {
+						 textBox1->Text = textBox1->Text + "v";
+					 }
+					 if (one == 119)
+					 {
+						 textBox1->Text = textBox1->Text + "w";
+					 }
+					 if (one == 120)
+					 {
+						 textBox1->Text = textBox1->Text + "x";
+					 }
+					 if (one == 121)
+					 {
+						 textBox1->Text = textBox1->Text + "y";
+					 }
+					 if (one == 122)
+					 {
+						 textBox1->Text = textBox1->Text + "z";
+					 }
+
+
+					 //+ "\r\n";
+					 //textBox1->Text = textBox1->Text + (char)ones[c] + "\r\n";
+				 }
+				 textBox1->Text = textBox1->Text + " ";
 			 }
+			 textBox1->Text = textBox1->Text + "\r\n";
 }
 }; //end of myform class
 }
