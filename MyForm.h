@@ -106,8 +106,9 @@ namespace Project1 {
 	private: System::Windows::Forms::PictureBox^  pictureBoxj;
 
 	private: System::Windows::Forms::PictureBox^  pictureBoxh;
+	private: System::Windows::Forms::PictureBox^  pictureBoxgg;
 
-	private: System::Windows::Forms::PictureBox^  pictureBoxg;
+
 
 	private: System::Windows::Forms::PictureBox^  pictureBoxf;
 
@@ -145,18 +146,28 @@ namespace Project1 {
 
 	private: System::Windows::Forms::PictureBox^  pictureBoxPlus;
 private: System::Windows::Forms::PictureBox^  PictureBoxDash;
+private: System::Windows::Forms::PictureBox^  pictureBoxZERO;
 
-	private: System::Windows::Forms::PictureBox^  pictureBox0;
 
-	private: System::Windows::Forms::PictureBox^  pictureBox9;
-	private: System::Windows::Forms::PictureBox^  pictureBox8;
-	private: System::Windows::Forms::PictureBox^  pictureBox7;
-	private: System::Windows::Forms::PictureBox^  pictureBox6;
-	private: System::Windows::Forms::PictureBox^  pictureBox5;
-	private: System::Windows::Forms::PictureBox^  pictureBox4;
-	private: System::Windows::Forms::PictureBox^  pictureBox3;
-	private: System::Windows::Forms::PictureBox^  pictureBox2;
-	private: System::Windows::Forms::PictureBox^  pictureBox1;
+private: System::Windows::Forms::PictureBox^  pictureBoxNINE;
+
+
+private: System::Windows::Forms::PictureBox^  pictureBoxEIGH;
+
+private: System::Windows::Forms::PictureBox^  pictureBoxSEVE;
+
+private: System::Windows::Forms::PictureBox^  pictureBoxSIX;
+
+private: System::Windows::Forms::PictureBox^  pictureBoxFIVE;
+
+private: System::Windows::Forms::PictureBox^  pictureBoxFOUR;
+
+private: System::Windows::Forms::PictureBox^  pictureBoxTHREE;
+
+private: System::Windows::Forms::PictureBox^  pictureBoxTWO;
+
+private: System::Windows::Forms::PictureBox^  pictureBoxONE;
+
 	private: System::Windows::Forms::TextBox^  textBox1;
 private: System::Windows::Forms::PictureBox^  pictureBoxRShi;
 
@@ -183,6 +194,7 @@ private: System::Windows::Forms::PictureBox^  pictureBoxRShi;
 			this->pictureBoxLAlt = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBoxLWin = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBoxLCtr = (gcnew System::Windows::Forms::PictureBox());
+			this->pictureBoxRShi = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBoxBSla = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBoxComm = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBoxDot = (gcnew System::Windows::Forms::PictureBox());
@@ -201,7 +213,7 @@ private: System::Windows::Forms::PictureBox^  pictureBoxRShi;
 			this->pictureBoxk = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBoxj = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBoxh = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBoxg = (gcnew System::Windows::Forms::PictureBox());
+			this->pictureBoxgg = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBoxf = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBoxd = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBoxs = (gcnew System::Windows::Forms::PictureBox());
@@ -224,22 +236,21 @@ private: System::Windows::Forms::PictureBox^  pictureBoxRShi;
 			this->pictureBoxBS = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBoxPlus = (gcnew System::Windows::Forms::PictureBox());
 			this->PictureBoxDash = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox0 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox9 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox8 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox7 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox6 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox5 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox4 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox3 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
+			this->pictureBoxZERO = (gcnew System::Windows::Forms::PictureBox());
+			this->pictureBoxNINE = (gcnew System::Windows::Forms::PictureBox());
+			this->pictureBoxEIGH = (gcnew System::Windows::Forms::PictureBox());
+			this->pictureBoxSEVE = (gcnew System::Windows::Forms::PictureBox());
+			this->pictureBoxSIX = (gcnew System::Windows::Forms::PictureBox());
+			this->pictureBoxFIVE = (gcnew System::Windows::Forms::PictureBox());
+			this->pictureBoxFOUR = (gcnew System::Windows::Forms::PictureBox());
+			this->pictureBoxTHREE = (gcnew System::Windows::Forms::PictureBox());
+			this->pictureBoxTWO = (gcnew System::Windows::Forms::PictureBox());
+			this->pictureBoxONE = (gcnew System::Windows::Forms::PictureBox());
 			this->PictureBoxTild = (gcnew System::Windows::Forms::PictureBox());
 			this->Exit_Button = (gcnew System::Windows::Forms::PictureBox());
 			this->Second_Button = (gcnew System::Windows::Forms::PictureBox());
 			this->Start_Pictutre = (gcnew System::Windows::Forms::PictureBox());
 			this->MenuPicture = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBoxRShi = (gcnew System::Windows::Forms::PictureBox());
 			this->panel1->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxSpac))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxRAlt))->BeginInit();
@@ -249,6 +260,7 @@ private: System::Windows::Forms::PictureBox^  pictureBoxRShi;
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxLAlt))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxLWin))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxLCtr))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxRShi))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxBSla))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxComm))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxDot))->BeginInit();
@@ -267,7 +279,7 @@ private: System::Windows::Forms::PictureBox^  pictureBoxRShi;
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxk))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxj))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxh))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxg))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxgg))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxf))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxd))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxs))->BeginInit();
@@ -290,22 +302,21 @@ private: System::Windows::Forms::PictureBox^  pictureBoxRShi;
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxBS))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxPlus))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->PictureBoxDash))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox0))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox9))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox8))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox7))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox6))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox5))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox4))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox3))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxZERO))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxNINE))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxEIGH))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxSEVE))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxSIX))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxFIVE))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxFOUR))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxTHREE))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxTWO))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxONE))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->PictureBoxTild))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Exit_Button))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Second_Button))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Start_Pictutre))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->MenuPicture))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxRShi))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// panel1
@@ -338,7 +349,7 @@ private: System::Windows::Forms::PictureBox^  pictureBoxRShi;
 			this->panel1->Controls->Add(this->pictureBoxk);
 			this->panel1->Controls->Add(this->pictureBoxj);
 			this->panel1->Controls->Add(this->pictureBoxh);
-			this->panel1->Controls->Add(this->pictureBoxg);
+			this->panel1->Controls->Add(this->pictureBoxgg);
 			this->panel1->Controls->Add(this->pictureBoxf);
 			this->panel1->Controls->Add(this->pictureBoxd);
 			this->panel1->Controls->Add(this->pictureBoxs);
@@ -361,16 +372,16 @@ private: System::Windows::Forms::PictureBox^  pictureBoxRShi;
 			this->panel1->Controls->Add(this->pictureBoxBS);
 			this->panel1->Controls->Add(this->pictureBoxPlus);
 			this->panel1->Controls->Add(this->PictureBoxDash);
-			this->panel1->Controls->Add(this->pictureBox0);
-			this->panel1->Controls->Add(this->pictureBox9);
-			this->panel1->Controls->Add(this->pictureBox8);
-			this->panel1->Controls->Add(this->pictureBox7);
-			this->panel1->Controls->Add(this->pictureBox6);
-			this->panel1->Controls->Add(this->pictureBox5);
-			this->panel1->Controls->Add(this->pictureBox4);
-			this->panel1->Controls->Add(this->pictureBox3);
-			this->panel1->Controls->Add(this->pictureBox2);
-			this->panel1->Controls->Add(this->pictureBox1);
+			this->panel1->Controls->Add(this->pictureBoxZERO);
+			this->panel1->Controls->Add(this->pictureBoxNINE);
+			this->panel1->Controls->Add(this->pictureBoxEIGH);
+			this->panel1->Controls->Add(this->pictureBoxSEVE);
+			this->panel1->Controls->Add(this->pictureBoxSIX);
+			this->panel1->Controls->Add(this->pictureBoxFIVE);
+			this->panel1->Controls->Add(this->pictureBoxFOUR);
+			this->panel1->Controls->Add(this->pictureBoxTHREE);
+			this->panel1->Controls->Add(this->pictureBoxTWO);
+			this->panel1->Controls->Add(this->pictureBoxONE);
 			this->panel1->Controls->Add(this->PictureBoxTild);
 			this->panel1->Controls->Add(this->Exit_Button);
 			this->panel1->Controls->Add(this->Second_Button);
@@ -464,6 +475,15 @@ private: System::Windows::Forms::PictureBox^  pictureBoxRShi;
 			this->pictureBoxLCtr->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->pictureBoxLCtr->TabIndex = 57;
 			this->pictureBoxLCtr->TabStop = false;
+			// 
+			// pictureBoxRShi
+			// 
+			this->pictureBoxRShi->Location = System::Drawing::Point(710, 344);
+			this->pictureBoxRShi->Name = L"pictureBoxRShi";
+			this->pictureBoxRShi->Size = System::Drawing::Size(166, 50);
+			this->pictureBoxRShi->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
+			this->pictureBoxRShi->TabIndex = 56;
+			this->pictureBoxRShi->TabStop = false;
 			// 
 			// pictureBoxBSla
 			// 
@@ -627,14 +647,14 @@ private: System::Windows::Forms::PictureBox^  pictureBoxRShi;
 			this->pictureBoxh->TabIndex = 38;
 			this->pictureBoxh->TabStop = false;
 			// 
-			// pictureBoxg
+			// pictureBoxgg
 			// 
-			this->pictureBoxg->Location = System::Drawing::Point(348, 288);
-			this->pictureBoxg->Name = L"pictureBoxg";
-			this->pictureBoxg->Size = System::Drawing::Size(50, 50);
-			this->pictureBoxg->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
-			this->pictureBoxg->TabIndex = 37;
-			this->pictureBoxg->TabStop = false;
+			this->pictureBoxgg->Location = System::Drawing::Point(348, 288);
+			this->pictureBoxgg->Name = L"pictureBoxgg";
+			this->pictureBoxgg->Size = System::Drawing::Size(50, 50);
+			this->pictureBoxgg->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
+			this->pictureBoxgg->TabIndex = 37;
+			this->pictureBoxgg->TabStop = false;
 			// 
 			// pictureBoxf
 			// 
@@ -834,95 +854,95 @@ private: System::Windows::Forms::PictureBox^  pictureBoxRShi;
 			this->PictureBoxDash->TabIndex = 15;
 			this->PictureBoxDash->TabStop = false;
 			// 
-			// pictureBox0
+			// pictureBoxZERO
 			// 
-			this->pictureBox0->Location = System::Drawing::Point(586, 176);
-			this->pictureBox0->Name = L"pictureBox0";
-			this->pictureBox0->Size = System::Drawing::Size(50, 50);
-			this->pictureBox0->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
-			this->pictureBox0->TabIndex = 14;
-			this->pictureBox0->TabStop = false;
+			this->pictureBoxZERO->Location = System::Drawing::Point(586, 176);
+			this->pictureBoxZERO->Name = L"pictureBoxZERO";
+			this->pictureBoxZERO->Size = System::Drawing::Size(50, 50);
+			this->pictureBoxZERO->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
+			this->pictureBoxZERO->TabIndex = 14;
+			this->pictureBoxZERO->TabStop = false;
 			// 
-			// pictureBox9
+			// pictureBoxNINE
 			// 
-			this->pictureBox9->Location = System::Drawing::Point(530, 176);
-			this->pictureBox9->Name = L"pictureBox9";
-			this->pictureBox9->Size = System::Drawing::Size(50, 50);
-			this->pictureBox9->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
-			this->pictureBox9->TabIndex = 13;
-			this->pictureBox9->TabStop = false;
+			this->pictureBoxNINE->Location = System::Drawing::Point(530, 176);
+			this->pictureBoxNINE->Name = L"pictureBoxNINE";
+			this->pictureBoxNINE->Size = System::Drawing::Size(50, 50);
+			this->pictureBoxNINE->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
+			this->pictureBoxNINE->TabIndex = 13;
+			this->pictureBoxNINE->TabStop = false;
 			// 
-			// pictureBox8
+			// pictureBoxEIGH
 			// 
-			this->pictureBox8->Location = System::Drawing::Point(474, 176);
-			this->pictureBox8->Name = L"pictureBox8";
-			this->pictureBox8->Size = System::Drawing::Size(50, 50);
-			this->pictureBox8->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
-			this->pictureBox8->TabIndex = 12;
-			this->pictureBox8->TabStop = false;
+			this->pictureBoxEIGH->Location = System::Drawing::Point(474, 176);
+			this->pictureBoxEIGH->Name = L"pictureBoxEIGH";
+			this->pictureBoxEIGH->Size = System::Drawing::Size(50, 50);
+			this->pictureBoxEIGH->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
+			this->pictureBoxEIGH->TabIndex = 12;
+			this->pictureBoxEIGH->TabStop = false;
 			// 
-			// pictureBox7
+			// pictureBoxSEVE
 			// 
-			this->pictureBox7->Location = System::Drawing::Point(418, 176);
-			this->pictureBox7->Name = L"pictureBox7";
-			this->pictureBox7->Size = System::Drawing::Size(50, 50);
-			this->pictureBox7->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
-			this->pictureBox7->TabIndex = 11;
-			this->pictureBox7->TabStop = false;
+			this->pictureBoxSEVE->Location = System::Drawing::Point(418, 176);
+			this->pictureBoxSEVE->Name = L"pictureBoxSEVE";
+			this->pictureBoxSEVE->Size = System::Drawing::Size(50, 50);
+			this->pictureBoxSEVE->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
+			this->pictureBoxSEVE->TabIndex = 11;
+			this->pictureBoxSEVE->TabStop = false;
 			// 
-			// pictureBox6
+			// pictureBoxSIX
 			// 
-			this->pictureBox6->Location = System::Drawing::Point(362, 176);
-			this->pictureBox6->Name = L"pictureBox6";
-			this->pictureBox6->Size = System::Drawing::Size(50, 50);
-			this->pictureBox6->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
-			this->pictureBox6->TabIndex = 10;
-			this->pictureBox6->TabStop = false;
+			this->pictureBoxSIX->Location = System::Drawing::Point(362, 176);
+			this->pictureBoxSIX->Name = L"pictureBoxSIX";
+			this->pictureBoxSIX->Size = System::Drawing::Size(50, 50);
+			this->pictureBoxSIX->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
+			this->pictureBoxSIX->TabIndex = 10;
+			this->pictureBoxSIX->TabStop = false;
 			// 
-			// pictureBox5
+			// pictureBoxFIVE
 			// 
-			this->pictureBox5->Location = System::Drawing::Point(306, 176);
-			this->pictureBox5->Name = L"pictureBox5";
-			this->pictureBox5->Size = System::Drawing::Size(50, 50);
-			this->pictureBox5->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
-			this->pictureBox5->TabIndex = 9;
-			this->pictureBox5->TabStop = false;
+			this->pictureBoxFIVE->Location = System::Drawing::Point(306, 176);
+			this->pictureBoxFIVE->Name = L"pictureBoxFIVE";
+			this->pictureBoxFIVE->Size = System::Drawing::Size(50, 50);
+			this->pictureBoxFIVE->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
+			this->pictureBoxFIVE->TabIndex = 9;
+			this->pictureBoxFIVE->TabStop = false;
 			// 
-			// pictureBox4
+			// pictureBoxFOUR
 			// 
-			this->pictureBox4->Location = System::Drawing::Point(250, 176);
-			this->pictureBox4->Name = L"pictureBox4";
-			this->pictureBox4->Size = System::Drawing::Size(50, 50);
-			this->pictureBox4->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
-			this->pictureBox4->TabIndex = 8;
-			this->pictureBox4->TabStop = false;
+			this->pictureBoxFOUR->Location = System::Drawing::Point(250, 176);
+			this->pictureBoxFOUR->Name = L"pictureBoxFOUR";
+			this->pictureBoxFOUR->Size = System::Drawing::Size(50, 50);
+			this->pictureBoxFOUR->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
+			this->pictureBoxFOUR->TabIndex = 8;
+			this->pictureBoxFOUR->TabStop = false;
 			// 
-			// pictureBox3
+			// pictureBoxTHREE
 			// 
-			this->pictureBox3->Location = System::Drawing::Point(194, 176);
-			this->pictureBox3->Name = L"pictureBox3";
-			this->pictureBox3->Size = System::Drawing::Size(50, 50);
-			this->pictureBox3->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
-			this->pictureBox3->TabIndex = 7;
-			this->pictureBox3->TabStop = false;
+			this->pictureBoxTHREE->Location = System::Drawing::Point(194, 176);
+			this->pictureBoxTHREE->Name = L"pictureBoxTHREE";
+			this->pictureBoxTHREE->Size = System::Drawing::Size(50, 50);
+			this->pictureBoxTHREE->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
+			this->pictureBoxTHREE->TabIndex = 7;
+			this->pictureBoxTHREE->TabStop = false;
 			// 
-			// pictureBox2
+			// pictureBoxTWO
 			// 
-			this->pictureBox2->Location = System::Drawing::Point(138, 176);
-			this->pictureBox2->Name = L"pictureBox2";
-			this->pictureBox2->Size = System::Drawing::Size(50, 50);
-			this->pictureBox2->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
-			this->pictureBox2->TabIndex = 6;
-			this->pictureBox2->TabStop = false;
+			this->pictureBoxTWO->Location = System::Drawing::Point(138, 176);
+			this->pictureBoxTWO->Name = L"pictureBoxTWO";
+			this->pictureBoxTWO->Size = System::Drawing::Size(50, 50);
+			this->pictureBoxTWO->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
+			this->pictureBoxTWO->TabIndex = 6;
+			this->pictureBoxTWO->TabStop = false;
 			// 
-			// pictureBox1
+			// pictureBoxONE
 			// 
-			this->pictureBox1->Location = System::Drawing::Point(82, 176);
-			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(50, 50);
-			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
-			this->pictureBox1->TabIndex = 5;
-			this->pictureBox1->TabStop = false;
+			this->pictureBoxONE->Location = System::Drawing::Point(82, 176);
+			this->pictureBoxONE->Name = L"pictureBoxONE";
+			this->pictureBoxONE->Size = System::Drawing::Size(50, 50);
+			this->pictureBoxONE->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
+			this->pictureBoxONE->TabIndex = 5;
+			this->pictureBoxONE->TabStop = false;
 			// 
 			// PictureBoxTild
 			// 
@@ -970,15 +990,6 @@ private: System::Windows::Forms::PictureBox^  pictureBoxRShi;
 			this->MenuPicture->TabIndex = 0;
 			this->MenuPicture->TabStop = false;
 			// 
-			// pictureBoxRShi
-			// 
-			this->pictureBoxRShi->Location = System::Drawing::Point(710, 344);
-			this->pictureBoxRShi->Name = L"pictureBoxRShi";
-			this->pictureBoxRShi->Size = System::Drawing::Size(166, 50);
-			this->pictureBoxRShi->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
-			this->pictureBoxRShi->TabIndex = 56;
-			this->pictureBoxRShi->TabStop = false;
-			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -999,6 +1010,7 @@ private: System::Windows::Forms::PictureBox^  pictureBoxRShi;
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxLAlt))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxLWin))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxLCtr))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxRShi))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxBSla))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxComm))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxDot))->EndInit();
@@ -1017,7 +1029,7 @@ private: System::Windows::Forms::PictureBox^  pictureBoxRShi;
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxk))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxj))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxh))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxg))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxgg))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxf))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxd))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxs))->EndInit();
@@ -1040,22 +1052,21 @@ private: System::Windows::Forms::PictureBox^  pictureBoxRShi;
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxBS))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxPlus))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->PictureBoxDash))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox0))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox9))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox8))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox7))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox6))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox5))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox4))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox3))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxZERO))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxNINE))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxEIGH))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxSEVE))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxSIX))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxFIVE))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxFOUR))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxTHREE))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxTWO))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxONE))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->PictureBoxTild))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Exit_Button))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Second_Button))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Start_Pictutre))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->MenuPicture))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxRShi))->EndInit();
 			this->ResumeLayout(false);
 
 		}
@@ -1067,62 +1078,73 @@ private: System::Windows::Forms::PictureBox^  pictureBoxRShi;
 		int Length = 0;
 
 		Bitmap^ ExitGame = gcnew Bitmap("Images\\exit.bmp");
-		Image^ ALT = Image::FromFile("Images\\alt_key.jpg");
-		Image^ CAP = Image::FromFile("Images\\caps_key.jpg");
-		Image^ CTRL = Image::FromFile("Images\\ctrl_key.jpg");
-		Image^ ENTER = Image::FromFile("Images\\enter_key.jpg");
-		Image^ LBRACKET = Image::FromFile("Images\\letter_,.jpg");
-		Image^ RBRACKET = Image::FromFile("Images\\letter_..jpg");
-		Image^ COMMA = Image::FromFile("Images\\letter_'.jpg");
-		Image^ HYPHEN = Image::FromFile("Images\\letter_-.jpg");
-		Image^ COLON = Image::FromFile("Images\\letter_;.jpg");
-		Image^ LBRACE = Image::FromFile("Images\\letter_[.jpg");
-		Image^ RBRACE = Image::FromFile("Images\\letter_].jpg");
-		Image^ TILD = Image::FromFile("Images\\letter_`.jpg");
-		Image^ PLUS = Image::FromFile("Images\\letter_=.jpg");
-		Image^ ZERO = Image::FromFile("Images\\letter_0.jpg");
-		Image^ ONE = Image::FromFile("Images\\letter_1.jpg");
-		Image^ TWO = Image::FromFile("Images\\letter_2.jpg");
-		Image^ THREE = Image::FromFile("Images\\letter_3.jpg");
-		Image^ FOUR = Image::FromFile("Images\\letter_4.jpg");
-		Image^ FIVE = Image::FromFile("Images\\letter_5.jpg");
-		Image^ SIX = Image::FromFile("Images\\letter_6.jpg");
-		Image^ SEVEN = Image::FromFile("Images\\letter_7.jpg");
-		Image^ EIGHT = Image::FromFile("Images\\letter_8.jpg");
-		Image^ NINE = Image::FromFile("Images\\letter_9.jpg");
-		Image^ KEYA = Image::FromFile("Images\\letter_a.jpg");
-		Image^ KEYB = Image::FromFile("Images\\letter_b.jpg");
-		Image^ KEYC = Image::FromFile("Images\\letter_c.jpg");
-		Image^ KEYD = Image::FromFile("Images\\letter_d.jpg");
-		Image^ KEYE = Image::FromFile("Images\\letter_e.jpg");
-		Image^ KEYF = Image::FromFile("Images\\letter_f.jpg");
-		Image^ KEYG = Image::FromFile("Images\\letter_g.jpg");
-		Image^ KEYH = Image::FromFile("Images\\letter_h.jpg");
-		Image^ KEYI = Image::FromFile("Images\\letter_i.jpg");
-		Image^ KEYJ = Image::FromFile("Images\\letter_j.jpg");
-		Image^ KEYK = Image::FromFile("Images\\letter_k.jpg");
-		Image^ KEYL = Image::FromFile("Images\\letter_l.jpg");
-		Image^ KEYM = Image::FromFile("Images\\letter_m.jpg");
-		Image^ KEYN = Image::FromFile("Images\\letter_n.jpg");
-		Image^ KEYO = Image::FromFile("Images\\letter_o.jpg");
-		Image^ KEYP = Image::FromFile("Images\\letter_p.jpg");
-		Image^ KEYQ = Image::FromFile("Images\\letter_q.jpg");
-		Image^ KEYR = Image::FromFile("Images\\letter_r.jpg");
-		Image^ KEYS = Image::FromFile("Images\\letter_s.jpg");
-		Image^ KEYT = Image::FromFile("Images\\letter_t.jpg");
-		Image^ KEYU = Image::FromFile("Images\\letter_u.jpg");
-		Image^ KEYV = Image::FromFile("Images\\letter_v.jpg");
-		Image^ KEYW = Image::FromFile("Images\\letter_w.jpg");
-		Image^ KEYX = Image::FromFile("Images\\letter_x.jpg");
-		Image^ KEYY = Image::FromFile("Images\\letter_y.jpg");
-		Image^ KEYZ = Image::FromFile("Images\\letter_z.jpg");
-		Image^ SHIFT = Image::FromFile("Images\\shift_key.jpg");
-		Image^ SPACE = Image::FromFile("Images\\space_key_l.jpg");
-		Image^ VLINE = Image::FromFile("Images\\tab_key1.jpg");
-		Image^ WINKEY = Image::FromFile("Images\\windows_key2.jpg");
+		Bitmap^ StartGame = gcnew Bitmap("Images\\exit.bmp");
+
+		Bitmap^ LAlt = gcnew Bitmap("Images\\caps_key.bmp");
+		Image^ RAlt = gcnew Bitmap("Images\\caps_key.bmp");
+		Image^ BS = gcnew Bitmap("Images\\caps_key.bmp");
+		Image^ Cap = gcnew Bitmap("Images\\caps_key.bmp");
+		Image^ LCtr = gcnew Bitmap("Images\\ctrl_key.bmp");
+		Image^ RCtr = gcnew Bitmap("Images\\ctrl_key.bmp");
+		Image^ Ent = gcnew Bitmap("Images\\enter_key.bmp");
+		Image^ Comm = gcnew Bitmap("Images\\letter_,.bmp");
+		Image^ Dot = gcnew Bitmap("Images\\letter_..bmp");
+		Image^ Quot = gcnew Bitmap("Images\\letter_'.bmp");
+		Image^ Dash = gcnew Bitmap("Images\\letter_-.bmp");
+		Image^ Semi = gcnew Bitmap("Images\\letter_;.bmp");
+		Image^ LBra = gcnew Bitmap("Images\\letter_[.bmp");
+		Image^ RBra = gcnew Bitmap("Images\\letter_].bmp");
+		Image^ Tild = gcnew Bitmap("Images\\letter_`.bmp");
+		Image^ Plus = gcnew Bitmap("Images\\letter_=.bmp");
+		Image^ BSla = gcnew Bitmap("Images\\letter_bslash.bmp");
+		Image^ ZERO = gcnew Bitmap("Images\\letter_0.bmp");
+		Image^ ONE = gcnew Bitmap("Images\\letter_1.bmp");
+		Image^ TWO = gcnew Bitmap("Images\\letter_2.bmp");
+		Image^ THRE = gcnew Bitmap("Images\\letter_3.bmp");
+		Image^ FOUR = gcnew Bitmap("Images\\letter_4.bmp");
+		Image^ FIVE = gcnew Bitmap("Images\\letter_5.bmp");
+		Image^ SIX = gcnew Bitmap("Images\\letter_6.bmp");
+		Image^ SEVE = gcnew Bitmap("Images\\letter_7.bmp");
+		Image^ EIGH = gcnew Bitmap("Images\\letter_8.bmp");
+		Image^ NINE = gcnew Bitmap("Images\\letter_9.bmp");
+		Image^ a = gcnew Bitmap("Images\\letter_a.bmp");
+		Image^ b = gcnew Bitmap("Images\\letter_b.bmp");
+		Image^ c = gcnew Bitmap("Images\\letter_c.bmp");
+		Image^ d = gcnew Bitmap("Images\\letter_d.bmp");
+		Image^ e = gcnew Bitmap("Images\\letter_e.bmp");
+		Image^ f = gcnew Bitmap("Images\\letter_f.bmp");
+		Image^ gg = gcnew Bitmap("Images\\letter_g.bmp");
+		Image^ h = gcnew Bitmap("Images\\letter_h.bmp");
+		Image^ i = gcnew Bitmap("Images\\letter_i.bmp");
+		Image^ j = gcnew Bitmap("Images\\letter_j.bmp");
+		Image^ k = gcnew Bitmap("Images\\letter_k.bmp");
+		Image^ l = gcnew Bitmap("Images\\letter_l.bmp");
+		Image^ m = gcnew Bitmap("Images\\letter_m.bmp");
+		Image^ n = gcnew Bitmap("Images\\letter_n.bmp");
+		Image^ o = gcnew Bitmap("Images\\letter_o.bmp");
+		Image^ p = gcnew Bitmap("Images\\letter_p.bmp");
+		Image^ q = gcnew Bitmap("Images\\letter_q.bmp");
+		Image^ r = gcnew Bitmap("Images\\letter_r.bmp");
+		Image^ s = gcnew Bitmap("Images\\letter_s.bmp");
+		Image^ t = gcnew Bitmap("Images\\letter_t.bmp");
+		Image^ u = gcnew Bitmap("Images\\letter_u.bmp");
+		Image^ v = gcnew Bitmap("Images\\letter_v.bmp");
+		Image^ w = gcnew Bitmap("Images\\letter_w.bmp");
+		Image^ x = gcnew Bitmap("Images\\letter_x.bmp");
+		Image^ y = gcnew Bitmap("Images\\letter_y.bmp");
+		Image^ z = gcnew Bitmap("Images\\letter_z.bmp");
+		Image^ LShi = gcnew Bitmap("Images\\shift_key.bmp");
+		Image^ RShi = gcnew Bitmap("Images\\shift_key.bmp");
+		Image^ Spac = gcnew Bitmap("Images\\space_key_l.bmp");
+		Image^ FSla = gcnew Bitmap("Images\\tab_key1.bmp");
+		Image^ TAB = gcnew Bitmap("Images\\tab_key1.bmp");
+		Image^ LWin = gcnew Bitmap("Images\\windows_key2.bmp");
+		Image^ RWin = gcnew Bitmap("Images\\windows_key2.bmp");
+		Image^ File = gcnew Bitmap("Images\\alt_key.bmp");
 
 		array<char>^ Keys = gcnew array<char>(61);
-		array<System::Windows::Forms::PictureBox ^>^ kKeys = gcnew array<System::Windows::Forms::PictureBox ^>(63);
+		array<Image^>^ Images = gcnew array<Image^>(61);
+		//array<System::Windows::Forms::PictureBox ^>^ kKeys = gcnew array<System::Windows::Forms::PictureBox ^>(63);
 
 		/* potential way of level design
 		char Level1[7];
@@ -1132,7 +1154,7 @@ private: System::Windows::Forms::PictureBox^  pictureBoxRShi;
 private: System::Void MyForm_Load(System::Object^  sender, System::EventArgs^  e) {
 			 g = panel1->CreateGraphics();
 			 Exit_Button->Image = ExitGame;
-			 Start_Pictutre->Image = WINKEY;
+			 Start_Pictutre->Image = StartGame;
 }
 private: System::Void panel1_Paint(System::Object^  sender, System::Windows::Forms::PaintEventArgs^  e) {
 }
@@ -1153,11 +1175,12 @@ private: System::Void Start_Pictutre_Click(System::Object^  sender, System::Even
 
 			 //makes new picturebox
 
-			char Keys[] = { 'Tild', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', 'Dash', 'Plus',
+			char Keys[] = { 'Tild', 'ONE', 'TWO', 'THRE', 'FOUR', 'FIVE', 'SIX', 'SEVE', 'EIGH', 'NINE', 'ZERO', 'Dash', 'Plus',
 				 'BS', 'TAB', 'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', 'LBra', 'RBra',
-				 'FSla', 'Cap', 'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'Semi', 'Quot',
+				 'FSla', 'Cap', 'a', 's', 'd', 'f', 'gg', 'h', 'j', 'k', 'l', 'Semi', 'Quot',
 				 'Ent', 'LShi', 'z', 'x', 'c', 'v', 'b', 'n', 'm', 'Comm', 'Dot', 'BSla',
 				 'RShi', 'LCtr', 'LWin', 'LAlt', 'Spac', 'RAlt', 'RWin', 'File', 'RCtr' };
+
 			/*
 			PictureBox^ kKeys[] = { PictureBoxTild, pictureBox0, pictureBox1, pictureBox2, pictureBox3, pictureBox4, pictureBox5, pictureBox6,
 				pictureBox7, pictureBox8, pictureBox9, pictureBox0, PictureBoxDash, pictureBoxPlus, pictureBoxBS, pictureBoxTAB,
@@ -1169,12 +1192,19 @@ private: System::Void Start_Pictutre_Click(System::Object^  sender, System::Even
 				pictureBoxLWin, pictureBoxLAlt, pictureBoxSpac, pictureBoxRAlt, pictureBoxRWin, pictureBoxFile, pictureBoxRCtr
 			};
 			*/
-
+			/*
+			//puts images in picture box
+			for (int i = 0; i < 61; i++)
+			{
+				Controls->Find("pictureBox" + Keys[i], true)[0] = Controls->Find("" + Keys[i], true)[0];
+			}
+			
+			//changes picturebox visibility
 			for (int i = 0; i < 61; i++)
 			{
 				Controls->Find("pictureBox" + Keys[i], true)[0]->Visible = false;
 			}
-
+			*/
 }
 //dont know yet
 private: System::Void Second_Button_Click(System::Object^  sender, System::EventArgs^  e) {
