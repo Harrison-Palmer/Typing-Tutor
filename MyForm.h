@@ -62,74 +62,33 @@ namespace Project1 {
 	private: System::Windows::Forms::PictureBox^  pictureBoxLAlt;
 	private: System::Windows::Forms::PictureBox^  pictureBoxLWin;
 	private: System::Windows::Forms::PictureBox^  pictureBoxLCtr;
-
-
-
-
-
 	private: System::Windows::Forms::PictureBox^  pictureBoxBSla;
-
-
 	private: System::Windows::Forms::PictureBox^  pictureBoxComm;
-
-
 	private: System::Windows::Forms::PictureBox^  pictureBoxDot;
-
 	private: System::Windows::Forms::PictureBox^  pictureBoxm;
-
 	private: System::Windows::Forms::PictureBox^  pictureBoxn;
-
 	private: System::Windows::Forms::PictureBox^  pictureBoxb;
-
 	private: System::Windows::Forms::PictureBox^  pictureBoxv;
-
 	private: System::Windows::Forms::PictureBox^  pictureBoxc;
-
 	private: System::Windows::Forms::PictureBox^  pictureBoxx;
-
 	private: System::Windows::Forms::PictureBox^  pictureBoxz;
 	private: System::Windows::Forms::PictureBox^  pictureBoxLshi;
-
-
-
 	private: System::Windows::Forms::PictureBox^  pictureBoxEnt;
 	private: System::Windows::Forms::PictureBox^  pictureBoxQuot;
-
-
-
 	private: System::Windows::Forms::PictureBox^  pictureBoxSemi;
-
 	private: System::Windows::Forms::PictureBox^  pictureBoxl;
-
 	private: System::Windows::Forms::PictureBox^  pictureBoxk;
-
 	private: System::Windows::Forms::PictureBox^  pictureBoxj;
-
 	private: System::Windows::Forms::PictureBox^  pictureBoxh;
 	private: System::Windows::Forms::PictureBox^  pictureBoxgg;
-
-
-
 	private: System::Windows::Forms::PictureBox^  pictureBoxf;
-
 	private: System::Windows::Forms::PictureBox^  pictureBoxd;
-
 	private: System::Windows::Forms::PictureBox^  pictureBoxs;
-
 	private: System::Windows::Forms::PictureBox^  pictureBoxa;
-
 	private: System::Windows::Forms::PictureBox^  pictureBoxCap;
 	private: System::Windows::Forms::PictureBox^  pictureBoxFSla;
-
-
 	private: System::Windows::Forms::PictureBox^  pictureBoxRBra;
-
-
 	private: System::Windows::Forms::PictureBox^  pictureBoxLBra;
-
-
-
-
 	private: System::Windows::Forms::PictureBox^  pictureBoxp;
 	private: System::Windows::Forms::PictureBox^  pictureBoxo;
 	private: System::Windows::Forms::PictureBox^  pictureBoxi;
@@ -1117,7 +1076,7 @@ private: System::Windows::Forms::PictureBox^  pictureBoxRShi;
 		Image^ h = gcnew Bitmap("Images\\letter_h.bmp");
 		Image^ i = gcnew Bitmap("Images\\letter_i.bmp");
 		Image^ j = gcnew Bitmap("Images\\letter_j.bmp");
-		Image^ k = gcnew Bitmap("Images\\letter_k.bmp");
+		Image^ k = gcnew Bitmap("Images\\letter_k.bmp"); 
 		Image^ l = gcnew Bitmap("Images\\letter_l.bmp");
 		Image^ m = gcnew Bitmap("Images\\letter_m.bmp");
 		Image^ n = gcnew Bitmap("Images\\letter_n.bmp");
@@ -1143,8 +1102,7 @@ private: System::Windows::Forms::PictureBox^  pictureBoxRShi;
 		Image^ File = gcnew Bitmap("Images\\alt_key.bmp");
 
 		array<char>^ Keys = gcnew array<char>(61);
-		array<Image^>^ Images = gcnew array<Image^>(61);
-		//array<System::Windows::Forms::PictureBox ^>^ kKeys = gcnew array<System::Windows::Forms::PictureBox ^>(63);
+		array<Control^>^ Keysss = gcnew array<Control^>(61);
 
 		/* potential way of level design
 		char Level1[7];
@@ -1180,25 +1138,18 @@ private: System::Void Start_Pictutre_Click(System::Object^  sender, System::Even
 				 'FSla', 'Cap', 'a', 's', 'd', 'f', 'gg', 'h', 'j', 'k', 'l', 'Semi', 'Quot',
 				 'Ent', 'LShi', 'z', 'x', 'c', 'v', 'b', 'n', 'm', 'Comm', 'Dot', 'BSla',
 				 'RShi', 'LCtr', 'LWin', 'LAlt', 'Spac', 'RAlt', 'RWin', 'File', 'RCtr' };
-
-			/*
-			PictureBox^ kKeys[] = { PictureBoxTild, pictureBox0, pictureBox1, pictureBox2, pictureBox3, pictureBox4, pictureBox5, pictureBox6,
-				pictureBox7, pictureBox8, pictureBox9, pictureBox0, PictureBoxDash, pictureBoxPlus, pictureBoxBS, pictureBoxTAB,
-				pictureBoxq, pictureBoxw, pictureBoxe, pictureBoxr, pictureBoxt, pictureBoxy, pictureBoxu, pictureBoxi, pictureBoxo,
-				pictureBoxp, pictureBoxLBra, pictureBoxRBra, pictureBoxFSla, pictureBoxCap, pictureBoxa, pictureBoxs, pictureBoxd,
-				pictureBoxd, pictureBoxf, pictureBoxg, pictureBoxh, pictureBoxj, pictureBoxk, pictureBoxl, pictureBoxSemi,
-				pictureBoxQuot, pictureBoxEnt, pictureBoxLshi, pictureBoxz, pictureBoxx, pictureBoxc, pictureBoxv, pictureBoxb,
-				pictureBoxn, pictureBoxm, pictureBoxComm, pictureBoxDot, pictureBoxBSla, pictureBoxRShi, pictureBoxLCtr,
-				pictureBoxLWin, pictureBoxLAlt, pictureBoxSpac, pictureBoxRAlt, pictureBoxRWin, pictureBoxFile, pictureBoxRCtr
-			};
-			*/
-			/*
+		
 			//puts images in picture box
 			for (int i = 0; i < 61; i++)
 			{
-				Controls->Find("pictureBox" + Keys[i], true)[0] = Controls->Find("" + Keys[i], true)[0];
+				String^ Astring = "PictureBox" + Keys[i].ToString();
+				String Bstring = Keys[i].ToString;
+
+				PictureBox^ Astring = Bitmap^ Bstring;
+
+				//Controls->Find("pictureBox" + Keys[i], true)[0];// = Controls->Find("" + Keys[i], true)[0];
 			}
-			
+			/*
 			//changes picturebox visibility
 			for (int i = 0; i < 61; i++)
 			{
