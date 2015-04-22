@@ -58,6 +58,7 @@ namespace Project1 {
 	private: System::Windows::Forms::PictureBox^  pictureBoxFile;
 	private: System::Windows::Forms::PictureBox^  pictureBoxRCtr;
 
+
 	private: System::Windows::Forms::PictureBox^  pictureBoxLAlt;
 	private: System::Windows::Forms::PictureBox^  pictureBoxLWin;
 	private: System::Windows::Forms::PictureBox^  pictureBoxLCtr;
@@ -103,8 +104,8 @@ namespace Project1 {
 	private: System::Windows::Forms::PictureBox^  pictureBoxBS;
 
 	private: System::Windows::Forms::PictureBox^  pictureBoxPlus;
-	private: System::Windows::Forms::PictureBox^  PictureBoxDash;
-	private: System::Windows::Forms::PictureBox^  pictureBoxZERO;
+private: System::Windows::Forms::PictureBox^  PictureBoxDash;
+private: System::Windows::Forms::PictureBox^  pictureBoxZERO;
 
 
 private: System::Windows::Forms::PictureBox^  pictureBoxNINE;
@@ -1103,16 +1104,6 @@ private: System::Windows::Forms::PictureBox^  pictureBoxRShi;
 		array<char>^ Keys = gcnew array<char>(61);
 		array<Control^>^ Keysss = gcnew array<Control^>(61);
 
-
-		enum Pictures {
-			Tild, ONE, TWO, THRE, FOUR, FIVE, SIX, SEVE, EIGH, NINE, ZERO, Dash, Plus,
-			BS, TAB, q, w, e, r, t, y, u, i, o, p, LBra, RBra,
-			FSla, Cap, a, s, d, f, gg, h, j, k, l, Semi, Quot,
-			Ent, LShi, z, x, c, v, b, n, m, Comm, Dot, BSla,
-			RShi, LCtr, LWin, LAlt, Spac, RAlt, RWin, File, RCtr
-		};
-
-		Pictures imgur;
 		/* potential way of level design
 		char Level1[7];
 		char Level1[] = {'t', 'e', 's', 't', 'i', 'n', 'g'};
@@ -1142,22 +1133,19 @@ private: System::Void Start_Pictutre_Click(System::Object^  sender, System::Even
 
 			 //makes new picturebox
 
-		/*	char Keys[] = { 'Tild', 'ONE', 'TWO', 'THRE', 'FOUR', 'FIVE', 'SIX', 'SEVE', 'EIGH', 'NINE', 'ZERO', 'Dash', 'Plus',
+			char Keys[] = { 'Tild', 'ONE', 'TWO', 'THRE', 'FOUR', 'FIVE', 'SIX', 'SEVE', 'EIGH', 'NINE', 'ZERO', 'Dash', 'Plus',
 				 'BS', 'TAB', 'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', 'LBra', 'RBra',
 				 'FSla', 'Cap', 'a', 's', 'd', 'f', 'gg', 'h', 'j', 'k', 'l', 'Semi', 'Quot',
 				 'Ent', 'LShi', 'z', 'x', 'c', 'v', 'b', 'n', 'm', 'Comm', 'Dot', 'BSla',
 				 'RShi', 'LCtr', 'LWin', 'LAlt', 'Spac', 'RAlt', 'RWin', 'File', 'RCtr' };
-				 */
-
+		
 			//puts images in picture box
 			for (int i = 0; i < 61; i++)
 			{
 				String^ Astring = "PictureBox" + Keys[i].ToString();
 				String Bstring = Keys[i].ToString;
 
-			//	Image[Pictures] =
-				
-				PictureBox^ Astring = //imgur[Bstring];
+				PictureBox^ Astring = Bitmap^ Bstring;
 
 				//Controls->Find("pictureBox" + Keys[i], true)[0];// = Controls->Find("" + Keys[i], true)[0];
 			}
