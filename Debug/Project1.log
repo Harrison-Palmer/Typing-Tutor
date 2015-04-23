@@ -1,16 +1,17 @@
-﻿Build started 4/22/2015 2:25:13 PM.
-     1>Project "C:\Users\hpalmer\Documents\Typing Tutor\Typing-Tutor\Project1.vcxproj" on node 2 (Build target(s)).
+﻿Build started 4/16/2015 5:26:03 PM.
+     1>Project "C:\Users\hpalmer\Documents\GitHub\Typing-Tutor\Project1.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /AI"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Drawing.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Windows.Forms.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib MyForm.cpp
          MyForm.cpp
-     1>c:\users\hpalmer\documents\typing tutor\typing-tutor\MyForm.h(1248): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
-       Link:
-         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\hpalmer\Documents\Typing Tutor\Typing-Tutor\Debug\CS113FormsProject.exe" /INCREMENTAL /NOLOGO /ASSEMBLYRESOURCE:"Debug\$safeprojectname$.MyForm.resources,Debug\/CS113FormsProject.MyForm.resources" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\hpalmer\Documents\Typing Tutor\Typing-Tutor\Debug\CS113FormsProject.pdb" /ASSEMBLYDEBUG /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Debug\MyForm.obj
-         Debug\Tutor.obj
-         "Debug\.NETFramework,Version=v4.5.AssemblyAttributes.obj"
-         Project1.vcxproj -> C:\Users\hpalmer\Documents\Typing Tutor\Typing-Tutor\Debug\CS113FormsProject.exe
-     1>Done Building Project "C:\Users\hpalmer\Documents\Typing Tutor\Typing-Tutor\Project1.vcxproj" (Build target(s)).
+     1>c:\users\hpalmer\documents\github\typing-tutor\MyForm.h(1140): warning C4305: 'initializing' : truncation from 'int' to 'char'
+     1>c:\users\hpalmer\documents\github\typing-tutor\MyForm.h(1140): warning C4309: 'initializing' : truncation of constant value
+     1>c:\users\hpalmer\documents\github\typing-tutor\MyForm.h(1147): warning C4669: 'type cast' : unsafe conversion: 'System::Windows::Forms::PictureBox' is a managed type object
+     1>c:\users\hpalmer\documents\github\typing-tutor\MyForm.h(1147): error C2440: '=' : cannot convert from 'char' to 'System::Windows::Forms::PictureBox ^'
+                 No user-defined-conversion operator available, or
+                 No standard conversion exists from the boxed form of the arithmetic type to the target type
+     1>c:\users\hpalmer\documents\github\typing-tutor\MyForm.h(1177): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>Done Building Project "C:\Users\hpalmer\Documents\GitHub\Typing-Tutor\Project1.vcxproj" (Build target(s)) -- FAILED.
 
-Build succeeded.
+Build FAILED.
 
-Time Elapsed 00:00:04.50
+Time Elapsed 00:00:02.48
