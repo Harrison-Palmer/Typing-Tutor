@@ -1045,6 +1045,8 @@ private: System::Windows::Forms::PictureBox^  pictureBoxRShi;
 
 		int Length = 0;
 
+		bool toggled;
+
 		Bitmap^ ExitGame = gcnew Bitmap("Images\\exit.bmp");
 		Bitmap^ StartGame = gcnew Bitmap("Images\\exit.bmp");
 		
@@ -1106,8 +1108,8 @@ private: System::Windows::Forms::PictureBox^  pictureBoxRShi;
 		Image^ Spac = gcnew Bitmap("Images\\space_key_l.bmp");
 		Image^ FSla = gcnew Bitmap("Images\\tab_key1.bmp");
 		Image^ TAB = gcnew Bitmap("Images\\tab_key2.bmp");
-		//Image^ LWin = gcnew Bitmap("Images\\windows_key2.bmp");
-		//Image^ RWin = gcnew Bitmap("Images\\windows_key2.bmp");
+		Image^ LWin = gcnew Bitmap("Images\\windows_key2.bmp");
+		Image^ RWin = gcnew Bitmap("Images\\windows_key2.bmp");
 		Image^ File = gcnew Bitmap("Images\\letter_file.bmp");
 		
 
@@ -1117,6 +1119,7 @@ private: System::Windows::Forms::PictureBox^  pictureBoxRShi;
 		array<char>^ Keys = gcnew array<char>(61);
 		array<Control^>^ Keysss = gcnew array<Control^>(61);
 
+		private: static array<System::Windows::Forms::PictureBox^>^ pictures = (gcnew array<System::Windows::Forms::PictureBox^>(64));
 		/*
 		enum Pictures {
 			Tild, ONE, TWO, THRE, FOUR, FIVE, SIX, SEVE, EIGH, NINE, ZERO, Dash, Plus,
@@ -1135,6 +1138,7 @@ private: System::Windows::Forms::PictureBox^  pictureBoxRShi;
 		char Level1[] = {'t', 'e', 's', 't', 'i', 'n', 'g'};
 		*/
 
+				 //full of junk for loading
 private: System::Void MyForm_Load(System::Object^  sender, System::EventArgs^  e) {
 			 g = panel1->CreateGraphics();
 
@@ -1142,7 +1146,131 @@ private: System::Void MyForm_Load(System::Object^  sender, System::EventArgs^  e
 			 Start_Pictutre->Image = StartGame;
 			 Second_Button->Image = ExitGame;
 
-			 
+			 PictureBoxTild->Image = Tild;
+			 pictureBoxSpac->Image = Spac;
+			 pictureBoxRAlt->Image = RAlt;
+			 pictureBoxRWin->Image = RWin;
+			 pictureBoxFile->Image = File;
+			 pictureBoxRCtr->Image = RCtr;
+			 pictureBoxLAlt->Image = LAlt;
+			 pictureBoxLWin->Image = LWin;
+			 pictureBoxLCtr->Image = LCtr;
+			 pictureBoxBSla->Image = BSla;
+			 pictureBoxComm->Image = Comm;
+			 pictureBoxDot->Image = Dot;
+			 pictureBoxm->Image = m;
+			 pictureBoxn->Image = n;
+			 pictureBoxb->Image = b;
+			 pictureBoxv->Image = v;
+			 pictureBoxc->Image = c;
+			 pictureBoxx->Image = x;
+			 pictureBoxz->Image = z;
+			 pictureBoxLshi->Image = LShi;
+			 pictureBoxEnt->Image = Ent;
+			 pictureBoxQuot->Image = Quot;
+			 pictureBoxSemi->Image = Semi;
+			 pictureBoxl->Image = l;
+			 pictureBoxk->Image = k;
+			 pictureBoxj->Image = j;
+			 pictureBoxh->Image = h;
+			 pictureBoxgg->Image = gg;
+			 pictureBoxf->Image = f;
+			 pictureBoxd->Image = d;
+			 pictureBoxs->Image = s;
+			 pictureBoxa->Image = a;
+			 pictureBoxCap->Image = Cap;
+			 pictureBoxFSla->Image = FSla;
+			 pictureBoxRBra->Image = RBra;
+			 pictureBoxLBra->Image = LBra;
+			 pictureBoxp->Image = p;
+			 pictureBoxo->Image = o;
+			 pictureBoxi->Image = i;
+			 pictureBoxu->Image = u;
+			 pictureBoxy->Image = y;
+			 pictureBoxt->Image = t;
+			 pictureBoxr->Image = r;
+			 pictureBoxe->Image = ee;
+			 pictureBoxw->Image = w;
+			 pictureBoxq->Image = q;
+			 pictureBoxTAB->Image = TAB;
+			 pictureBoxBS->Image = ExitGame;
+			 pictureBoxPlus->Image = Plus;
+			 PictureBoxDash->Image = Dash;
+			 pictureBoxZERO->Image = ZERO;
+			 pictureBoxNINE->Image = NINE;
+			 pictureBoxEIGH->Image = EIGH;
+			 pictureBoxSEVE->Image = SEVE;
+			 pictureBoxSIX->Image = SIX;
+			 pictureBoxFIVE->Image = FIVE;
+			 pictureBoxFOUR->Image = FOUR;
+			 pictureBoxTHREE->Image = THRE;
+			 pictureBoxTWO->Image = TWO;
+			 pictureBoxONE->Image = ONE;
+			 pictureBoxRShi->Image = RShi;
+
+			 pictures[0] = PictureBoxTild;
+			 pictures[1] = pictureBoxONE;
+			 pictures[2] = pictureBoxTWO;
+			 pictures[3] = pictureBoxTHREE;
+			 pictures[4] = pictureBoxFOUR;
+			 pictures[5] = pictureBoxFIVE;
+			 pictures[6] = pictureBoxSIX;
+			 pictures[7] = pictureBoxSEVE;
+			 pictures[8] = pictureBoxEIGH;
+			 pictures[9] = pictureBoxNINE;
+			 pictures[10] = pictureBoxZERO;
+			 pictures[11] = PictureBoxDash;
+			 pictures[12] = pictureBoxPlus;
+			 pictures[12] = pictureBoxBS;
+			 pictures[13] = pictureBoxTAB;
+			 pictures[14] = pictureBoxq;
+			 pictures[15] = pictureBoxw;
+			 pictures[16] = pictureBoxe;
+			 pictures[17] = pictureBoxr;
+			 pictures[18] = pictureBoxt;
+			 pictures[19] = pictureBoxu;
+			 pictures[20] = pictureBoxi;
+			 pictures[21] = pictureBoxo;
+			 pictures[22] = pictureBoxp;
+			 pictures[23] = pictureBoxLBra;
+			 pictures[24] = pictureBoxRBra;
+			 pictures[25] = pictureBoxFSla;
+			 pictures[26] = pictureBoxCap;
+			 pictures[27] = pictureBoxa;
+			 pictures[28] = pictureBoxs;
+			 pictures[29] = pictureBoxd;
+			 pictures[30] = pictureBoxf;
+			 pictures[31] = pictureBoxgg;
+			 pictures[32] = pictureBoxh;
+			 pictures[33] = pictureBoxj;
+			 pictures[34] = pictureBoxk;
+			 pictures[35] = pictureBoxl;
+			 pictures[36] = pictureBoxSemi;
+			 pictures[37] = pictureBoxQuot;
+			 pictures[38] = pictureBoxEnt;
+			 pictures[39] = pictureBoxLshi;
+			 pictures[40] = pictureBoxz;
+			 pictures[41] = pictureBoxx;
+			 pictures[42] = pictureBoxc;
+			 pictures[43] = pictureBoxx;
+			 pictures[44] = pictureBoxc;
+			 pictures[45] = pictureBoxv;
+			 pictures[46] = pictureBoxb;
+			 pictures[47] = pictureBoxn;
+			 pictures[48] = pictureBoxm;
+			 pictures[49] = pictureBoxComm;
+			 pictures[50] = pictureBoxDot;
+			 pictures[51] = pictureBoxBSla;
+			 pictures[52] = pictureBoxRShi;
+			 pictures[53] = pictureBoxLCtr;
+			 pictures[54] = pictureBoxLWin;
+			 pictures[55] = pictureBoxLAlt;
+			 pictures[56] = pictureBoxSpac;
+			 pictures[57] = pictureBoxRAlt;
+			 pictures[58] = pictureBoxRWin;
+			 pictures[59] = pictureBoxFile;
+			 pictures[60] = pictureBoxRCtr;
+			 pictures[61] = pictureBoxy;
 }
 private: System::Void panel1_Paint(System::Object^  sender, System::Windows::Forms::PaintEventArgs^  e) {
 }
@@ -1159,7 +1287,15 @@ private: System::Void MyForm_KeyPress(System::Object^  sender, System::Windows::
 
 //start game button
 private: System::Void Start_Pictutre_Click(System::Object^  sender, System::EventArgs^  e) {
-			// panel1->Controls->Clear();
+			
+			 
+			 for (int i = 0; i < 62; i++)
+				if (toggled)
+					 pictures[i]->Visible = false;
+				else
+					pictures[i]->Visible = true;
+			 
+			 // panel1->Controls->Clear();
 
 			 //makes new picturebox
 			 /*
@@ -1172,11 +1308,7 @@ private: System::Void Start_Pictutre_Click(System::Object^  sender, System::Even
 				 */
 
 			 /*
-=======
-		
->>>>>>> origin/master
-=======
->>>>>>> parent of b22f2c9... loaded images
+
 			//puts images in picture box
 			for (int i = 0; i < 61; i++)
 			{
