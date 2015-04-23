@@ -1047,10 +1047,10 @@ private: System::Windows::Forms::PictureBox^  pictureBoxRShi;
 
 		Bitmap^ ExitGame = gcnew Bitmap("Images\\exit.bmp");
 		Bitmap^ StartGame = gcnew Bitmap("Images\\exit.bmp");
-
-		Bitmap^ LAlt = gcnew Bitmap("Images\\caps_key.bmp");
-		Image^ RAlt = gcnew Bitmap("Images\\caps_key.bmp");
-		Image^ BS = gcnew Bitmap("Images\\caps_key.bmp");
+		
+		Image^ LAlt = gcnew Bitmap("Images\\alt_key.bmp");
+		Image^ RAlt = gcnew Bitmap("Images\\alt_key.bmp");
+		Image^ BS = gcnew Bitmap("Images\\backspace.bmp");
 		Image^ Cap = gcnew Bitmap("Images\\caps_key.bmp");
 		Image^ LCtr = gcnew Bitmap("Images\\ctrl_key.bmp");
 		Image^ RCtr = gcnew Bitmap("Images\\ctrl_key.bmp");
@@ -1108,9 +1108,8 @@ private: System::Windows::Forms::PictureBox^  pictureBoxRShi;
 		Image^ TAB = gcnew Bitmap("Images\\tab_key2.bmp");
 		//Image^ LWin = gcnew Bitmap("Images\\windows_key2.bmp");
 		//Image^ RWin = gcnew Bitmap("Images\\windows_key2.bmp");
-
 		Image^ File = gcnew Bitmap("Images\\letter_file.bmp");
-
+		
 
 	//private: System::Windows::Forms::PictureBox^  MenuPicture;
 	//private: System::Windows::Forms::PictureBox^  Exit_Button;
@@ -1138,71 +1137,12 @@ private: System::Windows::Forms::PictureBox^  pictureBoxRShi;
 
 private: System::Void MyForm_Load(System::Object^  sender, System::EventArgs^  e) {
 			 g = panel1->CreateGraphics();
+
 			 Exit_Button->Image = ExitGame;
 			 Start_Pictutre->Image = StartGame;
 			 Second_Button->Image = ExitGame;
 
-			 PictureBoxTild->Image = Tild;
-			 pictureBoxSpac->Image = Spac;
-			 pictureBoxRAlt->Image = RAlt;
-			 //pictureBoxRWin->Image = RWin;
-			 pictureBoxFile->Image = File;
-			 pictureBoxRCtr->Image = RCtr;
-			 pictureBoxLAlt->Image = LAlt;
-			 //pictureBoxLWin->Image = LWin;
-			 pictureBoxLCtr->Image = LCtr;
-			 pictureBoxBSla->Image = BSla;
-			 pictureBoxComm->Image = Comm;
-			 pictureBoxDot->Image = Dot;
-			 pictureBoxm->Image = m;
-			 pictureBoxn->Image = n;
-			 pictureBoxb->Image = b;
-			 pictureBoxv->Image = v;
-			 pictureBoxc->Image = c;
-			 pictureBoxx->Image = x;
-			 pictureBoxz->Image = z;
-			 pictureBoxLshi->Image = LShi;
-			 pictureBoxEnt->Image = Ent;
-			 pictureBoxQuot->Image = Quot;
-			 pictureBoxSemi->Image = Semi;
-			 pictureBoxl->Image = l;
-			 pictureBoxk->Image = k;
-			 pictureBoxj->Image = j;
-			 pictureBoxh->Image = h;
-			 pictureBoxgg->Image = gg;
-			 pictureBoxf->Image = f;
-			 pictureBoxd->Image = d;
-			 pictureBoxs->Image = s;
-			 pictureBoxa->Image = a;
-			 pictureBoxCap->Image = Cap;
-			 pictureBoxFSla->Image = FSla;
-			 pictureBoxRBra->Image = RBra;
-			 pictureBoxLBra->Image = LBra;
-			 pictureBoxp->Image = p;
-			 pictureBoxo->Image = o;
-			 pictureBoxi->Image = i;
-			 pictureBoxu->Image = u;
-			 pictureBoxy->Image = y;
-			 pictureBoxt->Image = t;
-			 pictureBoxr->Image = r;
-			 pictureBoxe->Image = ee;
-			 pictureBoxw->Image = w;
-			 pictureBoxq->Image = q;
-			 pictureBoxTAB->Image = TAB;
-			 pictureBoxBS->Image = ExitGame;
-			 pictureBoxPlus->Image = Plus;
-			 PictureBoxDash->Image = Dash;
-			 pictureBoxZERO->Image = ZERO;
-			 pictureBoxNINE->Image = NINE;
-			 pictureBoxEIGH->Image = EIGH;
-			 pictureBoxSEVE->Image = SEVE;
-			 pictureBoxSIX->Image = SIX;
-			 pictureBoxFIVE->Image = FIVE;
-			 pictureBoxFOUR->Image = FOUR;
-			 pictureBoxTHREE->Image = THRE;
-			 pictureBoxTWO->Image = TWO;
-			 pictureBoxONE->Image = ONE;
-			 pictureBoxRShi->Image = RShi;
+			 
 }
 private: System::Void panel1_Paint(System::Object^  sender, System::Windows::Forms::PaintEventArgs^  e) {
 }
