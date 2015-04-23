@@ -57,15 +57,7 @@ namespace Project1 {
 	private: System::Windows::Forms::PictureBox^  pictureBoxRWin;
 	private: System::Windows::Forms::PictureBox^  pictureBoxFile;
 	private: System::Windows::Forms::PictureBox^  pictureBoxRCtr;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
-
->>>>>>> origin/master
-=======
-
->>>>>>> parent of b22f2c9... loaded images
 	private: System::Windows::Forms::PictureBox^  pictureBoxLAlt;
 	private: System::Windows::Forms::PictureBox^  pictureBoxLWin;
 	private: System::Windows::Forms::PictureBox^  pictureBoxLCtr;
@@ -107,14 +99,10 @@ namespace Project1 {
 	private: System::Windows::Forms::PictureBox^  pictureBoxw;
 	private: System::Windows::Forms::PictureBox^  pictureBoxq;
 	private: System::Windows::Forms::PictureBox^  pictureBoxTAB;
-
 	private: System::Windows::Forms::PictureBox^  pictureBoxBS;
-
 	private: System::Windows::Forms::PictureBox^  pictureBoxPlus;
-<<<<<<< HEAD
 	private: System::Windows::Forms::PictureBox^  PictureBoxDash;
 	private: System::Windows::Forms::PictureBox^  pictureBoxZERO;
-<<<<<<< HEAD
 	private: System::Windows::Forms::PictureBox^  pictureBoxNINE;
 	private: System::Windows::Forms::PictureBox^  pictureBoxEIGH;
 	private: System::Windows::Forms::PictureBox^  pictureBoxSEVE;
@@ -125,12 +113,10 @@ namespace Project1 {
 	private: System::Windows::Forms::PictureBox^  pictureBoxTWO;
 	private: System::Windows::Forms::PictureBox^  pictureBoxONE;
 	private: System::Windows::Forms::PictureBox^  pictureBoxRShi;
-=======
+			 
+	private: System::Windows::Forms::TextBox^  textBox1;
+			 /*
 private: System::Windows::Forms::PictureBox^  PictureBoxDash;
-private: System::Windows::Forms::PictureBox^  pictureBoxZERO;
-=======
->>>>>>> parent of b22f2c9... loaded images
-
 
 private: System::Windows::Forms::PictureBox^  pictureBoxNINE;
 
@@ -150,14 +136,9 @@ private: System::Windows::Forms::PictureBox^  pictureBoxTHREE;
 private: System::Windows::Forms::PictureBox^  pictureBoxTWO;
 
 private: System::Windows::Forms::PictureBox^  pictureBoxONE;
-<<<<<<< HEAD
->>>>>>> origin/master
-=======
->>>>>>> parent of b22f2c9... loaded images
 
-	private: System::Windows::Forms::TextBox^  textBox1;
 private: System::Windows::Forms::PictureBox^  pictureBoxRShi;
-
+*/
 	private:
 		/// <summary>
 		/// Required designer variable.
@@ -1098,7 +1079,7 @@ private: System::Windows::Forms::PictureBox^  pictureBoxRShi;
 		Image^ b = gcnew Bitmap("Images\\letter_b.bmp");
 		Image^ c = gcnew Bitmap("Images\\letter_c.bmp");
 		Image^ d = gcnew Bitmap("Images\\letter_d.bmp");
-		Image^ e = gcnew Bitmap("Images\\letter_e.bmp");
+		Image^ ee = gcnew Bitmap("Images\\letter_e.bmp");
 		Image^ f = gcnew Bitmap("Images\\letter_f.bmp");
 		Image^ gg = gcnew Bitmap("Images\\letter_g.bmp");
 		Image^ h = gcnew Bitmap("Images\\letter_h.bmp");
@@ -1124,24 +1105,20 @@ private: System::Windows::Forms::PictureBox^  pictureBoxRShi;
 		Image^ RShi = gcnew Bitmap("Images\\shift_key.bmp");
 		Image^ Spac = gcnew Bitmap("Images\\space_key_l.bmp");
 		Image^ FSla = gcnew Bitmap("Images\\tab_key1.bmp");
-		Image^ TAB = gcnew Bitmap("Images\\tab_key1.bmp");
-		Image^ LWin = gcnew Bitmap("Images\\windows_key2.bmp");
-		Image^ RWin = gcnew Bitmap("Images\\windows_key2.bmp");
-<<<<<<< HEAD
+		Image^ TAB = gcnew Bitmap("Images\\tab_key2.bmp");
+		//Image^ LWin = gcnew Bitmap("Images\\windows_key2.bmp");
+		//Image^ RWin = gcnew Bitmap("Images\\windows_key2.bmp");
+
 		Image^ File = gcnew Bitmap("Images\\letter_file.bmp");
+
 
 	//private: System::Windows::Forms::PictureBox^  MenuPicture;
 	//private: System::Windows::Forms::PictureBox^  Exit_Button;
 
-<<<<<<< HEAD
-=======
-		Image^ File = gcnew Bitmap("Images\\alt_key.bmp");
->>>>>>> parent of b22f2c9... loaded images
-
 		array<char>^ Keys = gcnew array<char>(61);
 		array<Control^>^ Keysss = gcnew array<Control^>(61);
 
-
+		/*
 		enum Pictures {
 			Tild, ONE, TWO, THRE, FOUR, FIVE, SIX, SEVE, EIGH, NINE, ZERO, Dash, Plus,
 			BS, TAB, q, w, e, r, t, y, u, i, o, p, LBra, RBra,
@@ -1149,15 +1126,11 @@ private: System::Windows::Forms::PictureBox^  pictureBoxRShi;
 			Ent, LShi, z, x, c, v, b, n, m, Comm, Dot, BSla,
 			RShi, LCtr, LWin, LAlt, Spac, RAlt, RWin, File, RCtr
 		};
-<<<<<<< HEAD
+
 		*/
 		//Pictures imgur;
-=======
->>>>>>> origin/master
-=======
 
-		Pictures imgur;
->>>>>>> parent of b22f2c9... loaded images
+		//Pictures imgur;
 		/* potential way of level design
 		char Level1[7];
 		char Level1[] = {'t', 'e', 's', 't', 'i', 'n', 'g'};
@@ -1167,6 +1140,69 @@ private: System::Void MyForm_Load(System::Object^  sender, System::EventArgs^  e
 			 g = panel1->CreateGraphics();
 			 Exit_Button->Image = ExitGame;
 			 Start_Pictutre->Image = StartGame;
+			 Second_Button->Image = ExitGame;
+
+			 PictureBoxTild->Image = Tild;
+			 pictureBoxSpac->Image = Spac;
+			 pictureBoxRAlt->Image = RAlt;
+			 //pictureBoxRWin->Image = RWin;
+			 pictureBoxFile->Image = File;
+			 pictureBoxRCtr->Image = RCtr;
+			 pictureBoxLAlt->Image = LAlt;
+			 //pictureBoxLWin->Image = LWin;
+			 pictureBoxLCtr->Image = LCtr;
+			 pictureBoxBSla->Image = BSla;
+			 pictureBoxComm->Image = Comm;
+			 pictureBoxDot->Image = Dot;
+			 pictureBoxm->Image = m;
+			 pictureBoxn->Image = n;
+			 pictureBoxb->Image = b;
+			 pictureBoxv->Image = v;
+			 pictureBoxc->Image = c;
+			 pictureBoxx->Image = x;
+			 pictureBoxz->Image = z;
+			 pictureBoxLshi->Image = LShi;
+			 pictureBoxEnt->Image = Ent;
+			 pictureBoxQuot->Image = Quot;
+			 pictureBoxSemi->Image = Semi;
+			 pictureBoxl->Image = l;
+			 pictureBoxk->Image = k;
+			 pictureBoxj->Image = j;
+			 pictureBoxh->Image = h;
+			 pictureBoxgg->Image = gg;
+			 pictureBoxf->Image = f;
+			 pictureBoxd->Image = d;
+			 pictureBoxs->Image = s;
+			 pictureBoxa->Image = a;
+			 pictureBoxCap->Image = Cap;
+			 pictureBoxFSla->Image = FSla;
+			 pictureBoxRBra->Image = RBra;
+			 pictureBoxLBra->Image = LBra;
+			 pictureBoxp->Image = p;
+			 pictureBoxo->Image = o;
+			 pictureBoxi->Image = i;
+			 pictureBoxu->Image = u;
+			 pictureBoxy->Image = y;
+			 pictureBoxt->Image = t;
+			 pictureBoxr->Image = r;
+			 pictureBoxe->Image = ee;
+			 pictureBoxw->Image = w;
+			 pictureBoxq->Image = q;
+			 pictureBoxTAB->Image = TAB;
+			 pictureBoxBS->Image = ExitGame;
+			 pictureBoxPlus->Image = Plus;
+			 PictureBoxDash->Image = Dash;
+			 pictureBoxZERO->Image = ZERO;
+			 pictureBoxNINE->Image = NINE;
+			 pictureBoxEIGH->Image = EIGH;
+			 pictureBoxSEVE->Image = SEVE;
+			 pictureBoxSIX->Image = SIX;
+			 pictureBoxFIVE->Image = FIVE;
+			 pictureBoxFOUR->Image = FOUR;
+			 pictureBoxTHREE->Image = THRE;
+			 pictureBoxTWO->Image = TWO;
+			 pictureBoxONE->Image = ONE;
+			 pictureBoxRShi->Image = RShi;
 }
 private: System::Void panel1_Paint(System::Object^  sender, System::Windows::Forms::PaintEventArgs^  e) {
 }
@@ -1186,16 +1222,15 @@ private: System::Void Start_Pictutre_Click(System::Object^  sender, System::Even
 			// panel1->Controls->Clear();
 
 			 //makes new picturebox
-
+			 /*
 			char Keys[] = { 'Tild', 'ONE', 'TWO', 'THRE', 'FOUR', 'FIVE', 'SIX', 'SEVE', 'EIGH', 'NINE', 'ZERO', 'Dash', 'Plus',
 				 'BS', 'TAB', 'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', 'LBra', 'RBra',
 				 'FSla', 'Cap', 'a', 's', 'd', 'f', 'gg', 'h', 'j', 'k', 'l', 'Semi', 'Quot',
 				 'Ent', 'LShi', 'z', 'x', 'c', 'v', 'b', 'n', 'm', 'Comm', 'Dot', 'BSla',
 				 'RShi', 'LCtr', 'LWin', 'LAlt', 'Spac', 'RAlt', 'RWin', 'File', 'RCtr' };
-<<<<<<< HEAD
+
 				 */
 
-<<<<<<< HEAD
 			 /*
 =======
 		
