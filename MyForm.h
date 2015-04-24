@@ -1045,10 +1045,10 @@ private: System::Windows::Forms::PictureBox^  pictureBoxRShi;
 
 		int Length = 0;
 
-		bool toggled;
+		bool toggled = true;
 
 		Bitmap^ ExitGame = gcnew Bitmap("Images\\exit.bmp");
-		Bitmap^ StartGame = gcnew Bitmap("Images\\exit.bmp");
+		Bitmap^ StartGame = gcnew Bitmap("Images\\startButton.bmp");
 		
 		Image^ LAlt = gcnew Bitmap("Images\\alt_key.bmp");
 		Image^ RAlt = gcnew Bitmap("Images\\alt_key.bmp");
@@ -1146,6 +1146,62 @@ private: System::Void MyForm_Load(System::Object^  sender, System::EventArgs^  e
 			 Start_Pictutre->Image = StartGame;
 			 Second_Button->Image = ExitGame;
 
+			 initialize();
+			 toggleKeyboard();
+
+}
+private: System::Void panel1_Paint(System::Object^  sender, System::Windows::Forms::PaintEventArgs^  e) {
+}
+
+private: System::Void MyForm_KeyPress(System::Object^  sender, System::Windows::Forms::KeyPressEventArgs^  e) {
+			 int op = 65;
+			 if (e->KeyChar.CompareTo(op))
+			 {
+				 MessageBox::Show("yes");
+			 }
+			 else
+				 MessageBox::Show("not working");
+
+			 if (GetAsyncKeyState(VK_ESCAPE))
+			 {
+				 if (Start_Pictutre->Visible == true)
+					 Application::Exit();
+				 else if (Start_Pictutre->Visible == false && toggled == false)
+				 {
+					 //****de-load level selector****
+
+					 Start_Pictutre->Visible = true;
+					 Second_Button->Visible = true;
+					 Exit_Button->Visible = true;
+				 }
+				 else
+				 {
+					 toggleKeyboard();
+					 Start_Pictutre->Visible = true;
+					 Second_Button->Visible = true;
+					 Exit_Button->Visible = true;
+				 }
+			 }
+}
+
+		 //toggles keyboard visiblity
+private: System::Void toggleKeyboard()
+{
+			 for (int i = 0; i < 63; i++)
+			 {
+				 if (toggled)
+					 pictures[i]->Visible = false;
+				 else
+					 pictures[i]->Visible = true;
+			 }
+			 if (toggled)
+				 toggled = false;
+			 else
+				 toggled = true;
+}
+		 //fills the pictures boxs in a array, fills their images
+private: System::Void initialize()
+{
 			 PictureBoxTild->Image = Tild;
 			 pictureBoxSpac->Image = Spac;
 			 pictureBoxRAlt->Image = RAlt;
@@ -1220,7 +1276,6 @@ private: System::Void MyForm_Load(System::Object^  sender, System::EventArgs^  e
 			 pictures[9] = pictureBoxNINE;
 			 pictures[10] = pictureBoxZERO;
 			 pictures[11] = PictureBoxDash;
-			 pictures[12] = pictureBoxPlus;
 			 pictures[12] = pictureBoxBS;
 			 pictures[13] = pictureBoxTAB;
 			 pictures[14] = pictureBoxq;
@@ -1271,30 +1326,18 @@ private: System::Void MyForm_Load(System::Object^  sender, System::EventArgs^  e
 			 pictures[59] = pictureBoxFile;
 			 pictures[60] = pictureBoxRCtr;
 			 pictures[61] = pictureBoxy;
-}
-private: System::Void panel1_Paint(System::Object^  sender, System::Windows::Forms::PaintEventArgs^  e) {
-}
-
-private: System::Void MyForm_KeyPress(System::Object^  sender, System::Windows::Forms::KeyPressEventArgs^  e) {
-			 int op = 65;
-			 if (e->KeyChar.CompareTo(op))
-			 {
-				 MessageBox::Show("yes");
-			 }
-			 else
-				 MessageBox::Show("not working");
+			 pictures[62] = pictureBoxPlus;
 }
 
 //start game button
 private: System::Void Start_Pictutre_Click(System::Object^  sender, System::EventArgs^  e) {
 			
-			 
-			 for (int i = 0; i < 62; i++)
-				if (toggled)
-					 pictures[i]->Visible = false;
-				else
-					pictures[i]->Visible = true;
-			 
+			 toggleKeyboard();
+
+			 Start_Pictutre->Visible = false;
+			 Second_Button->Visible = false;
+			 Exit_Button->Visible = false;
+
 			 // panel1->Controls->Clear();
 
 			 //makes new picturebox
