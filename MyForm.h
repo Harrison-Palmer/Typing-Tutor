@@ -139,6 +139,10 @@ private: System::Windows::Forms::PictureBox^  pictureBoxONE;
 
 private: System::Windows::Forms::PictureBox^  pictureBoxRShi;
 */
+private: System::Windows::Forms::GroupBox^  groupBox1;
+private: System::Windows::Forms::RadioButton^  radioButton3;
+private: System::Windows::Forms::RadioButton^  radioButton2;
+private: System::Windows::Forms::RadioButton^  radioButton1;
 	private:
 		/// <summary>
 		/// Required designer variable.
@@ -153,6 +157,10 @@ private: System::Windows::Forms::PictureBox^  pictureBoxRShi;
 		void InitializeComponent(void)
 		{
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
+			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
+			this->radioButton3 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton2 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton1 = (gcnew System::Windows::Forms::RadioButton());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->pictureBoxSpac = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBoxRAlt = (gcnew System::Windows::Forms::PictureBox());
@@ -220,6 +228,7 @@ private: System::Windows::Forms::PictureBox^  pictureBoxRShi;
 			this->Start_Pictutre = (gcnew System::Windows::Forms::PictureBox());
 			this->MenuPicture = (gcnew System::Windows::Forms::PictureBox());
 			this->panel1->SuspendLayout();
+			this->groupBox1->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxSpac))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxRAlt))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxRWin))->BeginInit();
@@ -289,6 +298,7 @@ private: System::Windows::Forms::PictureBox^  pictureBoxRShi;
 			// 
 			// panel1
 			// 
+			this->panel1->Controls->Add(this->groupBox1);
 			this->panel1->Controls->Add(this->textBox1);
 			this->panel1->Controls->Add(this->pictureBoxSpac);
 			this->panel1->Controls->Add(this->pictureBoxRAlt);
@@ -360,6 +370,54 @@ private: System::Windows::Forms::PictureBox^  pictureBoxRShi;
 			this->panel1->Size = System::Drawing::Size(929, 506);
 			this->panel1->TabIndex = 1;
 			this->panel1->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &MyForm::panel1_Paint);
+			// 
+			// groupBox1
+			// 
+			this->groupBox1->Controls->Add(this->radioButton3);
+			this->groupBox1->Controls->Add(this->radioButton2);
+			this->groupBox1->Controls->Add(this->radioButton1);
+			this->groupBox1->Location = System::Drawing::Point(534, 248);
+			this->groupBox1->Name = L"groupBox1";
+			this->groupBox1->Size = System::Drawing::Size(200, 100);
+			this->groupBox1->TabIndex = 66;
+			this->groupBox1->TabStop = false;
+			this->groupBox1->Text = L"groupBox1";
+			// 
+			// radioButton3
+			// 
+			this->radioButton3->AutoSize = true;
+			this->radioButton3->Location = System::Drawing::Point(7, 67);
+			this->radioButton3->Name = L"radioButton3";
+			this->radioButton3->Size = System::Drawing::Size(60, 17);
+			this->radioButton3->TabIndex = 2;
+			this->radioButton3->TabStop = true;
+			this->radioButton3->Text = L"Level 3";
+			this->radioButton3->UseVisualStyleBackColor = true;
+			this->radioButton3->Click += gcnew System::EventHandler(this, &MyForm::Level3_click);
+			// 
+			// radioButton2
+			// 
+			this->radioButton2->AutoSize = true;
+			this->radioButton2->Location = System::Drawing::Point(8, 43);
+			this->radioButton2->Name = L"radioButton2";
+			this->radioButton2->Size = System::Drawing::Size(60, 17);
+			this->radioButton2->TabIndex = 1;
+			this->radioButton2->TabStop = true;
+			this->radioButton2->Text = L"Level 2";
+			this->radioButton2->UseVisualStyleBackColor = true;
+			this->radioButton2->Click += gcnew System::EventHandler(this, &MyForm::Level2_click);
+			// 
+			// radioButton1
+			// 
+			this->radioButton1->AutoSize = true;
+			this->radioButton1->Location = System::Drawing::Point(8, 19);
+			this->radioButton1->Name = L"radioButton1";
+			this->radioButton1->Size = System::Drawing::Size(60, 17);
+			this->radioButton1->TabIndex = 0;
+			this->radioButton1->TabStop = true;
+			this->radioButton1->Text = L"Level 1";
+			this->radioButton1->UseVisualStyleBackColor = true;
+			this->radioButton1->Click += gcnew System::EventHandler(this, &MyForm::Level1_click);
 			// 
 			// textBox1
 			// 
@@ -970,6 +1028,8 @@ private: System::Windows::Forms::PictureBox^  pictureBoxRShi;
 			this->KeyPress += gcnew System::Windows::Forms::KeyPressEventHandler(this, &MyForm::MyForm_KeyPress);
 			this->panel1->ResumeLayout(false);
 			this->panel1->PerformLayout();
+			this->groupBox1->ResumeLayout(false);
+			this->groupBox1->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxSpac))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxRAlt))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxRWin))->EndInit();
@@ -1512,6 +1572,41 @@ private: System::Void textBox1_Click(System::Object^  sender, System::EventArgs^
 				 textBox1->Text = textBox1->Text + " ";
 			 }
 			 textBox1->Text = textBox1->Text + "\r\n";
+}
+private: System::Void Level1_click(System::Object^  sender, System::EventArgs^  e) {
+			 textBox1->Text = nullptr;
+			 textBox1->Refresh();
+
+			 char randMax = 2;
+			 char ones[2] = { 'f', 'g' };
+			 srand(time(0));
+
+			 char c = (rand() % randMax);
+			 char one = ones[c];
+
+			 if (one == 102)
+			 {
+				 textBox1->Text = textBox1->Text + "f";
+				 textBox1->Text = textBox1->Text + " ";
+			 }
+			 if (one == 103)
+			 {
+				 textBox1->Text = textBox1->Text + "g";
+				 textBox1->Text = textBox1->Text + " ";
+			 }
+
+}
+private: System::Void Level2_click(System::Object^  sender, System::EventArgs^  e) {
+			 textBox1->Text = nullptr;
+			 textBox1->Refresh();
+
+			 groupBox1->Visible = false;
+}
+private: System::Void Level3_click(System::Object^  sender, System::EventArgs^  e) {
+			 textBox1->Text = nullptr;
+			 textBox1->Refresh();
+
+			 groupBox1->Visible = false;
 }
 }; //end of myform class
 }
