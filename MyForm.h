@@ -1397,6 +1397,7 @@ private: System::Void Start_Pictutre_Click(System::Object^  sender, System::Even
 			 Start_Pictutre->Visible = false;
 			 Second_Button->Visible = false;
 			 Exit_Button->Visible = false;
+			 groupBox1->Visible = false;
 
 			 // panel1->Controls->Clear();
 
@@ -1444,7 +1445,7 @@ private: System::Void pictureBox56_Click(System::Object^  sender, System::EventA
 }
 
 private: System::Void textBox1_Click(System::Object^  sender, System::EventArgs^  e) {
-			 char randMax = 25;
+			 /*char randMax = 25;
 			 char ones[27] = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
 				 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r',
 				 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' };
@@ -1571,7 +1572,7 @@ private: System::Void textBox1_Click(System::Object^  sender, System::EventArgs^
 				 }
 				 textBox1->Text = textBox1->Text + " ";
 			 }
-			 textBox1->Text = textBox1->Text + "\r\n";
+			 textBox1->Text = textBox1->Text + "\r\n";*/
 }
 private: System::Void Level1_click(System::Object^  sender, System::EventArgs^  e) {
 			 textBox1->Text = nullptr;
@@ -1599,14 +1600,12 @@ private: System::Void Level1_click(System::Object^  sender, System::EventArgs^  
 private: System::Void Level2_click(System::Object^  sender, System::EventArgs^  e) {
 			 textBox1->Text = nullptr;
 			 textBox1->Refresh();
-
-			 groupBox1->Visible = false;
+			 textBox1->Text = textBox1->Text + "the quick brown fox jumps over the lazy dog";
 }
 private: System::Void Level3_click(System::Object^  sender, System::EventArgs^  e) {
 			 textBox1->Text = nullptr;
 			 textBox1->Refresh();
-
-			 groupBox1->Visible = false;
+			 textBox1->Text = textBox1->Text + "The Quick Brown Fox Jumps Over The Lazy Dog.";
 }
 }; //end of myform class
 }
