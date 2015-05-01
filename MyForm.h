@@ -151,6 +151,18 @@ private: System::Windows::Forms::PictureBox^  Level_3;
 private: System::Windows::Forms::PictureBox^  Level_2;
 private: System::Windows::Forms::PictureBox^  Level_1;
 private: System::Windows::Forms::RichTextBox^  richTextBox1;
+private: System::Windows::Forms::PictureBox^  Level_9;
+
+private: System::Windows::Forms::PictureBox^  Level_8;
+
+private: System::Windows::Forms::PictureBox^  Level_7;
+
+private: System::Windows::Forms::PictureBox^  Level_6;
+
+private: System::Windows::Forms::PictureBox^  Level_5;
+
+private: System::Windows::Forms::PictureBox^  Level_4;
+
 	private:
 		/// <summary>
 		/// Required designer variable.
@@ -165,6 +177,12 @@ private: System::Windows::Forms::RichTextBox^  richTextBox1;
 		void InitializeComponent(void)
 		{
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
+			this->Level_9 = (gcnew System::Windows::Forms::PictureBox());
+			this->Level_8 = (gcnew System::Windows::Forms::PictureBox());
+			this->Level_7 = (gcnew System::Windows::Forms::PictureBox());
+			this->Level_6 = (gcnew System::Windows::Forms::PictureBox());
+			this->Level_5 = (gcnew System::Windows::Forms::PictureBox());
+			this->Level_4 = (gcnew System::Windows::Forms::PictureBox());
 			this->richTextBox1 = (gcnew System::Windows::Forms::RichTextBox());
 			this->Level_3 = (gcnew System::Windows::Forms::PictureBox());
 			this->Level_2 = (gcnew System::Windows::Forms::PictureBox());
@@ -236,6 +254,12 @@ private: System::Windows::Forms::RichTextBox^  richTextBox1;
 			this->Start_Pictutre = (gcnew System::Windows::Forms::PictureBox());
 			this->MenuPicture = (gcnew System::Windows::Forms::PictureBox());
 			this->panel1->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Level_9))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Level_8))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Level_7))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Level_6))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Level_5))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Level_4))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Level_3))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Level_2))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Level_1))->BeginInit();
@@ -308,6 +332,12 @@ private: System::Windows::Forms::RichTextBox^  richTextBox1;
 			// 
 			// panel1
 			// 
+			this->panel1->Controls->Add(this->Level_9);
+			this->panel1->Controls->Add(this->Level_8);
+			this->panel1->Controls->Add(this->Level_7);
+			this->panel1->Controls->Add(this->Level_6);
+			this->panel1->Controls->Add(this->Level_5);
+			this->panel1->Controls->Add(this->Level_4);
 			this->panel1->Controls->Add(this->richTextBox1);
 			this->panel1->Controls->Add(this->Level_3);
 			this->panel1->Controls->Add(this->Level_2);
@@ -384,9 +414,63 @@ private: System::Windows::Forms::RichTextBox^  richTextBox1;
 			this->panel1->TabIndex = 1;
 			this->panel1->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &MyForm::panel1_Paint);
 			// 
+			// Level_9
+			// 
+			this->Level_9->Location = System::Drawing::Point(714, 334);
+			this->Level_9->Name = L"Level_9";
+			this->Level_9->Size = System::Drawing::Size(162, 69);
+			this->Level_9->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
+			this->Level_9->TabIndex = 76;
+			this->Level_9->TabStop = false;
+			// 
+			// Level_8
+			// 
+			this->Level_8->Location = System::Drawing::Point(714, 259);
+			this->Level_8->Name = L"Level_8";
+			this->Level_8->Size = System::Drawing::Size(162, 69);
+			this->Level_8->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
+			this->Level_8->TabIndex = 75;
+			this->Level_8->TabStop = false;
+			// 
+			// Level_7
+			// 
+			this->Level_7->Location = System::Drawing::Point(714, 184);
+			this->Level_7->Name = L"Level_7";
+			this->Level_7->Size = System::Drawing::Size(162, 69);
+			this->Level_7->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
+			this->Level_7->TabIndex = 74;
+			this->Level_7->TabStop = false;
+			// 
+			// Level_6
+			// 
+			this->Level_6->Location = System::Drawing::Point(348, 333);
+			this->Level_6->Name = L"Level_6";
+			this->Level_6->Size = System::Drawing::Size(162, 69);
+			this->Level_6->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
+			this->Level_6->TabIndex = 73;
+			this->Level_6->TabStop = false;
+			// 
+			// Level_5
+			// 
+			this->Level_5->Location = System::Drawing::Point(348, 259);
+			this->Level_5->Name = L"Level_5";
+			this->Level_5->Size = System::Drawing::Size(162, 69);
+			this->Level_5->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
+			this->Level_5->TabIndex = 72;
+			this->Level_5->TabStop = false;
+			// 
+			// Level_4
+			// 
+			this->Level_4->Location = System::Drawing::Point(348, 184);
+			this->Level_4->Name = L"Level_4";
+			this->Level_4->Size = System::Drawing::Size(162, 69);
+			this->Level_4->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
+			this->Level_4->TabIndex = 71;
+			this->Level_4->TabStop = false;
+			// 
 			// richTextBox1
 			// 
-			this->richTextBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 30, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Pixel,
+			this->richTextBox1->Font = (gcnew System::Drawing::Font(L"Lucida Bright", 30, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Pixel,
 				static_cast<System::Byte>(0)));
 			this->richTextBox1->Location = System::Drawing::Point(37, 34);
 			this->richTextBox1->Name = L"richTextBox1";
@@ -394,11 +478,12 @@ private: System::Windows::Forms::RichTextBox^  richTextBox1;
 			this->richTextBox1->Size = System::Drawing::Size(839, 136);
 			this->richTextBox1->TabIndex = 70;
 			this->richTextBox1->Text = L"";
+			this->richTextBox1->KeyDown += gcnew System::Windows::Forms::KeyEventHandler(this, &MyForm::richTextBox1_KeyDown);
 			this->richTextBox1->KeyPress += gcnew System::Windows::Forms::KeyPressEventHandler(this, &MyForm::richTextBox1_KeyPress);
 			// 
 			// Level_3
 			// 
-			this->Level_3->Location = System::Drawing::Point(366, 334);
+			this->Level_3->Location = System::Drawing::Point(38, 334);
 			this->Level_3->Name = L"Level_3";
 			this->Level_3->Size = System::Drawing::Size(162, 69);
 			this->Level_3->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
@@ -408,7 +493,7 @@ private: System::Windows::Forms::RichTextBox^  richTextBox1;
 			// 
 			// Level_2
 			// 
-			this->Level_2->Location = System::Drawing::Point(366, 259);
+			this->Level_2->Location = System::Drawing::Point(38, 259);
 			this->Level_2->Name = L"Level_2";
 			this->Level_2->Size = System::Drawing::Size(162, 69);
 			this->Level_2->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
@@ -418,7 +503,7 @@ private: System::Windows::Forms::RichTextBox^  richTextBox1;
 			// 
 			// Level_1
 			// 
-			this->Level_1->Location = System::Drawing::Point(366, 184);
+			this->Level_1->Location = System::Drawing::Point(37, 184);
 			this->Level_1->Name = L"Level_1";
 			this->Level_1->Size = System::Drawing::Size(162, 69);
 			this->Level_1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
@@ -436,7 +521,6 @@ private: System::Windows::Forms::RichTextBox^  richTextBox1;
 			this->textBox1->Size = System::Drawing::Size(827, 128);
 			this->textBox1->TabIndex = 65;
 			this->textBox1->TabStop = false;
-			this->textBox1->Click += gcnew System::EventHandler(this, &MyForm::textBox1_Click);
 			// 
 			// pictureBoxSpac
 			// 
@@ -482,7 +566,6 @@ private: System::Windows::Forms::RichTextBox^  richTextBox1;
 			this->pictureBoxRCtr->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->pictureBoxRCtr->TabIndex = 60;
 			this->pictureBoxRCtr->TabStop = false;
-			this->pictureBoxRCtr->Click += gcnew System::EventHandler(this, &MyForm::pictureBox56_Click);
 			// 
 			// pictureBoxLAlt
 			// 
@@ -988,7 +1071,6 @@ private: System::Windows::Forms::RichTextBox^  richTextBox1;
 			this->PictureBoxTild->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->PictureBoxTild->TabIndex = 4;
 			this->PictureBoxTild->TabStop = false;
-			this->PictureBoxTild->Click += gcnew System::EventHandler(this, &MyForm::PictureBoxTild_Click);
 			// 
 			// Exit_Button
 			// 
@@ -1040,6 +1122,12 @@ private: System::Windows::Forms::RichTextBox^  richTextBox1;
 			this->KeyPress += gcnew System::Windows::Forms::KeyPressEventHandler(this, &MyForm::MyForm_KeyPress);
 			this->panel1->ResumeLayout(false);
 			this->panel1->PerformLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Level_9))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Level_8))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Level_7))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Level_6))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Level_5))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Level_4))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Level_3))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Level_2))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Level_1))->EndInit();
@@ -1194,7 +1282,7 @@ private: System::Windows::Forms::RichTextBox^  richTextBox1;
 
 		array<char>^ Keys = gcnew array<char>(61);
 		array<Control^>^ Keysss = gcnew array<Control^>(61);
-		String^ Text;
+		String^ Text = "";
 		String^ finalText;
 		int count = 0;
 
@@ -1328,6 +1416,16 @@ private: System::Void initialize()
 	pictures[60] = pictureBoxRCtr;
 	pictures[61] = pictureBoxy;
 	pictures[62] = pictureBoxPlus;
+
+	Level_1->Image = Image::FromFile("Images\\Level1.bmp");
+	Level_2->Image = Image::FromFile("Images\\Level2.bmp");
+	Level_3->Image = Image::FromFile("Images\\Level3.bmp");
+	Level_4->Image = Image::FromFile("Images\\Level4.bmp");
+	Level_5->Image = Image::FromFile("Images\\Level5.bmp");
+	Level_6->Image = Image::FromFile("Images\\Level6.bmp");
+	Level_7->Image = Image::FromFile("Images\\Level7.bmp");
+	Level_8->Image = Image::FromFile("Images\\Level8.bmp");
+	Level_9->Image = Image::FromFile("Images\\Level9.bmp");
 }
 
 //toggles keyboard visiblity
@@ -1353,17 +1451,26 @@ private: System::Void MyForm_Load(System::Object^  sender, System::EventArgs^  e
 			 Level_1->Visible = false;
 			 Level_2->Visible = false;
 			 Level_3->Visible = false;
+			 Level_4->Visible = false;
+			 Level_5->Visible = false;
+			 Level_6->Visible = false;
+			 Level_7->Visible = false;
+			 Level_8->Visible = false;
+			 Level_9->Visible = false;
 
 			 Exit_Button->Image = ExitGame;
 			 Start_Pictutre->Image = StartGame;
 			 Second_Button->Image = AboutGame;
 
-			 Level_1->Image = ExitGame;
-			 Level_2->Image = ExitGame;
-			 Level_3->Image = ExitGame;
-
 			 initialize();
 			 toggleKeyboard();
+
+			 richTextBox1->Font = gcnew System::Drawing::Font("Microsoft Sans Serif", 60);
+			 richTextBox1->Text = "Typing Tutor";
+			 richTextBox1->Font = gcnew System::Drawing::Font("Microsoft Sans Serif", 60);
+			 richTextBox1->Select(richTextBox1->Text[count], richTextBox1->Text->Length);
+			 richTextBox1->SelectionAlignment = HorizontalAlignment::Center;
+			 //richTextBox1->Text = "Typing Tutor";
 }
 private: System::Void panel1_Paint(System::Object^  sender, System::Windows::Forms::PaintEventArgs^  e) {
 }
@@ -1413,6 +1520,10 @@ private: System::Void MyForm_KeyPress(System::Object^  sender, System::Windows::
 private: System::Void Start_Pictutre_Click(System::Object^  sender, System::EventArgs^  e) {
 			
 			// toggleKeyboard();
+	richTextBox1->Text = "Select a level";
+	richTextBox1->Select(richTextBox1->Text[count], richTextBox1->Text->Length);
+	richTextBox1->SelectionAlignment = HorizontalAlignment::Center;
+	richTextBox1->Font = gcnew System::Drawing::Font("Microsoft Sans Serif", 60);
 
 			 Start_Pictutre->Visible = false;
 			 Second_Button->Visible = false;
@@ -1421,6 +1532,12 @@ private: System::Void Start_Pictutre_Click(System::Object^  sender, System::Even
 			 Level_1->Visible = true;
 			 Level_2->Visible = true;
 			 Level_3->Visible = true;
+			 Level_4->Visible = true;
+			 Level_5->Visible = true;
+			 Level_6->Visible = true;
+			 Level_7->Visible = true;
+			 Level_8->Visible = true;
+			 Level_9->Visible = true;
 }
 //dont know yet
 private: System::Void Second_Button_Click(System::Object^  sender, System::EventArgs^  e) {
@@ -1429,170 +1546,40 @@ private: System::Void Second_Button_Click(System::Object^  sender, System::Event
 private: System::Void Exit_Button_Click(System::Object^  sender, System::EventArgs^  e) {
 			 Application::Exit();
 }
-
-private: System::Void PictureBoxTild_Click(System::Object^  sender, System::EventArgs^  e) {
-}
-private: System::Void pictureBox56_Click(System::Object^  sender, System::EventArgs^  e) {
-}
-
-private: System::Void textBox1_Click(System::Object^  sender, System::EventArgs^  e) {
-			 /*char randMax = 25;
-			 char ones[27] = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
-				 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r',
-				 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' };
-
-
-
-			 srand(time(0));
-			 for (int j = 1; j <= 27; j++)
-			 {
-
-				 for (int i = 1; i <= 5; i++)
-				 {
-					 char c = (rand() % randMax);
-					 char one = ones[c];
-
-					 if (one == 97)
-					 {
-						 textBox1->Text = textBox1->Text + "a";
-					 }
-					 if (one == 98)
-					 {
-						 textBox1->Text = textBox1->Text + "b";
-					 }
-					 if (one == 99)
-					 {
-						 textBox1->Text = textBox1->Text + "c";
-					 }
-					 if (one == 100)
-					 {
-						 textBox1->Text = textBox1->Text + "d";
-					 }
-					 if (one == 101)
-					 {
-						 textBox1->Text = textBox1->Text + "e";
-					 }
-					 if (one == 102)
-					 {
-						 textBox1->Text = textBox1->Text + "f";
-					 }
-					 if (one == 103)
-					 {
-						 textBox1->Text = textBox1->Text + "g";
-					 }
-					 if (one == 104)
-					 {
-						 textBox1->Text = textBox1->Text + "h";
-					 }
-					 if (one == 105)
-					 {
-						 textBox1->Text = textBox1->Text + "i";
-					 }
-					 if (one == 106)
-					 {
-						 textBox1->Text = textBox1->Text + "j";
-					 }
-					 if (one == 107)
-					 {
-						 textBox1->Text = textBox1->Text + "k";
-					 }
-					 if (one == 108)
-					 {
-						 textBox1->Text = textBox1->Text + "l";
-					 }
-					 if (one == 109)
-					 {
-						 textBox1->Text = textBox1->Text + "m";
-					 }
-					 if (one == 110)
-					 {
-						 textBox1->Text = textBox1->Text + "n";
-					 }
-					 if (one == 111)
-					 {
-						 textBox1->Text = textBox1->Text + "o";
-					 }
-					 if (one == 112)
-					 {
-						 textBox1->Text = textBox1->Text + "p";
-					 }
-					 if (one == 113)
-					 {
-						 textBox1->Text = textBox1->Text + "q";
-					 }
-					 if (one == 114)
-					 {
-						 textBox1->Text = textBox1->Text + "r";
-					 }
-					 if (one == 115)
-					 {
-						 textBox1->Text = textBox1->Text + "s";
-					 }
-					 if (one == 116)
-					 {
-						 textBox1->Text = textBox1->Text + "t";
-					 }
-					 if (one == 117)
-					 {
-						 textBox1->Text = textBox1->Text + "u";
-					 }
-					 if (one == 118)
-					 {
-						 textBox1->Text = textBox1->Text + "v";
-					 }
-					 if (one == 119)
-					 {
-						 textBox1->Text = textBox1->Text + "w";
-					 }
-					 if (one == 120)
-					 {
-						 textBox1->Text = textBox1->Text + "x";
-					 }
-					 if (one == 121)
-					 {
-						 textBox1->Text = textBox1->Text + "y";
-					 }
-					 if (one == 122)
-					 {
-						 textBox1->Text = textBox1->Text + "z";
-					 }
-
-
-					 //+ "\r\n";
-					 //textBox1->Text = textBox1->Text + (char)ones[c] + "\r\n";
-				 }
-				 textBox1->Text = textBox1->Text + " ";
-			 }
-			 textBox1->Text = textBox1->Text + "\r\n";*/
-}
 private: System::Void Level_1_Click(System::Object^  sender, System::EventArgs^  e) {
-	textBox1->Text = nullptr;
-	textBox1->Refresh();
+	Text = "fjf jjfjf jfjfjfjfjf jf f jfjfjf jfjf jjjjjfj fjfjfj fjff ";
 
-	char randMax = 2;
-	char ones[2] = { 'f', 'g' };
-	srand(time(0));
-
-	char c = (rand() % randMax);
-	char one = ones[c];
-
-	if (one == 102)
-	{
-		textBox1->Text = textBox1->Text + "f";
-		textBox1->Text = textBox1->Text + " ";
-	}
-	if (one == 103)
-	{
-		textBox1->Text = textBox1->Text + "g";
-		textBox1->Text = textBox1->Text + " ";
-	}
-}
-private: System::Void Level_2_Click(System::Object^  sender, System::EventArgs^  e) {
-	Text = "the quick brown fox jumps over the lazy dog";
+	richTextBox1->Font = gcnew System::Drawing::Font("Lucida Bright", 30);
 
 	Level_1->Visible = false;
 	Level_2->Visible = false;
 	Level_3->Visible = false;
+	Level_4->Visible = false;
+	Level_5->Visible = false;
+	Level_6->Visible = false;
+	Level_7->Visible = false;
+	Level_8->Visible = false;
+	Level_9->Visible = false;
+	toggleKeyboard();
+
+	richTextBox1->Text = nullptr;
+	richTextBox1->Refresh();
+	richTextBox1->Text = Text;
+}
+private: System::Void Level_2_Click(System::Object^  sender, System::EventArgs^  e) {
+	Text = "The quick brown fox jumps over the lazy dog";
+
+	richTextBox1->Font = gcnew System::Drawing::Font("Lucida Bright", 30);
+
+	Level_1->Visible = false;
+	Level_2->Visible = false;
+	Level_3->Visible = false;
+	Level_4->Visible = false;
+	Level_5->Visible = false;
+	Level_6->Visible = false;
+	Level_7->Visible = false;
+	Level_8->Visible = false;
+	Level_9->Visible = false;
 	toggleKeyboard();
 
 	richTextBox1->Text = nullptr;
@@ -1601,11 +1588,19 @@ private: System::Void Level_2_Click(System::Object^  sender, System::EventArgs^ 
 }
 private: System::Void Level_3_Click(System::Object^  sender, System::EventArgs^  e) {
 	richTextBox1->Text = nullptr;
+
+	richTextBox1->Font = gcnew System::Drawing::Font("Lucida Bright", 30);
 	richTextBox1->Refresh();
 
 	Level_1->Visible = false;
 	Level_2->Visible = false;
 	Level_3->Visible = false;
+	Level_4->Visible = false;
+	Level_5->Visible = false;
+	Level_6->Visible = false;
+	Level_7->Visible = false;
+	Level_8->Visible = false;
+	Level_9->Visible = false;
 	toggleKeyboard();
 
 	richTextBox1->Text = richTextBox1->Text + "The Quick Brown Fox Jumps Over The Lazy Dog.";
@@ -1617,7 +1612,7 @@ private: System::Void richTextBox1_KeyPress(System::Object^  sender, System::Win
 	char t = (char)parsedText;
 	finalText = finalText + t;
 
-	
+
 	/*
 	richTextBox1->SelectionStart = 0;
 	richTextBox1->SelectionLength = richTextBox1->Text->Length;
@@ -1625,668 +1620,748 @@ private: System::Void richTextBox1_KeyPress(System::Object^  sender, System::Win
 	richTextBox1->Refresh();
 	*/
 
-	//false
-	if (e->KeyChar.CompareTo(t))
+	if (count == richTextBox1->Text->Length - 1)
 	{
-		//MessageBox::Show("no");
-		richTextBox1->Select(richTextBox1->Text[count], richTextBox1->Text[count+1]);
-		richTextBox1->SelectionColor = Color::Red;
+		count = 0;
+		toggleKeyboard();
+		Level_1->Visible = true;
+		Level_2->Visible = true;
+		Level_3->Visible = true;
+		Level_4->Visible = true;
+		Level_5->Visible = true;
+		Level_6->Visible = true;
+		Level_7->Visible = true;
+		Level_8->Visible = true;
+		Level_9->Visible = true;
+		richTextBox1->Clear();
 	}
-	else //true
+	else
 	{
-		//MessageBox::Show(finalText);
-		richTextBox1->Select(richTextBox1->Text[0], richTextBox1->Text[count + 1]);
-		richTextBox1->SelectionColor = Color::Green;
-		//richTextBox1->Select(richTextBox1->Text[0], richTextBox1->Text->Length);
-		richTextBox1->SelectionStart = richTextBox1->Text[0];
+		richTextBox1->ReadOnly = true;
 
-		count++;
-	}
-
-	if (GetAsyncKeyState(VK_ESCAPE))
-	{
-		if (Start_Pictutre->Visible == true)
-			Application::Exit();
-		else if (Start_Pictutre->Visible == false && toggled == false)
+		//false
+		if (e->KeyChar.CompareTo(t))
 		{
-			//****de-load level selector****
-
-			Start_Pictutre->Visible = true;
-			Second_Button->Visible = true;
-			Exit_Button->Visible = true;
+			//MessageBox::Show("no");
+			//richTextBox1->Select(richTextBox1->Text[count], richTextBox1->Text[count + 1]);
+			//richTextBox1->SelectionColor = Color::Red;
+			
 		}
-		else
+		else //true
 		{
-			toggleKeyboard();
-			Start_Pictutre->Visible = true;
-			Second_Button->Visible = true;
-			Exit_Button->Visible = true;
+			//MessageBox::Show(finalText);
+			richTextBox1->ReadOnly = false;
+			richTextBox1->Select(richTextBox1->Text[0], richTextBox1->Text[count + 1]);
+			richTextBox1->SelectionColor = Color::Green;
+			//richTextBox1->Select(richTextBox1->Text[0], richTextBox1->Text->Length);
+			richTextBox1->SelectionStart = richTextBox1->Text[0];
+
+			count++;
+		}
+
+		if (GetAsyncKeyState(VK_ESCAPE))
+		{
+			if (Start_Pictutre->Visible == true)
+				Application::Exit();
+			else if (Level_1->Visible == true)
+			{
+				//****de-load level selector****
+				Level_1->Visible = false;
+				Level_2->Visible = false;
+				Level_3->Visible = false;
+				Level_4->Visible = false;
+				Level_5->Visible = false;
+				Level_6->Visible = false;
+				Level_7->Visible = false;
+				Level_8->Visible = false;
+				Level_9->Visible = false;
+
+				Start_Pictutre->Visible = true;
+				Second_Button->Visible = true;
+				Exit_Button->Visible = true;
+
+				//Level_1->Visible = false;
+				//Level_2->Visible = false;
+				//Level_3->Visible = false;
+			}
+			else
+			{
+				toggleKeyboard();
+				Level_1->Visible = true;
+				Level_2->Visible = true;
+				Level_3->Visible = true;
+				Level_4->Visible = true;
+				Level_5->Visible = true;
+				Level_6->Visible = true;
+				Level_7->Visible = true;
+				Level_8->Visible = true;
+				Level_9->Visible = true;
+			}
+		}
+		/*******************************************************************************/
+		if ((e->KeyChar.Equals(97) || e->KeyChar.Equals(65)) && e->KeyChar.Equals(t))
+		{
+			pictureBoxa->Image = Image::FromFile("Images\\letter_a_t.bmp");
+			Refresh();
+			pictureBoxa->Image = Image::FromFile("Images\\letter_a.bmp");
+		}
+		else if (e->KeyChar.Equals(97) || e->KeyChar.Equals(65))
+		{
+			pictureBoxa->Image = Image::FromFile("Images\\letter_a_f.bmp");
+			Refresh();
+			pictureBoxa->Image = Image::FromFile("Images\\letter_a.bmp");
+		}
+		//
+		if ((e->KeyChar.Equals(98) || e->KeyChar.Equals(66)) && e->KeyChar.Equals(t))
+		{
+			pictureBoxb->Image = Image::FromFile("Images\\letter_b_t.bmp");
+			Refresh();
+			pictureBoxb->Image = Image::FromFile("Images\\letter_b.bmp");
+		}
+		else if (e->KeyChar.Equals(98) || e->KeyChar.Equals(66))
+		{
+			pictureBoxb->Image = Image::FromFile("Images\\letter_b_f.bmp");
+			Refresh();
+			pictureBoxb->Image = Image::FromFile("Images\\letter_b.bmp");
+		}
+		//
+		if ((e->KeyChar.Equals(99) || e->KeyChar.Equals(67)) && e->KeyChar.Equals(t))
+		{
+			pictureBoxc->Image = Image::FromFile("Images\\letter_c_t.bmp");
+			Refresh();
+			pictureBoxc->Image = Image::FromFile("Images\\letter_c.bmp");
+		}
+		else if (e->KeyChar.Equals(99) || e->KeyChar.Equals(67))
+		{
+			pictureBoxc->Image = Image::FromFile("Images\\letter_c_f.bmp");
+			Refresh();
+			pictureBoxc->Image = Image::FromFile("Images\\letter_c.bmp");
+		}
+		//
+		if ((e->KeyChar.Equals(100) || e->KeyChar.Equals(68)) && e->KeyChar.Equals(t))
+		{
+			pictureBoxd->Image = Image::FromFile("Images\\letter_d_t.bmp");
+			Refresh();
+			pictureBoxd->Image = Image::FromFile("Images\\letter_d.bmp");
+		}
+		else if (e->KeyChar.Equals(100) || e->KeyChar.Equals(68))
+		{
+			pictureBoxd->Image = Image::FromFile("Images\\letter_d_f.bmp");
+			Refresh();
+			pictureBoxd->Image = Image::FromFile("Images\\letter_d.bmp");
+		}
+		//
+		if ((e->KeyChar.Equals(101) || e->KeyChar.Equals(69)) && e->KeyChar.Equals(t))
+		{
+			pictureBoxe->Image = Image::FromFile("Images\\letter_e_t.bmp");
+			Refresh();
+			pictureBoxe->Image = Image::FromFile("Images\\letter_e.bmp");
+		}
+		else if (e->KeyChar.Equals(101) || e->KeyChar.Equals(69))
+		{
+			pictureBoxe->Image = Image::FromFile("Images\\letter_e_f.bmp");
+			Refresh();
+			pictureBoxe->Image = Image::FromFile("Images\\letter_e.bmp");
+		}
+		//
+		if ((e->KeyChar.Equals(102) || e->KeyChar.Equals(70)) && e->KeyChar.Equals(t))
+		{
+			pictureBoxf->Image = Image::FromFile("Images\\letter_f_t.bmp");
+			Refresh();
+			pictureBoxf->Image = Image::FromFile("Images\\letter_f.bmp");
+		}
+		else if (e->KeyChar.Equals(102) || e->KeyChar.Equals(70))
+		{
+			pictureBoxf->Image = Image::FromFile("Images\\letter_f_f.bmp");
+			Refresh();
+			pictureBoxf->Image = Image::FromFile("Images\\letter_f.bmp");
+		}
+		//
+		if ((e->KeyChar.Equals(103) || e->KeyChar.Equals(71)) && e->KeyChar.Equals(t))
+		{
+			pictureBoxgg->Image = Image::FromFile("Images\\letter_g_t.bmp");
+			Refresh();
+			pictureBoxgg->Image = Image::FromFile("Images\\letter_g.bmp");
+		}
+		else if (e->KeyChar.Equals(103) || e->KeyChar.Equals(71))
+		{
+			pictureBoxgg->Image = Image::FromFile("Images\\letter_g_f.bmp");
+			Refresh();
+			pictureBoxgg->Image = Image::FromFile("Images\\letter_g.bmp");
+		}
+		//
+		if ((e->KeyChar.Equals(104) || e->KeyChar.Equals(72)) && e->KeyChar.Equals(t))
+		{
+			pictureBoxh->Image = Image::FromFile("Images\\letter_h_t.bmp");
+			Refresh();
+			pictureBoxh->Image = Image::FromFile("Images\\letter_h.bmp");
+		}
+		else if (e->KeyChar.Equals(104) || e->KeyChar.Equals(72))
+		{
+			pictureBoxh->Image = Image::FromFile("Images\\letter_h_f.bmp");
+			Refresh();
+			pictureBoxh->Image = Image::FromFile("Images\\letter_h.bmp");
+		}
+		//
+		if ((e->KeyChar.Equals(105) || e->KeyChar.Equals(73)) && e->KeyChar.Equals(t))
+		{
+			pictureBoxi->Image = Image::FromFile("Images\\letter_i_t.bmp");
+			Refresh();
+			pictureBoxi->Image = Image::FromFile("Images\\letter_i.bmp");
+		}
+		else if (e->KeyChar.Equals(105) || e->KeyChar.Equals(73))
+		{
+			pictureBoxi->Image = Image::FromFile("Images\\letter_i_f.bmp");
+			Refresh();
+			pictureBoxi->Image = Image::FromFile("Images\\letter_i.bmp");
+		}
+		//
+		if ((e->KeyChar.Equals(106) || e->KeyChar.Equals(74)) && e->KeyChar.Equals(t))
+		{
+			pictureBoxj->Image = Image::FromFile("Images\\letter_j_t.bmp");
+			Refresh();
+			pictureBoxj->Image = Image::FromFile("Images\\letter_j.bmp");
+		}
+		else if (e->KeyChar.Equals(106) || e->KeyChar.Equals(74))
+		{
+			pictureBoxj->Image = Image::FromFile("Images\\letter_j_f.bmp");
+			Refresh();
+			pictureBoxj->Image = Image::FromFile("Images\\letter_j.bmp");
+		}
+		//
+		if ((e->KeyChar.Equals(107) || e->KeyChar.Equals(75)) && e->KeyChar.Equals(t))
+		{
+			pictureBoxk->Image = Image::FromFile("Images\\letter_k_t.bmp");
+			Refresh();
+			pictureBoxk->Image = Image::FromFile("Images\\letter_k.bmp");
+		}
+		else if (e->KeyChar.Equals(107) || e->KeyChar.Equals(75))
+		{
+			pictureBoxk->Image = Image::FromFile("Images\\letter_k_f.bmp");
+			Refresh();
+			pictureBoxk->Image = Image::FromFile("Images\\letter_k.bmp");
+		}
+		//
+		if ((e->KeyChar.Equals(108) || e->KeyChar.Equals(76)) && e->KeyChar.Equals(t))
+		{
+			pictureBoxl->Image = Image::FromFile("Images\\letter_l_t.bmp");
+			Refresh();
+			pictureBoxl->Image = Image::FromFile("Images\\letter_l.bmp");
+		}
+		else if (e->KeyChar.Equals(108) || e->KeyChar.Equals(76))
+		{
+			pictureBoxl->Image = Image::FromFile("Images\\letter_l_f.bmp");
+			Refresh();
+			pictureBoxl->Image = Image::FromFile("Images\\letter_l.bmp");
+		}
+		//
+		if ((e->KeyChar.Equals(109) || e->KeyChar.Equals(77)) && e->KeyChar.Equals(t))
+		{
+			pictureBoxm->Image = Image::FromFile("Images\\letter_m_t.bmp");
+			Refresh();
+			pictureBoxm->Image = Image::FromFile("Images\\letter_m.bmp");
+		}
+		else if (e->KeyChar.Equals(109) || e->KeyChar.Equals(77))
+		{
+			pictureBoxm->Image = Image::FromFile("Images\\letter_m_f.bmp");
+			Refresh();
+			pictureBoxm->Image = Image::FromFile("Images\\letter_m.bmp");
+		}
+		//
+		if ((e->KeyChar.Equals(110) || e->KeyChar.Equals(78)) && e->KeyChar.Equals(t))
+		{
+			pictureBoxn->Image = Image::FromFile("Images\\letter_n_t.bmp");
+			Refresh();
+			pictureBoxn->Image = Image::FromFile("Images\\letter_n.bmp");
+		}
+		else if (e->KeyChar.Equals(110) || e->KeyChar.Equals(78))
+		{
+			pictureBoxn->Image = Image::FromFile("Images\\letter_n_f.bmp");
+			Refresh();
+			pictureBoxn->Image = Image::FromFile("Images\\letter_n.bmp");
+		}
+		//
+		if ((e->KeyChar.Equals(111) || e->KeyChar.Equals(79)) && e->KeyChar.Equals(t))
+		{
+			pictureBoxo->Image = Image::FromFile("Images\\letter_o_t.bmp");
+			Refresh();
+			pictureBoxo->Image = Image::FromFile("Images\\letter_o.bmp");
+		}
+		else if (e->KeyChar.Equals(111) || e->KeyChar.Equals(79))
+		{
+			pictureBoxo->Image = Image::FromFile("Images\\letter_o_f.bmp");
+			Refresh();
+			pictureBoxo->Image = Image::FromFile("Images\\letter_o.bmp");
+		}
+		//
+		if ((e->KeyChar.Equals(112) || e->KeyChar.Equals(80)) && e->KeyChar.Equals(t))
+		{
+			pictureBoxp->Image = Image::FromFile("Images\\letter_p_t.bmp");
+			Refresh();
+			pictureBoxp->Image = Image::FromFile("Images\\letter_p.bmp");
+		}
+		else if (e->KeyChar.Equals(112) || e->KeyChar.Equals(80))
+		{
+			pictureBoxp->Image = Image::FromFile("Images\\letter_p_f.bmp");
+			Refresh();
+			pictureBoxp->Image = Image::FromFile("Images\\letter_p.bmp");
+		}
+		//
+		if ((e->KeyChar.Equals(113) || e->KeyChar.Equals(81)) && e->KeyChar.Equals(t))
+		{
+			pictureBoxq->Image = Image::FromFile("Images\\letter_q_t.bmp");
+			Refresh();
+			pictureBoxq->Image = Image::FromFile("Images\\letter_q.bmp");
+		}
+		else if (e->KeyChar.Equals(113) || e->KeyChar.Equals(81))
+		{
+			pictureBoxq->Image = Image::FromFile("Images\\letter_q_f.bmp");
+			Refresh();
+			pictureBoxq->Image = Image::FromFile("Images\\letter_q.bmp");
+		}
+		//
+		if ((e->KeyChar.Equals(114) || e->KeyChar.Equals(82)) && e->KeyChar.Equals(t))
+		{
+			pictureBoxr->Image = Image::FromFile("Images\\letter_r_t.bmp");
+			Refresh();
+			pictureBoxr->Image = Image::FromFile("Images\\letter_r.bmp");
+		}
+		else if (e->KeyChar.Equals(114) || e->KeyChar.Equals(82))
+		{
+			pictureBoxr->Image = Image::FromFile("Images\\letter_r_f.bmp");
+			Refresh();
+			pictureBoxr->Image = Image::FromFile("Images\\letter_r.bmp");
+		}
+		//
+		if ((e->KeyChar.Equals(115) || e->KeyChar.Equals(83)) && e->KeyChar.Equals(t))
+		{
+			pictureBoxs->Image = Image::FromFile("Images\\letter_s_t.bmp");
+			Refresh();
+			pictureBoxs->Image = Image::FromFile("Images\\letter_s.bmp");
+		}
+		else if (e->KeyChar.Equals(115) || e->KeyChar.Equals(83))
+		{
+			pictureBoxs->Image = Image::FromFile("Images\\letter_s_f.bmp");
+			Refresh();
+			pictureBoxs->Image = Image::FromFile("Images\\letter_s.bmp");
+		}
+		//
+		if ((e->KeyChar.Equals(116) || e->KeyChar.Equals(84)) && e->KeyChar.Equals(t))
+		{
+			pictureBoxt->Image = Image::FromFile("Images\\letter_t_t.bmp");
+			Refresh();
+			pictureBoxt->Image = Image::FromFile("Images\\letter_t.bmp");
+		}
+		else if (e->KeyChar.Equals(116) || e->KeyChar.Equals(84))
+		{
+			pictureBoxt->Image = Image::FromFile("Images\\letter_t_f.bmp");
+			Refresh();
+			pictureBoxt->Image = Image::FromFile("Images\\letter_t.bmp");
+		}
+		//
+		if ((e->KeyChar.Equals(117) || e->KeyChar.Equals(85)) && e->KeyChar.Equals(t))
+		{
+			pictureBoxu->Image = Image::FromFile("Images\\letter_u_t.bmp");
+			Refresh();
+			pictureBoxu->Image = Image::FromFile("Images\\letter_u.bmp");
+		}
+		else if (e->KeyChar.Equals(117) || e->KeyChar.Equals(85))
+		{
+			pictureBoxu->Image = Image::FromFile("Images\\letter_u_f.bmp");
+			Refresh();
+			pictureBoxu->Image = Image::FromFile("Images\\letter_u.bmp");
+		}
+		//
+		if ((e->KeyChar.Equals(118) || e->KeyChar.Equals(86)) && e->KeyChar.Equals(t))
+		{
+			pictureBoxv->Image = Image::FromFile("Images\\letter_v_t.bmp");
+			Refresh();
+			pictureBoxv->Image = Image::FromFile("Images\\letter_v.bmp");
+		}
+		else if (e->KeyChar.Equals(118) || e->KeyChar.Equals(86))
+		{
+			pictureBoxv->Image = Image::FromFile("Images\\letter_v_f.bmp");
+			Refresh();
+			pictureBoxv->Image = Image::FromFile("Images\\letter_v.bmp");
+		}
+		//
+		if ((e->KeyChar.Equals(119) || e->KeyChar.Equals(87)) && e->KeyChar.Equals(t))
+		{
+			pictureBoxw->Image = Image::FromFile("Images\\letter_w_t.bmp");
+			Refresh();
+			pictureBoxw->Image = Image::FromFile("Images\\letter_w.bmp");
+		}
+		else if (e->KeyChar.Equals(119) || e->KeyChar.Equals(87))
+		{
+			pictureBoxw->Image = Image::FromFile("Images\\letter_w_f.bmp");
+			Refresh();
+			pictureBoxw->Image = Image::FromFile("Images\\letter_w.bmp");
+		}
+		//
+		if ((e->KeyChar.Equals(120) || e->KeyChar.Equals(88)) && e->KeyChar.Equals(t))
+		{
+			pictureBoxx->Image = Image::FromFile("Images\\letter_x_t.bmp");
+			Refresh();
+			pictureBoxx->Image = Image::FromFile("Images\\letter_x.bmp");
+		}
+		else if (e->KeyChar.Equals(120) || e->KeyChar.Equals(88))
+		{
+			pictureBoxx->Image = Image::FromFile("Images\\letter_x_f.bmp");
+			Refresh();
+			pictureBoxx->Image = Image::FromFile("Images\\letter_x.bmp");
+		}
+		//
+		if ((e->KeyChar.Equals(121) || e->KeyChar.Equals(89)) && e->KeyChar.Equals(t))
+		{
+			pictureBoxy->Image = Image::FromFile("Images\\letter_y_t.bmp");
+			Refresh();
+			pictureBoxy->Image = Image::FromFile("Images\\letter_y.bmp");
+		}
+		else if (e->KeyChar.Equals(121) || e->KeyChar.Equals(89))
+		{
+			pictureBoxy->Image = Image::FromFile("Images\\letter_y_f.bmp");
+			Refresh();
+			pictureBoxy->Image = Image::FromFile("Images\\letter_y.bmp");
+		}
+		//
+		if ((e->KeyChar.Equals(122) || e->KeyChar.Equals(90)) && e->KeyChar.Equals(t))
+		{
+			pictureBoxz->Image = Image::FromFile("Images\\letter_z_t.bmp");
+			Refresh();
+			pictureBoxz->Image = Image::FromFile("Images\\letter_z.bmp");
+		}
+		else if (e->KeyChar.Equals(122) || e->KeyChar.Equals(90))
+		{
+			pictureBoxz->Image = Image::FromFile("Images\\letter_z_f.bmp");
+			Refresh();
+			pictureBoxz->Image = Image::FromFile("Images\\letter_z.bmp");
+		}
+		//
+		if (e->KeyChar.Equals(91) && e->KeyChar.Equals(t))
+		{
+			pictureBoxRBra->Image = Image::FromFile("Images\\letter_[_t.bmp");
+			Refresh();
+			pictureBoxRBra->Image = Image::FromFile("Images\\letter_[.bmp");
+		}
+		else if (e->KeyChar.Equals(91))
+		{
+			pictureBoxRBra->Image = Image::FromFile("Images\\letter_[_f.bmp");
+			Refresh();
+			pictureBoxRBra->Image = Image::FromFile("Images\\letter_[.bmp");
+		}
+		//
+		if ((e->KeyChar.Equals(92)) && e->KeyChar.Equals(t))
+		{
+			pictureBoxFSla->Image = Image::FromFile("Images\\tab_key1_t.bmp");
+			Refresh();
+			pictureBoxFSla->Image = Image::FromFile("Images\\tab_key1.bmp");
+		}
+		else if (e->KeyChar.Equals(92))
+		{
+			pictureBoxFSla->Image = Image::FromFile("Images\\tab_key1_f.bmp");
+			Refresh();
+			pictureBoxFSla->Image = Image::FromFile("Images\\tab_key1.bmp");
+		}
+		//
+		if ((e->KeyChar.Equals(93)) && e->KeyChar.Equals(t))
+		{
+			pictureBoxLBra->Image = Image::FromFile("Images\\letter_]_t.bmp");
+			Refresh();
+			pictureBoxLBra->Image = Image::FromFile("Images\\letter_].bmp");
+		}
+		else if (e->KeyChar.Equals(93))
+		{
+			pictureBoxLBra->Image = Image::FromFile("Images\\letter_]_f.bmp");
+			Refresh();
+			pictureBoxLBra->Image = Image::FromFile("Images\\letter_].bmp");
+		}
+		//
+		if ((e->KeyChar.Equals(96)) && e->KeyChar.Equals(t))
+		{
+			PictureBoxTild->Image = Image::FromFile("Images\\letter_`_t.bmp");
+			Refresh();
+			PictureBoxTild->Image = Image::FromFile("Images\\letter_`.bmp");
+		}
+		else if (e->KeyChar.Equals(96))
+		{
+			PictureBoxTild->Image = Image::FromFile("Images\\letter_`_f.bmp");
+			Refresh();
+			PictureBoxTild->Image = Image::FromFile("Images\\letter_`.bmp");
+		}
+		//
+		if ((e->KeyChar.Equals(59)) && e->KeyChar.Equals(t))
+		{
+			pictureBoxSemi->Image = Image::FromFile("Images\\letter_;_t.bmp");
+			Refresh();
+			pictureBoxSemi->Image = Image::FromFile("Images\\letter_;.bmp");
+		}
+		else if (e->KeyChar.Equals(59))
+		{
+			pictureBoxSemi->Image = Image::FromFile("Images\\letter_;_f.bmp");
+			Refresh();
+			pictureBoxSemi->Image = Image::FromFile("Images\\letter_;.bmp");
+		}
+		//
+		if ((e->KeyChar.Equals(57)) && e->KeyChar.Equals(t))
+		{
+			pictureBoxNINE->Image = Image::FromFile("Images\\letter_9_t.bmp");
+			Refresh();
+			pictureBoxNINE->Image = Image::FromFile("Images\\letter_9.bmp");
+		}
+		else if (e->KeyChar.Equals(57))
+		{
+			pictureBoxNINE->Image = Image::FromFile("Images\\letter_9_f.bmp");
+			Refresh();
+			pictureBoxNINE->Image = Image::FromFile("Images\\letter_9.bmp");
+		}
+		//
+		if ((e->KeyChar.Equals(56)) && e->KeyChar.Equals(t))
+		{
+			pictureBoxEIGH->Image = Image::FromFile("Images\\letter_8_t.bmp");
+			Refresh();
+			pictureBoxEIGH->Image = Image::FromFile("Images\\letter_8.bmp");
+		}
+		else if (e->KeyChar.Equals(56))
+		{
+			pictureBoxEIGH->Image = Image::FromFile("Images\\letter_8_f.bmp");
+			Refresh();
+			pictureBoxEIGH->Image = Image::FromFile("Images\\letter_8.bmp");
+		}
+		//
+		if ((e->KeyChar.Equals(55)) && e->KeyChar.Equals(t))
+		{
+			pictureBoxSEVE->Image = Image::FromFile("Images\\letter_7_t.bmp");
+			Refresh();
+			pictureBoxSEVE->Image = Image::FromFile("Images\\letter_7.bmp");
+		}
+		else if (e->KeyChar.Equals(55))
+		{
+			pictureBoxSEVE->Image = Image::FromFile("Images\\letter_7_f.bmp");
+			Refresh();
+			pictureBoxSEVE->Image = Image::FromFile("Images\\letter_7.bmp");
+		}
+		//
+		if ((e->KeyChar.Equals(54)) && e->KeyChar.Equals(t))
+		{
+			pictureBoxSIX->Image = Image::FromFile("Images\\letter_6_t.bmp");
+			Refresh();
+			pictureBoxSIX->Image = Image::FromFile("Images\\letter_6.bmp");
+		}
+		else if (e->KeyChar.Equals(54))
+		{
+			pictureBoxSIX->Image = Image::FromFile("Images\\letter_6_f.bmp");
+			Refresh();
+			pictureBoxSIX->Image = Image::FromFile("Images\\letter_6.bmp");
+		}
+		//
+		if ((e->KeyChar.Equals(53)) && e->KeyChar.Equals(t))
+		{
+			pictureBoxFIVE->Image = Image::FromFile("Images\\letter_5_t.bmp");
+			Refresh();
+			pictureBoxFIVE->Image = Image::FromFile("Images\\letter_5.bmp");
+		}
+		else if (e->KeyChar.Equals(53))
+		{
+			pictureBoxFIVE->Image = Image::FromFile("Images\\letter_5_f.bmp");
+			Refresh();
+			pictureBoxFIVE->Image = Image::FromFile("Images\\letter_5.bmp");
+		}
+		//
+		if ((e->KeyChar.Equals(52)) && e->KeyChar.Equals(t))
+		{
+			pictureBoxFOUR->Image = Image::FromFile("Images\\letter_4_t.bmp");
+			Refresh();
+			pictureBoxFOUR->Image = Image::FromFile("Images\\letter_4.bmp");
+		}
+		else if (e->KeyChar.Equals(52))
+		{
+			pictureBoxFOUR->Image = Image::FromFile("Images\\letter_4_f.bmp");
+			Refresh();
+			pictureBoxFOUR->Image = Image::FromFile("Images\\letter_4.bmp");
+		}
+		//
+		if ((e->KeyChar.Equals(51)) && e->KeyChar.Equals(t))
+		{
+			pictureBoxTHREE->Image = Image::FromFile("Images\\letter_3_t.bmp");
+			Refresh();
+			pictureBoxTHREE->Image = Image::FromFile("Images\\letter_3.bmp");
+		}
+		else if (e->KeyChar.Equals(51))
+		{
+			pictureBoxTHREE->Image = Image::FromFile("Images\\letter_3_f.bmp");
+			Refresh();
+			pictureBoxTHREE->Image = Image::FromFile("Images\\letter_3.bmp");
+		}
+		//
+		if ((e->KeyChar.Equals(50)) && e->KeyChar.Equals(t))
+		{
+			pictureBoxTWO->Image = Image::FromFile("Images\\letter_2_t.bmp");
+			Refresh();
+			pictureBoxTWO->Image = Image::FromFile("Images\\letter_2.bmp");
+		}
+		else if (e->KeyChar.Equals(50))
+		{
+			pictureBoxTWO->Image = Image::FromFile("Images\\letter_2_f.bmp");
+			Refresh();
+			pictureBoxTWO->Image = Image::FromFile("Images\\letter_2.bmp");
+		}
+		//
+		if ((e->KeyChar.Equals(49)) && e->KeyChar.Equals(t))
+		{
+			pictureBoxONE->Image = Image::FromFile("Images\\letter_1_t.bmp");
+			Refresh();
+			pictureBoxONE->Image = Image::FromFile("Images\\letter_1.bmp");
+		}
+		else if (e->KeyChar.Equals(49))
+		{
+			pictureBoxONE->Image = Image::FromFile("Images\\letter_1_f.bmp");
+			Refresh();
+			pictureBoxONE->Image = Image::FromFile("Images\\letter_1.bmp");
+		}
+		//
+		if ((e->KeyChar.Equals(48)) && e->KeyChar.Equals(t))
+		{
+			pictureBoxZERO->Image = Image::FromFile("Images\\letter_0_t.bmp");
+			Refresh();
+			pictureBoxZERO->Image = Image::FromFile("Images\\letter_0.bmp");
+		}
+		else if (e->KeyChar.Equals(48))
+		{
+			pictureBoxZERO->Image = Image::FromFile("Images\\letter_0_f.bmp");
+			Refresh();
+			pictureBoxZERO->Image = Image::FromFile("Images\\letter_0.bmp");
+		}
+		//
+		if ((e->KeyChar.Equals(47)) && e->KeyChar.Equals(t))
+		{
+			pictureBoxBSla->Image = Image::FromFile("Images\\letter_bslash_t.bmp");
+			Refresh();
+			pictureBoxBSla->Image = Image::FromFile("Images\\letter_bslash.bmp");
+		}
+		else if (e->KeyChar.Equals(47))
+		{
+			pictureBoxBSla->Image = Image::FromFile("Images\\letter_bslash_f.bmp");
+			Refresh();
+			pictureBoxBSla->Image = Image::FromFile("Images\\letter_bslash.bmp");
+		}
+		//
+		if ((e->KeyChar.Equals(46)) && e->KeyChar.Equals(t))
+		{
+			pictureBoxDot->Image = Image::FromFile("Images\\letter_._t.bmp");
+			Refresh();
+			pictureBoxDot->Image = Image::FromFile("Images\\letter_..bmp");
+		}
+		else if (e->KeyChar.Equals(46))
+		{
+			pictureBoxDot->Image = Image::FromFile("Images\\letter_._f.bmp");
+			Refresh();
+			pictureBoxDot->Image = Image::FromFile("Images\\letter_..bmp");
+		}
+		//
+		if ((e->KeyChar.Equals(45)) && e->KeyChar.Equals(t))
+		{
+			PictureBoxDash->Image = Image::FromFile("Images\\letter_-_t.bmp");
+			Refresh();
+			PictureBoxDash->Image = Image::FromFile("Images\\letter_-.bmp");
+		}
+		else if (e->KeyChar.Equals(45))
+		{
+			PictureBoxDash->Image = Image::FromFile("Images\\letter_-_f.bmp");
+			Refresh();
+			PictureBoxDash->Image = Image::FromFile("Images\\letter_-.bmp");
+		}
+		//
+		if ((e->KeyChar.Equals(44)) && e->KeyChar.Equals(t))
+		{
+			pictureBoxComm->Image = Image::FromFile("Images\\letter_,_t.bmp");
+			Refresh();
+			pictureBoxComm->Image = Image::FromFile("Images\\letter_,.bmp");
+		}
+		else if (e->KeyChar.Equals(44))
+		{
+			pictureBoxComm->Image = Image::FromFile("Images\\letter_,_f.bmp");
+			Refresh();
+			pictureBoxComm->Image = Image::FromFile("Images\\letter_,.bmp");
+		}
+		//
+		if ((e->KeyChar.Equals(61)) && e->KeyChar.Equals(t))
+		{
+			pictureBoxPlus->Image = Image::FromFile("Images\\letter_=_t.bmp");
+			Refresh();
+			pictureBoxPlus->Image = Image::FromFile("Images\\letter_=.bmp");
+		}
+		else if (e->KeyChar.Equals(61))
+		{
+			pictureBoxPlus->Image = Image::FromFile("Images\\letter_=_f.bmp");
+			Refresh();
+			pictureBoxPlus->Image = Image::FromFile("Images\\letter_=.bmp");
+		}
+		//
+		if ((e->KeyChar.Equals(32)) && e->KeyChar.Equals(t))
+		{
+			pictureBoxSpac->Image = Image::FromFile("Images\\space_key_l_t.bmp");
+			Refresh();
+			pictureBoxSpac->Image = Image::FromFile("Images\\space_key_l.bmp");
+		}
+		else if (e->KeyChar.Equals(32))
+		{
+			pictureBoxSpac->Image = Image::FromFile("Images\\space_key_l_f.bmp");
+			Refresh();
+			pictureBoxSpac->Image = Image::FromFile("Images\\space_key_l.bmp");
+		}
+		//
+		if ((e->KeyChar.Equals(8)) && e->KeyChar.Equals(t))
+		{
+			pictureBoxBS->Image = Image::FromFile("Images\\backspace_t.bmp");
+			Refresh();
+			pictureBoxBS->Image = Image::FromFile("Images\\backspace.bmp");
+		}
+		else if (e->KeyChar.Equals(8))
+		{
+			pictureBoxBS->Image = Image::FromFile("Images\\backspace_f.bmp");
+			Refresh();
+			pictureBoxBS->Image = Image::FromFile("Images\\backspace.bmp");
+		}
+		//
+		if (GetAsyncKeyState(VK_SHIFT) && e->KeyChar.Equals(t))
+		{
+			pictureBoxLshi->Image = Image::FromFile("Images\\shift_key_t.bmp");
+			pictureBoxRShi->Image = Image::FromFile("Images\\shift_key_t.bmp");
+			Refresh();
+			pictureBoxLshi->Image = Image::FromFile("Images\\shift_key.bmp");
+			pictureBoxRShi->Image = Image::FromFile("Images\\shift_key.bmp");
+		}
+		else if (GetAsyncKeyState(VK_SHIFT))
+		{
+			pictureBoxLshi->Image = Image::FromFile("Images\\shift_key_f.bmp");
+			pictureBoxRShi->Image = Image::FromFile("Images\\shift_key_f.bmp");
+			Refresh();
+			pictureBoxLshi->Image = Image::FromFile("Images\\shift_key.bmp");
+			pictureBoxRShi->Image = Image::FromFile("Images\\shift_key.bmp");
+		}
+		//
+		if (GetAsyncKeyState(VK_CONTROL) && e->KeyChar.Equals(t))
+		{
+			pictureBoxLCtr->Image = Image::FromFile("Images\\ctrl_key_t.bmp");
+			pictureBoxRCtr->Image = Image::FromFile("Images\\ctrl_key_t.bmp");
+			Refresh();
+			pictureBoxLCtr->Image = Image::FromFile("Images\\ctrl_key.bmp");
+			pictureBoxRCtr->Image = Image::FromFile("Images\\ctrl_key.bmp");
+		}
+		else if (GetAsyncKeyState(VK_CONTROL))
+		{
+			pictureBoxLCtr->Image = Image::FromFile("Images\\ctrl_key_f.bmp");
+			pictureBoxRCtr->Image = Image::FromFile("Images\\ctrl_key_f.bmp");
+			Refresh();
+			pictureBoxLCtr->Image = Image::FromFile("Images\\ctrl_key.bmp");
+			pictureBoxRCtr->Image = Image::FromFile("Images\\ctrl_key.bmp");
 		}
 	}
-	/*******************************************************************************/
-	if ((e->KeyChar.Equals(97) || e->KeyChar.Equals(65)) && e->KeyChar.Equals(t))
-	{
-		pictureBoxa->Image = Image::FromFile("Images\\letter_a_t.bmp");
-		Refresh();
-		pictureBoxa->Image = Image::FromFile("Images\\letter_a.bmp");
-	}	
-	else if (e->KeyChar.Equals(97) || e->KeyChar.Equals(65))
-	{
-		pictureBoxa->Image = Image::FromFile("Images\\letter_a_f.bmp");
-		Refresh();
-		pictureBoxa->Image = Image::FromFile("Images\\letter_a.bmp");
-	}
-	//
-	if ((e->KeyChar.Equals(98) || e->KeyChar.Equals(66)) && e->KeyChar.Equals(t))
-	{
-		pictureBoxb->Image = Image::FromFile("Images\\letter_b_t.bmp");
-		Refresh();
-		pictureBoxb->Image = Image::FromFile("Images\\letter_b.bmp");
-	}
-	else if (e->KeyChar.Equals(98) || e->KeyChar.Equals(66))
-	{
-		pictureBoxb->Image = Image::FromFile("Images\\letter_b_f.bmp");
-		Refresh();
-		pictureBoxb->Image = Image::FromFile("Images\\letter_b.bmp");
-	}
-	//
-	if ((e->KeyChar.Equals(99) || e->KeyChar.Equals(67)) && e->KeyChar.Equals(t))
-	{
-		pictureBoxc->Image = Image::FromFile("Images\\letter_c_t.bmp");
-		Refresh();
-		pictureBoxc->Image = Image::FromFile("Images\\letter_c.bmp");
-	}
-	else if (e->KeyChar.Equals(99) || e->KeyChar.Equals(67))
-	{
-		pictureBoxc->Image = Image::FromFile("Images\\letter_c_f.bmp");
-		Refresh();
-		pictureBoxc->Image = Image::FromFile("Images\\letter_c.bmp");
-	}
-	//
-	if ((e->KeyChar.Equals(100) || e->KeyChar.Equals(68)) && e->KeyChar.Equals(t))
-	{
-		pictureBoxd->Image = Image::FromFile("Images\\letter_d_t.bmp");
-		Refresh();
-		pictureBoxd->Image = Image::FromFile("Images\\letter_d.bmp");
-	}
-	else if (e->KeyChar.Equals(100) || e->KeyChar.Equals(68))
-	{
-		pictureBoxd->Image = Image::FromFile("Images\\letter_d_f.bmp");
-		Refresh();
-		pictureBoxd->Image = Image::FromFile("Images\\letter_d.bmp");
-	}
-	//
-	if ((e->KeyChar.Equals(101) || e->KeyChar.Equals(69)) && e->KeyChar.Equals(t))
-	{
-		pictureBoxe->Image = Image::FromFile("Images\\letter_e_t.bmp");
-		Refresh();
-		pictureBoxe->Image = Image::FromFile("Images\\letter_e.bmp");
-	}
-	else if (e->KeyChar.Equals(101) || e->KeyChar.Equals(69))
-	{
-		pictureBoxe->Image = Image::FromFile("Images\\letter_e_f.bmp");
-		Refresh();
-		pictureBoxe->Image = Image::FromFile("Images\\letter_e.bmp");
-	}
-	//
-	if ((e->KeyChar.Equals(102) || e->KeyChar.Equals(70)) && e->KeyChar.Equals(t))
-	{
-		pictureBoxf->Image = Image::FromFile("Images\\letter_f_t.bmp");
-		Refresh();
-		pictureBoxf->Image = Image::FromFile("Images\\letter_f.bmp");
-	}
-	else if (e->KeyChar.Equals(102) || e->KeyChar.Equals(70))
-	{
-		pictureBoxf->Image = Image::FromFile("Images\\letter_f_f.bmp");
-		Refresh();
-		pictureBoxf->Image = Image::FromFile("Images\\letter_f.bmp");
-	}
-	//
-	if ((e->KeyChar.Equals(103) || e->KeyChar.Equals(71)) && e->KeyChar.Equals(t))
-	{
-		pictureBoxgg->Image = Image::FromFile("Images\\letter_g_t.bmp");
-		Refresh();
-		pictureBoxgg->Image = Image::FromFile("Images\\letter_g.bmp");
-	}
-	else if (e->KeyChar.Equals(103) || e->KeyChar.Equals(71))
-	{
-		pictureBoxgg->Image = Image::FromFile("Images\\letter_g_f.bmp");
-		Refresh();
-		pictureBoxgg->Image = Image::FromFile("Images\\letter_g.bmp");
-	}
-	//
-	if ((e->KeyChar.Equals(104) || e->KeyChar.Equals(72)) && e->KeyChar.Equals(t))
-	{
-		pictureBoxh->Image = Image::FromFile("Images\\letter_h_t.bmp");
-		Refresh();
-		pictureBoxh->Image = Image::FromFile("Images\\letter_h.bmp");
-	}
-	else if (e->KeyChar.Equals(104) || e->KeyChar.Equals(72))
-	{
-		pictureBoxh->Image = Image::FromFile("Images\\letter_h_f.bmp");
-		Refresh();
-		pictureBoxh->Image = Image::FromFile("Images\\letter_h.bmp");
-	}
-	//
-	if ((e->KeyChar.Equals(105) || e->KeyChar.Equals(73)) && e->KeyChar.Equals(t))
-	{
-		pictureBoxi->Image = Image::FromFile("Images\\letter_i_t.bmp");
-		Refresh();
-		pictureBoxi->Image = Image::FromFile("Images\\letter_i.bmp");
-	}
-	else if (e->KeyChar.Equals(105) || e->KeyChar.Equals(73))
-	{
-		pictureBoxi->Image = Image::FromFile("Images\\letter_i_f.bmp");
-		Refresh();
-		pictureBoxi->Image = Image::FromFile("Images\\letter_i.bmp");
-	}
-	//
-	if ((e->KeyChar.Equals(106) || e->KeyChar.Equals(74)) && e->KeyChar.Equals(t))
-	{
-		pictureBoxj->Image = Image::FromFile("Images\\letter_j_t.bmp");
-		Refresh();
-		pictureBoxj->Image = Image::FromFile("Images\\letter_j.bmp");
-	}
-	else if (e->KeyChar.Equals(106) || e->KeyChar.Equals(74))
-	{
-		pictureBoxj->Image = Image::FromFile("Images\\letter_j_f.bmp");
-		Refresh();
-		pictureBoxj->Image = Image::FromFile("Images\\letter_j.bmp");
-	}
-	//
-	if ((e->KeyChar.Equals(107) || e->KeyChar.Equals(75)) && e->KeyChar.Equals(t))
-	{
-		pictureBoxk->Image = Image::FromFile("Images\\letter_k_t.bmp");
-		Refresh();
-		pictureBoxk->Image = Image::FromFile("Images\\letter_k.bmp");
-	}
-	else if (e->KeyChar.Equals(107) || e->KeyChar.Equals(75))
-	{
-		pictureBoxk->Image = Image::FromFile("Images\\letter_k_f.bmp");
-		Refresh();
-		pictureBoxk->Image = Image::FromFile("Images\\letter_k.bmp");
-	}
-	//
-	if ((e->KeyChar.Equals(108) || e->KeyChar.Equals(76)) && e->KeyChar.Equals(t))
-	{
-		pictureBoxl->Image = Image::FromFile("Images\\letter_l_t.bmp");
-		Refresh();
-		pictureBoxl->Image = Image::FromFile("Images\\letter_l.bmp");
-	}
-	else if (e->KeyChar.Equals(108) || e->KeyChar.Equals(76))
-	{
-		pictureBoxl->Image = Image::FromFile("Images\\letter_l_f.bmp");
-		Refresh();
-		pictureBoxl->Image = Image::FromFile("Images\\letter_l.bmp");
-	}
-	//
-	if ((e->KeyChar.Equals(109) || e->KeyChar.Equals(77)) && e->KeyChar.Equals(t))
-	{
-		pictureBoxm->Image = Image::FromFile("Images\\letter_m_t.bmp");
-		Refresh();
-		pictureBoxm->Image = Image::FromFile("Images\\letter_m.bmp");
-	}
-	else if (e->KeyChar.Equals(109) || e->KeyChar.Equals(77))
-	{
-		pictureBoxm->Image = Image::FromFile("Images\\letter_m_f.bmp");
-		Refresh();
-		pictureBoxm->Image = Image::FromFile("Images\\letter_m.bmp");
-	}
-	//
-	if ((e->KeyChar.Equals(110) || e->KeyChar.Equals(78)) && e->KeyChar.Equals(t))
-	{
-		pictureBoxn->Image = Image::FromFile("Images\\letter_n_t.bmp");
-		Refresh();
-		pictureBoxn->Image = Image::FromFile("Images\\letter_n.bmp");
-	}
-	else if (e->KeyChar.Equals(110) || e->KeyChar.Equals(78))
-	{
-		pictureBoxn->Image = Image::FromFile("Images\\letter_n_f.bmp");
-		Refresh();
-		pictureBoxn->Image = Image::FromFile("Images\\letter_n.bmp");
-	}
-	//
-	if ((e->KeyChar.Equals(111) || e->KeyChar.Equals(79)) && e->KeyChar.Equals(t))
-	{
-		pictureBoxo->Image = Image::FromFile("Images\\letter_o_t.bmp");
-		Refresh();
-		pictureBoxo->Image = Image::FromFile("Images\\letter_o.bmp");
-	}
-	else if (e->KeyChar.Equals(111) || e->KeyChar.Equals(79))
-	{
-		pictureBoxo->Image = Image::FromFile("Images\\letter_o_f.bmp");
-		Refresh();
-		pictureBoxo->Image = Image::FromFile("Images\\letter_o.bmp");
-	}
-	//
-	if ((e->KeyChar.Equals(112) || e->KeyChar.Equals(80)) && e->KeyChar.Equals(t))
-	{
-		pictureBoxp->Image = Image::FromFile("Images\\letter_p_t.bmp");
-		Refresh();
-		pictureBoxp->Image = Image::FromFile("Images\\letter_p.bmp");
-	}
-	else if (e->KeyChar.Equals(112) || e->KeyChar.Equals(80))
-	{
-		pictureBoxp->Image = Image::FromFile("Images\\letter_p_f.bmp");
-		Refresh();
-		pictureBoxp->Image = Image::FromFile("Images\\letter_p.bmp");
-	}
-	//
-	if ((e->KeyChar.Equals(113) || e->KeyChar.Equals(81)) && e->KeyChar.Equals(t))
-	{
-		pictureBoxq->Image = Image::FromFile("Images\\letter_q_t.bmp");
-		Refresh();
-		pictureBoxq->Image = Image::FromFile("Images\\letter_q.bmp");
-	}
-	else if (e->KeyChar.Equals(113) || e->KeyChar.Equals(81))
-	{
-		pictureBoxq->Image = Image::FromFile("Images\\letter_q_f.bmp");
-		Refresh();
-		pictureBoxq->Image = Image::FromFile("Images\\letter_q.bmp");
-	}
-	//
-	if ((e->KeyChar.Equals(114) || e->KeyChar.Equals(82)) && e->KeyChar.Equals(t))
-	{
-		pictureBoxr->Image = Image::FromFile("Images\\letter_r_t.bmp");
-		Refresh();
-		pictureBoxr->Image = Image::FromFile("Images\\letter_r.bmp");
-	}
-	else if (e->KeyChar.Equals(114) || e->KeyChar.Equals(82))
-	{
-		pictureBoxr->Image = Image::FromFile("Images\\letter_r_f.bmp");
-		Refresh();
-		pictureBoxr->Image = Image::FromFile("Images\\letter_r.bmp");
-	}
-	//
-	if ((e->KeyChar.Equals(115) || e->KeyChar.Equals(83)) && e->KeyChar.Equals(t))
-	{
-		pictureBoxs->Image = Image::FromFile("Images\\letter_s_t.bmp");
-		Refresh();
-		pictureBoxs->Image = Image::FromFile("Images\\letter_s.bmp");
-	}
-	else if (e->KeyChar.Equals(115) || e->KeyChar.Equals(83))
-	{
-		pictureBoxs->Image = Image::FromFile("Images\\letter_s_f.bmp");
-		Refresh();
-		pictureBoxs->Image = Image::FromFile("Images\\letter_s.bmp");
-	}
-	//
-	if ((e->KeyChar.Equals(116) || e->KeyChar.Equals(84)) && e->KeyChar.Equals(t))
-	{
-		pictureBoxt->Image = Image::FromFile("Images\\letter_t_t.bmp");
-		Refresh();
-		pictureBoxt->Image = Image::FromFile("Images\\letter_t.bmp");
-	}
-	else if (e->KeyChar.Equals(116) || e->KeyChar.Equals(84))
-	{
-		pictureBoxt->Image = Image::FromFile("Images\\letter_t_f.bmp");
-		Refresh();
-		pictureBoxt->Image = Image::FromFile("Images\\letter_t.bmp");
-	}
-	//
-	if ((e->KeyChar.Equals(117) || e->KeyChar.Equals(85)) && e->KeyChar.Equals(t))
-	{
-		pictureBoxu->Image = Image::FromFile("Images\\letter_u_t.bmp");
-		Refresh();
-		pictureBoxu->Image = Image::FromFile("Images\\letter_u.bmp");
-	}
-	else if (e->KeyChar.Equals(117) || e->KeyChar.Equals(85))
-	{
-		pictureBoxu->Image = Image::FromFile("Images\\letter_u_f.bmp");
-		Refresh();
-		pictureBoxu->Image = Image::FromFile("Images\\letter_u.bmp");
-	}
-	//
-	if ((e->KeyChar.Equals(118) || e->KeyChar.Equals(86)) && e->KeyChar.Equals(t))
-	{
-		pictureBoxv->Image = Image::FromFile("Images\\letter_v_t.bmp");
-		Refresh();
-		pictureBoxv->Image = Image::FromFile("Images\\letter_v.bmp");
-	}
-	else if (e->KeyChar.Equals(118) || e->KeyChar.Equals(86))
-	{
-		pictureBoxv->Image = Image::FromFile("Images\\letter_v_f.bmp");
-		Refresh();
-		pictureBoxv->Image = Image::FromFile("Images\\letter_v.bmp");
-	}
-	//
-	if ((e->KeyChar.Equals(119) || e->KeyChar.Equals(87)) && e->KeyChar.Equals(t))
-	{
-		pictureBoxw->Image = Image::FromFile("Images\\letter_w_t.bmp");
-		Refresh();
-		pictureBoxw->Image = Image::FromFile("Images\\letter_w.bmp");
-	}
-	else if (e->KeyChar.Equals(119) || e->KeyChar.Equals(87))
-	{
-		pictureBoxw->Image = Image::FromFile("Images\\letter_w_f.bmp");
-		Refresh();
-		pictureBoxw->Image = Image::FromFile("Images\\letter_w.bmp");
-	}
-	//
-	if ((e->KeyChar.Equals(120) || e->KeyChar.Equals(88)) && e->KeyChar.Equals(t))
-	{
-		pictureBoxx->Image = Image::FromFile("Images\\letter_x_t.bmp");
-		Refresh();
-		pictureBoxx->Image = Image::FromFile("Images\\letter_x.bmp");
-	}
-	else if (e->KeyChar.Equals(120) || e->KeyChar.Equals(88))
-	{
-		pictureBoxx->Image = Image::FromFile("Images\\letter_x_f.bmp");
-		Refresh();
-		pictureBoxx->Image = Image::FromFile("Images\\letter_x.bmp");
-	}
-	//
-	if ((e->KeyChar.Equals(121) || e->KeyChar.Equals(89)) && e->KeyChar.Equals(t))
-	{
-		pictureBoxy->Image = Image::FromFile("Images\\letter_y_t.bmp");
-		Refresh();
-		pictureBoxy->Image = Image::FromFile("Images\\letter_y.bmp");
-	}
-	else if (e->KeyChar.Equals(121) || e->KeyChar.Equals(89))
-	{
-		pictureBoxy->Image = Image::FromFile("Images\\letter_y_f.bmp");
-		Refresh();
-		pictureBoxy->Image = Image::FromFile("Images\\letter_y.bmp");
-	}
-	//
-	if ((e->KeyChar.Equals(122) || e->KeyChar.Equals(90)) && e->KeyChar.Equals(t))
-	{
-		pictureBoxz->Image = Image::FromFile("Images\\letter_z_t.bmp");
-		Refresh();
-		pictureBoxz->Image = Image::FromFile("Images\\letter_z.bmp");
-	}
-	else if (e->KeyChar.Equals(122) || e->KeyChar.Equals(90))
-	{
-		pictureBoxz->Image = Image::FromFile("Images\\letter_z_f.bmp");
-		Refresh();
-		pictureBoxz->Image = Image::FromFile("Images\\letter_z.bmp");
-	}
-	//
-	if (e->KeyChar.Equals(91) && e->KeyChar.Equals(t))
-	{
-		pictureBoxRBra->Image = Image::FromFile("Images\\letter_[_t.bmp");
-		Refresh();
-		pictureBoxRBra->Image = Image::FromFile("Images\\letter_[.bmp");
-	}
-	else if (e->KeyChar.Equals(91))
-	{
-		pictureBoxRBra->Image = Image::FromFile("Images\\letter_[_f.bmp");
-		Refresh();
-		pictureBoxRBra->Image = Image::FromFile("Images\\letter_[.bmp");
-	}
-	//
-	if ((e->KeyChar.Equals(92)) && e->KeyChar.Equals(t))
-	{
-		pictureBoxFSla->Image = Image::FromFile("Images\\tab_key1_t.bmp");
-		Refresh();
-		pictureBoxFSla->Image = Image::FromFile("Images\\tab_key1.bmp");
-	}
-	else if ( e->KeyChar.Equals(92))
-	{
-		pictureBoxFSla->Image = Image::FromFile("Images\\tab_key1_f.bmp");
-		Refresh();
-		pictureBoxFSla->Image = Image::FromFile("Images\\tab_key1.bmp");
-	}
-	//
-	if ((e->KeyChar.Equals(93)) && e->KeyChar.Equals(t))
-	{
-		pictureBoxLBra->Image = Image::FromFile("Images\\letter_]_t.bmp");
-		Refresh();
-		pictureBoxLBra->Image = Image::FromFile("Images\\letter_].bmp");
-	}
-	else if (e->KeyChar.Equals(93))
-	{
-		pictureBoxLBra->Image = Image::FromFile("Images\\letter_]_f.bmp");
-		Refresh();
-		pictureBoxLBra->Image = Image::FromFile("Images\\letter_].bmp");
-	}
-	//
-	if ((e->KeyChar.Equals(96)) && e->KeyChar.Equals(t))
-	{
-		PictureBoxTild->Image = Image::FromFile("Images\\letter_`_t.bmp");
-		Refresh();
-		PictureBoxTild->Image = Image::FromFile("Images\\letter_`.bmp");
-	}
-	else if (e->KeyChar.Equals(96))
-	{
-		PictureBoxTild->Image = Image::FromFile("Images\\letter_`_f.bmp");
-		Refresh();
-		PictureBoxTild->Image = Image::FromFile("Images\\letter_`.bmp");
-	}
-	//
-	if ((e->KeyChar.Equals(59)) && e->KeyChar.Equals(t))
-	{
-		pictureBoxSemi->Image = Image::FromFile("Images\\letter_;_t.bmp");
-		Refresh();
-		pictureBoxSemi->Image = Image::FromFile("Images\\letter_;.bmp");
-	}
-	else if (e->KeyChar.Equals(59))
-	{
-		pictureBoxSemi->Image = Image::FromFile("Images\\letter_;_f.bmp");
-		Refresh();
-		pictureBoxSemi->Image = Image::FromFile("Images\\letter_;.bmp");
-	}
-	//
-	if ((e->KeyChar.Equals(57)) && e->KeyChar.Equals(t))
-	{
-		pictureBoxNINE->Image = Image::FromFile("Images\\letter_9_t.bmp");
-		Refresh();
-		pictureBoxNINE->Image = Image::FromFile("Images\\letter_9.bmp");
-	}
-	else if (e->KeyChar.Equals(57))
-	{
-		pictureBoxNINE->Image = Image::FromFile("Images\\letter_9_f.bmp");
-		Refresh();
-		pictureBoxNINE->Image = Image::FromFile("Images\\letter_9.bmp");
-	}
-	//
-	if ((e->KeyChar.Equals(56)) && e->KeyChar.Equals(t))
-	{
-		pictureBoxEIGH->Image = Image::FromFile("Images\\letter_8_t.bmp");
-		Refresh();
-		pictureBoxEIGH->Image = Image::FromFile("Images\\letter_8.bmp");
-	}
-	else if (e->KeyChar.Equals(56))
-	{
-		pictureBoxEIGH->Image = Image::FromFile("Images\\letter_8_f.bmp");
-		Refresh();
-		pictureBoxEIGH->Image = Image::FromFile("Images\\letter_8.bmp");
-	}
-	//
-	if ((e->KeyChar.Equals(55)) && e->KeyChar.Equals(t))
-	{
-		pictureBoxSEVE->Image = Image::FromFile("Images\\letter_7_t.bmp");
-		Refresh();
-		pictureBoxSEVE->Image = Image::FromFile("Images\\letter_7.bmp");
-	}
-	else if (e->KeyChar.Equals(55))
-	{
-		pictureBoxSEVE->Image = Image::FromFile("Images\\letter_7_f.bmp");
-		Refresh();
-		pictureBoxSEVE->Image = Image::FromFile("Images\\letter_7.bmp");
-	}
-	//
-	if ((e->KeyChar.Equals(54)) && e->KeyChar.Equals(t))
-	{
-		pictureBoxSIX->Image = Image::FromFile("Images\\letter_6_t.bmp");
-		Refresh();
-		pictureBoxSIX->Image = Image::FromFile("Images\\letter_6.bmp");
-	}
-	else if (e->KeyChar.Equals(54))
-	{
-		pictureBoxSIX->Image = Image::FromFile("Images\\letter_6_f.bmp");
-		Refresh();
-		pictureBoxSIX->Image = Image::FromFile("Images\\letter_6.bmp");
-	}
-	//
-	if ((e->KeyChar.Equals(53)) && e->KeyChar.Equals(t))
-	{
-		pictureBoxFIVE->Image = Image::FromFile("Images\\letter_5_t.bmp");
-		Refresh();
-		pictureBoxFIVE->Image = Image::FromFile("Images\\letter_5.bmp");
-	}
-	else if (e->KeyChar.Equals(53))
-	{
-		pictureBoxFIVE->Image = Image::FromFile("Images\\letter_5_f.bmp");
-		Refresh();
-		pictureBoxFIVE->Image = Image::FromFile("Images\\letter_5.bmp");
-	}
-	//
-	if ((e->KeyChar.Equals(52)) && e->KeyChar.Equals(t))
-	{
-		pictureBoxFOUR->Image = Image::FromFile("Images\\letter_4_t.bmp");
-		Refresh();
-		pictureBoxFOUR->Image = Image::FromFile("Images\\letter_4.bmp");
-	}
-	else if (e->KeyChar.Equals(52))
-	{
-		pictureBoxFOUR->Image = Image::FromFile("Images\\letter_4_f.bmp");
-		Refresh();
-		pictureBoxFOUR->Image = Image::FromFile("Images\\letter_4.bmp");
-	}
-	//
-	if ((e->KeyChar.Equals(51)) && e->KeyChar.Equals(t))
-	{
-		pictureBoxTHREE->Image = Image::FromFile("Images\\letter_3_t.bmp");
-		Refresh();
-		pictureBoxTHREE->Image = Image::FromFile("Images\\letter_3.bmp");
-	}
-	else if (e->KeyChar.Equals(51))
-	{
-		pictureBoxTHREE->Image = Image::FromFile("Images\\letter_3_f.bmp");
-		Refresh();
-		pictureBoxTHREE->Image = Image::FromFile("Images\\letter_3.bmp");
-	}
-	//
-	if ((e->KeyChar.Equals(50)) && e->KeyChar.Equals(t))
-	{
-		pictureBoxTWO->Image = Image::FromFile("Images\\letter_2_t.bmp");
-		Refresh();
-		pictureBoxTWO->Image = Image::FromFile("Images\\letter_2.bmp");
-	}
-	else if (e->KeyChar.Equals(50))
-	{
-		pictureBoxTWO->Image = Image::FromFile("Images\\letter_2_f.bmp");
-		Refresh();
-		pictureBoxTWO->Image = Image::FromFile("Images\\letter_2.bmp");
-	}
-	//
-	if ((e->KeyChar.Equals(49)) && e->KeyChar.Equals(t))
-	{
-		pictureBoxONE->Image = Image::FromFile("Images\\letter_1_t.bmp");
-		Refresh();
-		pictureBoxONE->Image = Image::FromFile("Images\\letter_1.bmp");
-	}
-	else if (e->KeyChar.Equals(49))
-	{
-		pictureBoxONE->Image = Image::FromFile("Images\\letter_1_f.bmp");
-		Refresh();
-		pictureBoxONE->Image = Image::FromFile("Images\\letter_1.bmp");
-	}
-	//
-	if ((e->KeyChar.Equals(48)) && e->KeyChar.Equals(t))
-	{
-		pictureBoxZERO->Image = Image::FromFile("Images\\letter_0_t.bmp");
-		Refresh();
-		pictureBoxZERO->Image = Image::FromFile("Images\\letter_0.bmp");
-	}
-	else if (e->KeyChar.Equals(48))
-	{
-		pictureBoxZERO->Image = Image::FromFile("Images\\letter_0_f.bmp");
-		Refresh();
-		pictureBoxZERO->Image = Image::FromFile("Images\\letter_0.bmp");
-	}
-	//
-	if ((e->KeyChar.Equals(47)) && e->KeyChar.Equals(t))
-	{
-		pictureBoxBSla->Image = Image::FromFile("Images\\letter_bslash_t.bmp");
-		Refresh();
-		pictureBoxBSla->Image = Image::FromFile("Images\\letter_bslash.bmp");
-	}
-	else if (e->KeyChar.Equals(47))
-	{
-		pictureBoxBSla->Image = Image::FromFile("Images\\letter_bslash_f.bmp");
-		Refresh();
-		pictureBoxBSla->Image = Image::FromFile("Images\\letter_bslash.bmp");
-	}
-	//
-	if ((e->KeyChar.Equals(46)) && e->KeyChar.Equals(t))
-	{
-		pictureBoxDot->Image = Image::FromFile("Images\\letter_._t.bmp");
-		Refresh();
-		pictureBoxDot->Image = Image::FromFile("Images\\letter_..bmp");
-	}
-	else if (e->KeyChar.Equals(46))
-	{
-		pictureBoxDot->Image = Image::FromFile("Images\\letter_._f.bmp");
-		Refresh();
-		pictureBoxDot->Image = Image::FromFile("Images\\letter_..bmp");
-	}
-	//
-	if ((e->KeyChar.Equals(45)) && e->KeyChar.Equals(t))
-	{
-		PictureBoxDash->Image = Image::FromFile("Images\\letter_-_t.bmp");
-		Refresh();
-		PictureBoxDash->Image = Image::FromFile("Images\\letter_-.bmp");
-	}
-	else if (e->KeyChar.Equals(45))
-	{
-		PictureBoxDash->Image = Image::FromFile("Images\\letter_-_f.bmp");
-		Refresh();
-		PictureBoxDash->Image = Image::FromFile("Images\\letter_-.bmp");
-	}
-	//
-	if ((e->KeyChar.Equals(44)) && e->KeyChar.Equals(t))
-	{
-		pictureBoxComm->Image = Image::FromFile("Images\\letter_,_t.bmp");
-		Refresh();
-		pictureBoxComm->Image = Image::FromFile("Images\\letter_,.bmp");
-	}
-	else if (e->KeyChar.Equals(44))
-	{
-		pictureBoxComm->Image = Image::FromFile("Images\\letter_,_f.bmp");
-		Refresh();
-		pictureBoxComm->Image = Image::FromFile("Images\\letter_,.bmp");
-	}
-	//
-	if ((e->KeyChar.Equals(61)) && e->KeyChar.Equals(t))
-	{
-		pictureBoxPlus->Image = Image::FromFile("Images\\letter_=_t.bmp");
-		Refresh();
-		pictureBoxPlus->Image = Image::FromFile("Images\\letter_=.bmp");
-	}
-	else if (e->KeyChar.Equals(61))
-	{
-		pictureBoxPlus->Image = Image::FromFile("Images\\letter_=_f.bmp");
-		Refresh();
-		pictureBoxPlus->Image = Image::FromFile("Images\\letter_=.bmp");
-	}
-	//
-	if ((e->KeyChar.Equals(32)) && e->KeyChar.Equals(t))
-	{
-		pictureBoxSpac->Image = Image::FromFile("Images\\space_key_l_t.bmp");
-		Refresh();
-		pictureBoxSpac->Image = Image::FromFile("Images\\space_key_l.bmp");
-	}
-	else if (e->KeyChar.Equals(32))
-	{
-		pictureBoxSpac->Image = Image::FromFile("Images\\space_key_l_f.bmp");
-		Refresh();
-		pictureBoxSpac->Image = Image::FromFile("Images\\space_key_l.bmp");
-	}
-	//
-	if ((e->KeyChar.Equals(8)) && e->KeyChar.Equals(t))
-	{
-		pictureBoxBS->Image = Image::FromFile("Images\\backspace_f_t.bmp");
-		Refresh();
-		pictureBoxBS->Image = Image::FromFile("Images\\backspace_f.bmp");
-	}
-	else if (e->KeyChar.Equals(8))
-	{
-		pictureBoxBS->Image = Image::FromFile("Images\\backspace_f.bmp");
-		Refresh();
-		pictureBoxBS->Image = Image::FromFile("Images\\backspace_f.bmp");
-	}
+}
+//prevents backspacing
+private: System::Void richTextBox1_KeyDown(System::Object^  sender, System::Windows::Forms::KeyEventArgs^  e) {
+	if (e->KeyCode ==Keys::Back)
+		e->Handled = true;
 }
 }; //end of myform class
 }
