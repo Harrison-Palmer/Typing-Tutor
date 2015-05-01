@@ -449,24 +449,27 @@ private: System::Windows::Forms::PictureBox^  Level_4;
 			this->Level_6->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->Level_6->TabIndex = 73;
 			this->Level_6->TabStop = false;
+			this->Level_6->Click += gcnew System::EventHandler(this, &MyForm::Level_6_Click);
 			// 
 			// Level_5
 			// 
-			this->Level_5->Location = System::Drawing::Point(348, 259);
+			this->Level_5->Location = System::Drawing::Point(348, 258);
 			this->Level_5->Name = L"Level_5";
 			this->Level_5->Size = System::Drawing::Size(162, 69);
 			this->Level_5->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->Level_5->TabIndex = 72;
 			this->Level_5->TabStop = false;
+			this->Level_5->Click += gcnew System::EventHandler(this, &MyForm::Level_5_Click);
 			// 
 			// Level_4
 			// 
-			this->Level_4->Location = System::Drawing::Point(348, 184);
+			this->Level_4->Location = System::Drawing::Point(348, 183);
 			this->Level_4->Name = L"Level_4";
 			this->Level_4->Size = System::Drawing::Size(162, 69);
 			this->Level_4->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->Level_4->TabIndex = 71;
 			this->Level_4->TabStop = false;
+			this->Level_4->Click += gcnew System::EventHandler(this, &MyForm::Level_4_Click);
 			// 
 			// richTextBox1
 			// 
@@ -1077,7 +1080,7 @@ private: System::Windows::Forms::PictureBox^  Level_4;
 			this->Exit_Button->Location = System::Drawing::Point(385, 354);
 			this->Exit_Button->Name = L"Exit_Button";
 			this->Exit_Button->Size = System::Drawing::Size(100, 50);
-			this->Exit_Button->SizeMode = System::Windows::Forms::PictureBoxSizeMode::CenterImage;
+			this->Exit_Button->SizeMode = System::Windows::Forms::PictureBoxSizeMode::AutoSize;
 			this->Exit_Button->TabIndex = 3;
 			this->Exit_Button->TabStop = false;
 			this->Exit_Button->Click += gcnew System::EventHandler(this, &MyForm::Exit_Button_Click);
@@ -1087,16 +1090,18 @@ private: System::Windows::Forms::PictureBox^  Level_4;
 			this->Second_Button->Location = System::Drawing::Point(385, 277);
 			this->Second_Button->Name = L"Second_Button";
 			this->Second_Button->Size = System::Drawing::Size(100, 50);
-			this->Second_Button->SizeMode = System::Windows::Forms::PictureBoxSizeMode::CenterImage;
+			this->Second_Button->SizeMode = System::Windows::Forms::PictureBoxSizeMode::AutoSize;
 			this->Second_Button->TabIndex = 2;
 			this->Second_Button->TabStop = false;
 			this->Second_Button->Click += gcnew System::EventHandler(this, &MyForm::Second_Button_Click);
 			// 
 			// Start_Pictutre
 			// 
+			this->Start_Pictutre->BackColor = System::Drawing::SystemColors::Control;
 			this->Start_Pictutre->Location = System::Drawing::Point(385, 203);
 			this->Start_Pictutre->Name = L"Start_Pictutre";
 			this->Start_Pictutre->Size = System::Drawing::Size(100, 50);
+			this->Start_Pictutre->SizeMode = System::Windows::Forms::PictureBoxSizeMode::AutoSize;
 			this->Start_Pictutre->TabIndex = 1;
 			this->Start_Pictutre->TabStop = false;
 			this->Start_Pictutre->Click += gcnew System::EventHandler(this, &MyForm::Start_Pictutre_Click);
@@ -1458,9 +1463,12 @@ private: System::Void MyForm_Load(System::Object^  sender, System::EventArgs^  e
 			 Level_8->Visible = false;
 			 Level_9->Visible = false;
 
-			 Exit_Button->Image = ExitGame;
-			 Start_Pictutre->Image = StartGame;
-			 Second_Button->Image = AboutGame;
+			 Exit_Button->Image = Image::FromFile("Images\\exitgame.bmp");
+			 Start_Pictutre->Image = Image::FromFile("Images\\startgame.bmp");
+			 Second_Button->Image = Image::FromFile("Images\\about.bmp");
+
+			 Exit_Button->ForeColor = System::Drawing::Color::Blue;
+			 Exit_Button->Text = "Exit Game";
 
 			 initialize();
 			 toggleKeyboard();
@@ -1541,15 +1549,22 @@ private: System::Void Start_Pictutre_Click(System::Object^  sender, System::Even
 }
 //dont know yet
 private: System::Void Second_Button_Click(System::Object^  sender, System::EventArgs^  e) {
-			 MessageBox::Show("Nothing to see here.");
+			 MessageBox::Show("Typing Tutor - 2015 \n Developed by: \n\n Harrison Palmer \n Jared Hughes \n Treva O'Keefe \n Ross O'Brien");
 }
 private: System::Void Exit_Button_Click(System::Object^  sender, System::EventArgs^  e) {
 			 Application::Exit();
 }
 private: System::Void Level_1_Click(System::Object^  sender, System::EventArgs^  e) {
-	Text = "fjf jjfjf jfjfjfjfjf jf f jfjfjf jfjf jjjjjfj fjfjfj fjff ";
+	Text = "rrr rru ruu uuu uur urr rur uru uu rr ru ur r u";
 
-	richTextBox1->Font = gcnew System::Drawing::Font("Lucida Bright", 30);
+	int remainder = 65 - Text->Length;
+
+	for (int i = 0; i < remainder; i++)
+	{
+		Text += " ";
+	}
+
+	richTextBox1->Font = gcnew System::Drawing::Font("Lucida Bright", 28);
 
 	Level_1->Visible = false;
 	Level_2->Visible = false;
@@ -1567,9 +1582,16 @@ private: System::Void Level_1_Click(System::Object^  sender, System::EventArgs^ 
 	richTextBox1->Text = Text;
 }
 private: System::Void Level_2_Click(System::Object^  sender, System::EventArgs^  e) {
-	Text = "The quick brown fox jumps over the lazy dog";
+	Text = "eee eei eii iii iie iee eie iei ii ee ei ie e i";
 
-	richTextBox1->Font = gcnew System::Drawing::Font("Lucida Bright", 30);
+	int remainder = 65 - Text->Length;
+
+	for (int i = 0; i < remainder; i++)
+	{
+		Text += " ";
+	}
+
+	richTextBox1->Font = gcnew System::Drawing::Font("Lucida Bright", 28);
 
 	Level_1->Visible = false;
 	Level_2->Visible = false;
@@ -1587,10 +1609,16 @@ private: System::Void Level_2_Click(System::Object^  sender, System::EventArgs^ 
 	richTextBox1->Text = Text;
 }
 private: System::Void Level_3_Click(System::Object^  sender, System::EventArgs^  e) {
-	richTextBox1->Text = nullptr;
+	Text = "www wwo woo ooo oow oww wow owo oo ww wo ow w o";
 
-	richTextBox1->Font = gcnew System::Drawing::Font("Lucida Bright", 30);
-	richTextBox1->Refresh();
+	int remainder = 65 - Text->Length;
+
+	for (int i = 0; i < remainder; i++)
+	{
+		Text += " ";
+	}
+
+	richTextBox1->Font = gcnew System::Drawing::Font("Lucida Bright", 28);
 
 	Level_1->Visible = false;
 	Level_2->Visible = false;
@@ -1603,15 +1631,96 @@ private: System::Void Level_3_Click(System::Object^  sender, System::EventArgs^ 
 	Level_9->Visible = false;
 	toggleKeyboard();
 
-	richTextBox1->Text = richTextBox1->Text + "The Quick Brown Fox Jumps Over The Lazy Dog.";
-
-	//richTextBox1->AppendText(Environment::NewLine);
+	richTextBox1->Text = nullptr;
+	richTextBox1->Refresh();
+	richTextBox1->Text = Text;
 }
+private: System::Void Level_4_Click(System::Object^  sender, System::EventArgs^  e) {
+	Text = "fff ffj fjj jjj jjf jff fjf jfj jj ff fj jf f j";
+
+	int remainder = 65 - Text->Length;
+
+	for (int i = 0; i < remainder; i++)
+	{
+		Text += " ";
+	}
+
+	richTextBox1->Font = gcnew System::Drawing::Font("Lucida Bright", 28);
+
+	Level_1->Visible = false;
+	Level_2->Visible = false;
+	Level_3->Visible = false;
+	Level_4->Visible = false;
+	Level_5->Visible = false;
+	Level_6->Visible = false;
+	Level_7->Visible = false;
+	Level_8->Visible = false;
+	Level_9->Visible = false;
+	toggleKeyboard();
+
+	richTextBox1->Text = nullptr;
+	richTextBox1->Refresh();
+	richTextBox1->Text = Text;
+}
+private: System::Void Level_5_Click(System::Object^  sender, System::EventArgs^  e) {
+	Text = "ddd ddk dkk kkk kkd kdd dkd kdk kk dd dk kd d k";
+
+	int remainder = 65 - Text->Length;
+
+	for (int i = 0; i < remainder; i++)
+	{
+		Text += " ";
+	}
+
+	richTextBox1->Font = gcnew System::Drawing::Font("Lucida Bright", 28);
+
+	Level_1->Visible = false;
+	Level_2->Visible = false;
+	Level_3->Visible = false;
+	Level_4->Visible = false;
+	Level_5->Visible = false;
+	Level_6->Visible = false;
+	Level_7->Visible = false;
+	Level_8->Visible = false;
+	Level_9->Visible = false;
+	toggleKeyboard();
+
+	richTextBox1->Text = nullptr;
+	richTextBox1->Refresh();
+	richTextBox1->Text = Text;
+}
+		 private: System::Void Level_6_Click(System::Object^  sender, System::EventArgs^  e) {
+			 Text = "The quick brown fox jumps over the lazy dog";
+
+			 int remainder = 65 - Text->Length;
+
+			 for (int i = 0; i < remainder; i++)
+			 {
+				 Text += " ";
+			 }
+
+			 richTextBox1->Font = gcnew System::Drawing::Font("Lucida Bright", 28);
+
+			 Level_1->Visible = false;
+			 Level_2->Visible = false;
+			 Level_3->Visible = false;
+			 Level_4->Visible = false;
+			 Level_5->Visible = false;
+			 Level_6->Visible = false;
+			 Level_7->Visible = false;
+			 Level_8->Visible = false;
+			 Level_9->Visible = false;
+			 toggleKeyboard();
+
+			 richTextBox1->Text = nullptr;
+			 richTextBox1->Refresh();
+			 richTextBox1->Text = Text;
+		 }
 private: System::Void richTextBox1_KeyPress(System::Object^  sender, System::Windows::Forms::KeyPressEventArgs^  e) {
 	wchar_t parsedText = Text[count];
 	char t = (char)parsedText;
 	finalText = finalText + t;
-
+	
 
 	/*
 	richTextBox1->SelectionStart = 0;
@@ -1654,7 +1763,7 @@ private: System::Void richTextBox1_KeyPress(System::Object^  sender, System::Win
 			richTextBox1->Select(richTextBox1->Text[0], richTextBox1->Text[count + 1]);
 			richTextBox1->SelectionColor = Color::Green;
 			//richTextBox1->Select(richTextBox1->Text[0], richTextBox1->Text->Length);
-			richTextBox1->SelectionStart = richTextBox1->Text[0];
+			//richTextBox1->SelectionStart = richTextBox1->Text[0];
 
 			count++;
 		}
@@ -1665,6 +1774,10 @@ private: System::Void richTextBox1_KeyPress(System::Object^  sender, System::Win
 				Application::Exit();
 			else if (Level_1->Visible == true)
 			{
+				richTextBox1->Font = gcnew System::Drawing::Font("Microsoft Sans Serif", 60);
+				richTextBox1->Text = "Typing Tutor";
+				richTextBox1->Select(richTextBox1->Text[count], richTextBox1->Text->Length);
+				richTextBox1->SelectionAlignment = HorizontalAlignment::Center;
 				//****de-load level selector****
 				Level_1->Visible = false;
 				Level_2->Visible = false;
@@ -1686,6 +1799,11 @@ private: System::Void richTextBox1_KeyPress(System::Object^  sender, System::Win
 			}
 			else
 			{
+				count = 0;
+				richTextBox1->Font = gcnew System::Drawing::Font("Microsoft Sans Serif", 60);
+				richTextBox1->Text = "Select a level";
+				richTextBox1->Select(richTextBox1->Text[count], richTextBox1->Text->Length);
+				richTextBox1->SelectionAlignment = HorizontalAlignment::Center;
 				toggleKeyboard();
 				Level_1->Visible = true;
 				Level_2->Visible = true;
